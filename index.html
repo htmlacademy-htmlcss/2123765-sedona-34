@@ -49,6 +49,7 @@
   <main class="main-index">
     <h1 class="visually-hidden">Седона</h1>
     <section class="welcome">
+      <h2 class="visually-hidden">Преимущества седоны</h2>
       <img src="#" alt="Добро пожаловать в Седону">
     </section>
     <section class="advantages">
@@ -61,10 +62,12 @@
         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </section>
       <section>
+        <h2 class="visually-hidden">Красота города</h2>
         <img src="#" alt="Город">
       </section>
     </section>
     <section class="features-block">
+      <h2 class="visually-hidden">Особые фишки города</h2>
       <section class="house-block">
         <h3>Жильё</h3>
         <p class="features-description-1">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -79,7 +82,9 @@
       </section>
     </section>
     <section class="advantages item">
+      <h2 class="visually-hidden">Про мост дьявола и прочее</h2>
       <section>
+        <h2 class="visually-hidden">Раздел с мостом и фотографией</h2>
         <img src="#" alt="Мост дьявола">
       </section>
       <section class="advantages item-2">
@@ -89,6 +94,7 @@
       </section>
     </section>
     <section class="advantages list">
+      <h2 class="visually-hidden">Продолжение списка преимуществ</h2>
       <section class="advantages item-3">
         <h3>Небольшая площадь</h3>
         <p> - №3 - </p>
@@ -105,73 +111,77 @@
         <p>Большинство едет в Гранд Каньон и толпится там</p>
       </section>
     </section>
-    <section class="booking">
-      <section class="booking-header">
-        <span>Заинтересовались?</span>
-        <br>
-        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      </section>
-      <div class="booking-form">
-        <button class="hotel-search" type="button">Поиск гостиницы в седоне</button>
-        <section class="modal-show">
-          <form action="#" method="get">
-            <ul class="booking-list">
-              <li class="booking-item">
-                <h2 class="booking-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-                <button class="calendar-button calendar-button-check-in" type="button">
-                  <span class="visually-hidden">Кнопка выбора даты заезда</span>
+    <section class="booking-header">
+      <h2 class="visually-hidden">Форма для подачи заявки</h2>
+      <span>Заинтересовались?</span>
+      <br>
+      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    </section>
+    <div class="booking-form">
+      <button class="hotel-search" type="button">Поиск гостиницы в седоне</button>
+      <section class="modal-show">
+        <form action="#" method="get">
+          <ul class="booking-list">
+            <li class="booking-item">
+              <h2 class="booking-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+              <button class="calendar-button calendar-button-check-in" type="button">
+                <span class="visually-hidden">Кнопка выбора даты заезда</span>
+              </button>
+              <label class="item-name">Дата Заезда:
+                <input type="text" name="check-in" placeholder="27 апреля 2020">
+              </label>
+            </li>
+            <li class="booking-item">
+              <button class="calendar-button calendar-button-check-out" type="button">
+                <span class="visually-hidden">Кнопка выбора даты выезда</span>
+              </button>
+              <label class="item-name">Дата Выезда:
+                <input type="text" name="check-out" placeholder="01 сентября 2021">
+              </label>
+            </li>
+            <li class="booking-item">
+              <label for="adults" class="item-name">Взрослые:</label>
+              <div class="adults-form">
+                <button class="quantity-button minus" type="button">
+                  <span class="visually-hidden">Кнопка меньше</span>
                 </button>
-                <label class="item-name">Дата Заезда:
-                  <input type="text" name="check-in" placeholder="27 апреля 2020">
-                </label>
-              </li>
-              <li class="booking-item">
-                <button class="calendar-button calendar-button-check-out" type="button">
-                  <span class="visually-hidden">Кнопка выбора даты выезда</span>
+                <input id="adults" type="text" name="number-of-adults" placeholder="2">
+                <button class="quantity-button plus" type="button">
+                  <span class="visually-hidden">Кнопка больше</span>
                 </button>
-                <label class="item-name">Дата Выезда:
-                  <input type="text" name="check-out" placeholder="01 сентября 2021">
-                </label>
-              </li>
-              <li class="booking-item">
-                <label for="adults" class="item-name">Взрослые:</label>
-                <div class="adults-form">
-                  <button class="quantity-button minus" type="button">
-                    <span class="visually-hidden">Кнопка меньше</span>
-                  </button>
-                  <input id="adults" type="text" name="number-of-adults" placeholder="2">
-                  <button class="quantity-button plus" type="button">
-                    <span class="visually-hidden">Кнопка больше</span>
-                  </button>
-                </div>
-              </li>
-              <li class="booking-item">
-                <label for="kids" class="item-name">Дети:</label>
-                <div class="kids-form">
-                  <button class="quantity-button minus" type="button">
-                    <span class="visually-hidden">Кнопка меньше</span>
-                  </button>
-                  <input id="kids" type="text" name="number-of-kids" placeholder="1">
-                  <button class="quantity-button plus" type="button">
-                    <span class="visually-hidden">Кнопка больше</span>
-                  </button>
-                </div>
-              </li>
-            </ul>
-            <button class="search-button" type="submit">Найти</button>
-          </form>
-        </section>
-      </div>
-      <section class="mailing">
-        <section class="mailing-header">
-          <span>Подпишитесь на рассылку</span>
-          <br>
-          <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-        </section>
-        <form action="" method="post">
-          <input class="field" type="email" id="mailing-address" placeholder="Ваш e-mail"><button class="button"
-            type="submit">Подписаться</button>
+              </div>
+            </li>
+            <li class="booking-item">
+              <label for="kids" class="item-name">Дети:</label>
+              <div class="kids-form">
+                <button class="quantity-button minus" type="button">
+                  <span class="visually-hidden">Кнопка меньше</span>
+                </button>
+                <input id="kids" type="text" name="number-of-kids" placeholder="1">
+                <button class="quantity-button plus" type="button">
+                  <span class="visually-hidden">Кнопка больше</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <button class="search-button" type="submit">Найти</button>
         </form>
+      </section>
+    </div>
+    <section class="mailing">
+      <h2 class="visually-hidden">Окончание раздела с букингом</h2>
+      <section class="mailing-header">
+        <h2 class="visually-hidden">Раздел подписки на почтовую рассылку</h2>
+        <img src="#" alt="Горы на фоне">
+        <span>Подпишитесь на рассылку</span>
+        <br>
+        <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+      </section>
+      <form action="#" method="post">
+        <input class="field" type="email" id="mailing-address" placeholder="Ваш e-mail"><button class="button"
+          type="submit">Подписаться</button>
+      </form>
+    </section>
   </main>
   <footer class="footer-social">
     <ul class="footer-social-list">
@@ -187,14 +197,13 @@
       </li>
       <li class="footer-social-item">
         <a class="button" href="#">
-          <span class="visually-hidden">Ютуб<span>
+          <span class="visually-hidden">Ютуб</span>
         </a>
       </li>
     </ul>
     <p class="tel-number">+78128121212</p>
     <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
   </footer>
-
 </body>
 
 </html>
