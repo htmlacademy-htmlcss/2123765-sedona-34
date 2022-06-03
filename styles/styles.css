@@ -83,6 +83,40 @@ background-color: #756157;
   background-color: #FFFFFF;
 }
 
+.booking-title
+{ font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.callto {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+}
+.button-footer {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
 .advantages-item-1 {
   background-color: #82B3D3;
 }
@@ -98,6 +132,10 @@ background-color: #756157;
 .visually-hidden {
   display: none;
 }
+
+
+
+
 
 .button-c {
   font-size: 16px;
