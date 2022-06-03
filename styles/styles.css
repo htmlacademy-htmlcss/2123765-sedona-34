@@ -30,29 +30,11 @@ body {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  background-color: #FFFFFF;
 }
-
-.pagination-current {
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  color: #000000;
-  background-color: #F2F2F2;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.pagination-link {
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #82B3D3;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-
+.navi {
+color: #FFFFFF;
+background-color: #756157;
 }
 
 .titlehead {
@@ -60,6 +42,45 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
+  background-color: #FFFFFF;
+
+}
+
+.fivereason {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.advant-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+.advant-number {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+
+}
+.advant-descr {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.datetravel {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  background-color: #FFFFFF;
 }
 
 .advantages-item-1 {
@@ -83,4 +104,25 @@ body {
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+}
+.pagination-current {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #F2F2F2;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
 }
