@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="page-header">
@@ -39,7 +40,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <button type="submit">Хочу сюда!</button>
+          <a class="navigation-link" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -57,26 +58,26 @@
       </ul>
     </section>
     <section class="filter-infrastructure-type">
-      <form class="hotels-filter" action="#" method="get">
+      <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
         <h3 class="visually-hidden">Выбор инфраструктуры отеля</h3>
         <fieldset class="infrastructure">
           <legend class="hotels-filter-title">Инфраструктура</legend>
           <ul class="hotels-filter-list">
             <li class="hotels-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="pool" checked>
+                <input class="control-input" type="checkbox" name="infrastructure" checked>
                 Бассейн
               </label>
             </li>
             <li class="hotels-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="parking" checked>
+                <input class="control-input" type="checkbox" name="infrastructure" checked>
                 Парковка
               </label>
             </li>
             <li class="hotels-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="wi-fi">
+                <input class="control-input" type="checkbox" name="infrastructure">
                 Wi-fi
               </label>
             </li>
@@ -93,13 +94,13 @@
             </li>
             <li class="house-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="motel" value="motel">
+                <input class="control-input" type="radio" name="hotel" value="motel">
                 Мотель
               </label>
             </li>
             <li class="house-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="apartments" value="apartments">
+                <input class="control-input" type="radio" name="hotel" value="apartments">
                 Апартаменты
               </label>
             </li>
@@ -134,10 +135,12 @@
       <a class="button" href="#">
         <span class="visually-hidden">Слайдшоу</span>
       </a>
-      <a href="#" class="button button-light">
+      <a class="button" href="#">
         <span class="visually-hidden">Показать список</span>
       </a>
     </section>
+    <section>
+      <h3 class="visually-hidden">Раздел с отелями</h3>
     <ul class="hotel-list">
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
@@ -212,36 +215,42 @@
         <a class="pagination-link" href="#">10</a>
       </li>
     </ul>
+    </section>
       <section class="mailing-header">
         <h3 class="visually-hidden">Поле подписки</h3>
         <span>Подпишитесь на рассылку</span>
         <br>
         <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
       </section>
-      <form action="#" method="post">
+      <form action="https://echo.htmlacademy.ru/" method="post">
         <input class="field" type="email" id="mailing-address" placeholder="Ваш e-mail"><button class="button"
           type="submit">Подписаться</button>
       </form>
   </main>
   <footer class="footer-social">
+    <section class="footer-social">
+    <h3 class="visually-hidden">Ссылки на соцсети</h3>
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a class="socialvk" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">ВКонтакте</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a class="socialteleg" href="https://t.me/htmlacademy">
           <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a class="socialyoutube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Ютуб</span></a>
       </li>
     </ul>
-    <p><a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a></p>
-    <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+    <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+      <img src="images/htmlacademy.svg" width="115" height="34" alt="Логотип академии">
+    </a>
+    </section>
   </footer>
 </body>
 </html>
