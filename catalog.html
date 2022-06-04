@@ -48,18 +48,21 @@
     </nav>
   </header>
   <main>
-    <section class="filter-content"> <img src="images/catalog-background.jpg" width="1200" height="408" alt="Каньон">
-      <h1 class="header-catalog">Гостиницы седоны</h1>
+
+    <section class="hotelssedona">
+    <div class="filter-content"> <img src="images/catalog-background.jpg" width="1200" height="408" alt="Каньон">
+      <h1 class="header-catalog">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <a class="breadcrumbs-link" href="index.html"><img src="images/Union.svg" width="12" height="12" alt="иконка домик"></a>
+          <img src="images/vectorv.svg" width="5" height="8" alt="иконка стрелка">
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>
+          <a class="breadcrumbs-link-hotels">Гостиницы</a>
         </li>
       </ul>
-    </section>
-    <section class="filter-infrastructure-type">
+    </div>
+    <div class="filter-infrastructure-type">
       <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
         <h3 class="visually-hidden">Выбор инфраструктуры отеля</h3>
         <fieldset class="infrastructure">
@@ -123,9 +126,11 @@
           <button class="button-c" type="reset">Сбросить</button>
         </fieldset>
       </form>
+    </div>
     </section>
+
     <section class="sorting">
-      <h2>Найдено гостиниц:38</h2>
+      <h2 class="hotelscat">Найдено гостиниц:38</h2>
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярные</option>
         <option value="cheap">Сначала дешёвые</option>
