@@ -41,6 +41,12 @@ body {
 .headermedia {
   position	: relative;
 	width		: 100%;
+
+}
+
+
+.grandcajpg {
+  width: 100%;
 }
 
 .welcomephoto {
@@ -49,11 +55,9 @@ body {
 	left		: 0;
 	width		: 100%;
 }
-.divider-a {
-  position	: absolute;
-	width		: 100%;
-  bottom: 0%;
-}
+
+
+
 
 div .advantages {
   background-color: #FFFFFF;

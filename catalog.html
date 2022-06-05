@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
@@ -29,6 +31,7 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
+            <img src="img/search.svg" width="18" height="18" alt="иконка поиска">
             <span class="visually-hidden">
               Поиск
             </span>
@@ -36,13 +39,15 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
+            <img src="img/favorite.svg" width="18" height="17" alt="иконка избранное">
+            <img src="img/twelve.svg" width="19" height="13" alt="иконка с цифрой">
             <span class="visually-hidden">
               Избранное
             </span><span>12</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Хочу сюда!</a>
+          <a class="navigation-link navi" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -69,20 +74,20 @@
           <legend class="hotels-filter-title">Инфраструктура</legend>
           <ul class="hotels-filter-list">
             <li class="hotels-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="infrastructure" checked>
+              <label class="control" for="pool">
+                <input class="control-input" type="checkbox" id="pool" name="infrastructure" checked>
                 Бассейн
               </label>
             </li>
             <li class="hotels-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="infrastructure" checked>
+              <label class="control" for="parking">
+                <input class="control-input" type="checkbox" id="parking" name="infrastructure" checked>
                 Парковка
               </label>
             </li>
             <li class="hotels-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="infrastructure">
+              <label class="control" for="Wi-fi">
+                <input class="control-input" type="checkbox" id="Wi-fi" name="infrastructure">
                 Wi-fi
               </label>
             </li>
@@ -92,27 +97,27 @@
           <legend class="house-filter-title">Тип жилья</legend>
           <ul class="house-filter-list">
             <li class="house-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="hotel" value="hotel" checked>
+              <label class="control" for="hotel">
+                <input class="control-input" type="radio" id="hotel" name="hotel" value="hotel" checked>
                 Гостиница
               </label>
             </li>
             <li class="house-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="hotel" value="motel">
+              <label class="control" for="motel">
+                <input class="control-input" type="radio" id="motel" name="hotel" value="motel">
                 Мотель
               </label>
             </li>
             <li class="house-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="hotel" value="apartments">
+              <label class="control" for="apartments">
+                <input class="control-input" type="radio" id="apartments" name="hotel" value="apartments">
                 Апартаменты
               </label>
             </li>
           </ul>
         </fieldset>
       </form>
-      <form>
+      <form action="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
           <input type="number" min="0" placeholder="от">
           <input type="number" max="9000" placeholder="до">
