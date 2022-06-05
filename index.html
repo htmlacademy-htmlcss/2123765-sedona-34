@@ -57,9 +57,9 @@
     <section class="welcome">
       <h2 class="visually-hidden">Обзорный вид</h2>
       <div class="headermedia">
-      <img class="grandcajpg" src="images/grand-canyon.jpg" width="1200" height="485" alt="Добро пожаловать в Седону">
-      <img class="welcomephoto" src="images/welcome.svg" width="458" height="352" alt="Приветствие">
-      <img class="divider-a" src="images/divider.svg" width="1200" height="57" alt="Разделитель">
+        <img class="grandcajpg" src="images/grand-canyon.jpg" width="1200" height="485" alt="Добро пожаловать в Седону">
+        <img class="welcomephoto" src="images/welcome.svg" width="458" height="352" alt="Приветствие">
+        <img class="divider-a" src="images/divider.svg" width="1200" height="57" alt="Разделитель">
       </div>
     </section>
     <div class="advantages">
@@ -122,58 +122,59 @@
       <h2 class="visually-hidden">Форма для подачи заявки</h2>
       <span class="titlehead">Заинтересовались?</span>
       <br>
-      <p class="datetravel">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p class="datetravel">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
+        Седоне</p>
       <button class="hotel-search" type="button">Поиск гостиницы в седоне</button>
     </section>
 
-      <section class="modal-show">
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <ul class="booking-list">
-            <li class="booking-item">
-              <h2 class="booking-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-              <button class="calendar-button calendar-button-check-in" type="button">
-                <span class="visually-hidden">Кнопка выбора даты заезда</span>
+    <section class="modal-show">
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <ul class="booking-list">
+          <li class="booking-item">
+            <h2 class="booking-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+            <button class="calendar-button calendar-button-check-in" type="button">
+              <span class="visually-hidden">Кнопка выбора даты заезда</span>
+            </button>
+            <label class="item-name" for="checkindata">Дата Заезда:
+              <input type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020">
+            </label>
+          </li>
+          <li class="booking-item">
+            <button class="calendar-button calendar-button-check-out" type="button">
+              <span class="visually-hidden">Кнопка выбора даты выезда</span>
+            </button>
+            <label class="item-name" for="checkoutdata">Дата Выезда:
+              <input type="text" name="check-out" id="checkoutdata" placeholder="01 сентября 2021">
+            </label>
+          </li>
+          <li class="booking-item">
+            <label for="adults" class="item-name">Взрослые:</label>
+            <div class="adults-form">
+              <button class="quantity-button minus" type="button">
+                <span class="visually-hidden">Кнопка меньше</span>
               </button>
-              <label class="item-name" for="checkindata">Дата Заезда:
-                <input type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020">
-              </label>
-            </li>
-            <li class="booking-item">
-              <button class="calendar-button calendar-button-check-out" type="button">
-                <span class="visually-hidden">Кнопка выбора даты выезда</span>
+              <input id="adults" type="text" name="number-of-adults" placeholder="2">
+              <button class="quantity-button plus" type="button">
+                <span class="visually-hidden">Кнопка больше</span>
               </button>
-              <label class="item-name" for="checkoutdata">Дата Выезда:
-                <input type="text" name="check-out" id="checkoutdata" placeholder="01 сентября 2021">
-              </label>
-            </li>
-            <li class="booking-item">
-              <label for="adults" class="item-name">Взрослые:</label>
-              <div class="adults-form">
-                <button class="quantity-button minus" type="button">
-                  <span class="visually-hidden">Кнопка меньше</span>
-                </button>
-                <input id="adults" type="text" name="number-of-adults" placeholder="2">
-                <button class="quantity-button plus" type="button">
-                  <span class="visually-hidden">Кнопка больше</span>
-                </button>
-              </div>
-            </li>
-            <li class="booking-item">
-              <label for="kids" class="item-name">Дети:</label>
-              <div class="kids-form">
-                <button class="quantity-button minus" type="button">
-                  <span class="visually-hidden">Кнопка меньше</span>
-                </button>
-                <input id="kids" type="text" name="number-of-kids" placeholder="1">
-                <button class="quantity-button plus" type="button">
-                  <span class="visually-hidden">Кнопка больше</span>
-                </button>
-              </div>
-            </li>
-          </ul>
-          <button class="search-button" type="submit">Найти</button>
-        </form>
-      </section>
+            </div>
+          </li>
+          <li class="booking-item">
+            <label for="kids" class="item-name">Дети:</label>
+            <div class="kids-form">
+              <button class="quantity-button minus" type="button">
+                <span class="visually-hidden">Кнопка меньше</span>
+              </button>
+              <input id="kids" type="text" name="number-of-kids" placeholder="1">
+              <button class="quantity-button plus" type="button">
+                <span class="visually-hidden">Кнопка больше</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <button class="search-button" type="submit">Найти</button>
+      </form>
+    </section>
 
     <section class="mailing">
       <h2 class="visually-hidden">Окончание раздела с букингом</h2>
@@ -185,36 +186,33 @@
         <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
       </section>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="field" type="email" id="mailing-address" placeholder="Ваш e-mail"><button class="button-footer"
-          type="submit">Подписаться</button>
+        <input class="field" type="email" id="mailing-address" placeholder="Ваш e-mail">
+        <button class="button-footer" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
   <footer class="footer-social">
-    <section class="footer social">
-      <h3 class="visually-hidden">Ссылки на соцсети</h3>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="socialvk" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="socialteleg" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="socialyoutube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-        <img src="images/htmlacademy.svg" width="115" height="34" alt="Логотип академии">
-      </a>
-    </section>
+    <ul class="footer-social-list">
+      <li class="footer-social-item">
+        <a class="socialvk" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">ВКонтакте</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="socialteleg" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Телеграм</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="socialyoutube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Ютуб</span>
+        </a>
+      </li>
+    </ul>
+    <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+      <img src="images/htmlacademy.svg" width="115" height="34" alt="Логотип академии">
+    </a>
   </footer>
 </body>
 

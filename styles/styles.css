@@ -39,24 +39,21 @@ body {
 }
 
 .headermedia {
-  position	: relative;
-	width		: 100%;
+  position  : relative;
+  width   : 100%;
 
 }
-
 
 .grandcajpg {
   width: 100%;
 }
 
 .welcomephoto {
-  position	: absolute;
-	top		: 51px;
-	left		: 0;
-	width		: 100%;
+  position  : absolute;
+  top   : 51px;
+  left    : 0;
+  width   : 100%;
 }
-
-
 
 
 div .advantages {
@@ -172,23 +169,22 @@ div .advantages {
 }
 
 .hotelssedona {
-  position	: relative;
-	width		: 100%;
+  position  : relative;
+  width   : 100%;
 }
 .filter-content {
-  position	: absolute;
-	top		: 0;
-	left		: 0;
-	width		: 100%;
+  position  : absolute;
+  top   : 0;
+  left    : 0;
+  width   : 100%;
 
 }
 .header-catalog {
-  position	: absolute;
-	top		: 35px;
-	left		: 70px;
-	width		: 100%;
+  position  : absolute;
+  top   : 35px;
+  left    : 70px;
+  width   : 100%;
 }
-
 
 .breadcrumbs-link-hotels
 { font-size: 16px;
@@ -210,8 +206,6 @@ div .advantages {
   font-weight: 700;
   color: #000000;
 }
-
-
 
 .button-c {
   font-size: 16px;
@@ -241,3 +235,4 @@ div .advantages {
   text-transform: uppercase;
   text-decoration: none;
 }
+
