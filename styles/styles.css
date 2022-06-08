@@ -134,6 +134,11 @@ margin: auto;
 {
   display: flex;
 }
+.town-block-1 {
+width: 1200px;
+height: 384px;
+}
+
 .town-block-micro-1 {
   display: block;
   width: 400px;
@@ -192,6 +197,7 @@ height: 384px;
 padding-top: 30px;
 margin-left: auto;
 margin-right: auto;
+margin-top: 0;
 }
 .advant-descr-3 {
 margin-left: auto;
