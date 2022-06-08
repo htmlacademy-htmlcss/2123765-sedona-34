@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-weight: 400;
   font-style: normal;
-  src: url("ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
-  src: url("ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -160,7 +160,8 @@ margin: auto;
 .underlist-a {
   background-color: rgba(131, 179, 211, 0.12);
 }
-.advant-descr {
+.advant-descr,
+.advant-descr-2 {
   width: 230px;
   height: 63px;
   margin: auto;
@@ -174,12 +175,78 @@ height: 384px;
 .icon-house {
   padding-top: 80px;
 }
-.advant-descr {
-  margin: auto;
+.underlist-b {
+  background-color: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+}
+.icon-burger {
+  padding-top: 81px;
+  padding-bottom: 0;
+}
+.advant-title-1 {
+  margin: 0;
+  padding-top: 30px;
+}
+.advant-descr-2 {
+padding-top: 30px;
+}
+.advant-descr-3 {
+margin: 0;
+padding-top: 30px;
 }
 
-
-
+.advant-title-2 {
+margin: 0;
+padding-top: 31px;
+}
+.icon-souvenir {
+padding-top: 78px;
+}
+.advant-title-3 {
+  margin: 0;
+  padding-top: 28px;
+}
+.advant-descr-4 {
+margin: 0;
+padding-top: 30px;
+}
+.underlist-c {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.underlist {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+.town-block-2 {
+  display: flex;
+  width: 1200px;
+  height: 384px;
+  color: #FFFFFF;
+}
+.town-block-medium-2 {
+display: block;
+width: 400px;
+height: 384px;
+background-color: #82B3D3;
+}
+.advant-title-4 {
+text-transform: uppercase;
+margin: 0;
+padding-top: 92px;
+}
+.advant-number-2 {
+  margin: 0;
+  padding-top: 30px;
+}
+.advant-descr-5 {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  width: 230px;
+  height: 63px;
+}
 .button-hotel-search {
   display: flex;
   align-items: center;
@@ -221,7 +288,7 @@ div .advantages {
 }
 
 .titlehead {
-  display: block;
+  display: flex;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -231,8 +298,11 @@ div .advantages {
   padding-top: 63px;
   padding-left: 290px;
   padding-right: 290px;
-  text-align: center;
+  width: 620px;
+  height: 72px;
   line-height: 93%;
+  text-align: center;
+  vertical-align: top;
 }
 
 .fivereason {
@@ -240,8 +310,9 @@ div .advantages {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
-  padding-top: 0;
-  padding-bottom: 90px;
+  margin: 0;
+  padding-top: 31px;
+
 
 }
 
