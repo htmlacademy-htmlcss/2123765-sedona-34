@@ -264,6 +264,47 @@ padding-top: 92px;
   width: 230px;
   height: 63px;
 }
+
+.underlist-2 {
+width: 1200px;
+height: 384px;
+}
+.underlist-d,
+.underlist-e,
+.underlist-f {
+  width: 400px;
+  height: 384px;
+}
+.underlist-d {
+  width: 400px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advant-title-5 {
+  width: 230px;
+  height: 56px;
+  margin: 0;
+  padding-top: 103px;
+  padding-left: 85px;
+  padding-right: 85px;
+  text-transform: uppercase;
+}
+.advant-number-3 {
+  margin: 0;
+  width: 230px;
+  height: 21px;
+  padding-top: 30px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+.advant-descr-6 {
+width: 230px;
+height: 42px;
+padding-top: 30px;
+margin: 0;
+padding-left: 85px;
+padding-right: 85px;
+}
 .button-hotel-search {
   display: flex;
   align-items: center;
