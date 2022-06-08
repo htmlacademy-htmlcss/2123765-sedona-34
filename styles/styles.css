@@ -27,8 +27,12 @@ body {
 .body-index {
   width: 1200px;
   text-align: center;
-}
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 
+}
 
 .navigation-link {
   font-size: 20px;
@@ -38,6 +42,14 @@ body {
   text-decoration: none;
   background-color: #FFFFFF;
   }
+.advantages {
+  display: block;
+  width: 1200px;
+  height: 282px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 
 .nav-container {
   display: flex;
@@ -57,7 +69,7 @@ body {
   height: 66px;
   justify-content: center;
   margin: auto;
-  padding-right: 237px;
+  padding-right: 351px;
 
 }
 .container-nav-2 {
@@ -84,7 +96,6 @@ display: flex;
 justify-content: center;
 margin: auto;
  }
-
 
 .search-icon {
   margin-top: 24px;
@@ -116,6 +127,58 @@ margin: auto;
   text-transform: uppercase;
   margin: auto;
 }
+.town-block-1,
+.town-block-2,
+.underlist,
+.underlist-2
+{
+  display: flex;
+}
+.town-block-micro-1 {
+  display: block;
+  width: 400px;
+  height: 384px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+.advant-title {
+  padding-top: 92px;
+  text-align: center;
+  width: 230px;
+  height: 56px;
+  text-transform: uppercase;
+  margin: auto;
+}
+.advant-title-x {
+  padding-top: 92px;
+  text-align: center;
+  width: 230px;
+  height: 56px;
+  text-transform: uppercase;
+  margin: auto;
+}
+.underlist-a {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advant-descr {
+  width: 230px;
+  height: 63px;
+  margin: auto;
+}
+.underlist-a,
+.underlist-b,
+.underlist-c{
+width: 400px;
+height: 384px;
+}
+.icon-house {
+  padding-top: 80px;
+}
+.advant-descr {
+  margin: auto;
+}
+
+
 
 .button-hotel-search {
   display: flex;
@@ -134,12 +197,13 @@ margin: auto;
 }
 
 
-
 .welcome {
   width: 1200px;
   height: 485px;
   background-image: url("../images/grand-canyon.jpg");
   background-repeat: no-repeat;
+  margin-bottom: 0;
+  border-collapse: collapse;
 }
 
 .headermedia {
@@ -152,19 +216,23 @@ margin: auto;
   padding: 51px 371px 82px 371px;
  }
 
-
 div .advantages {
   background-color: #FFFFFF;
 }
 
 .titlehead {
+  display: block;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
-
+  margin: 0;
+  padding-top: 63px;
+  padding-left: 290px;
+  padding-right: 290px;
+  text-align: center;
+  line-height: 93%;
 }
 
 .fivereason {
@@ -172,6 +240,9 @@ div .advantages {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+  padding-top: 0;
+  padding-bottom: 90px;
+
 }
 
 .advant-title {
