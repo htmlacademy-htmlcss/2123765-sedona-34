@@ -49,8 +49,25 @@ body {
   margin: 0;
 
 }
-
-
+.link-1 {
+  margin: o;
+  padding-left: 47px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+}
+.link-2 {
+  margin: o;
+  padding-left: 34px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+}
+.link-3 {
+  margin: o;
+  padding-left: 34px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  margin-right: 311px;
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -94,7 +111,7 @@ justify-content: flex-end;
  .navigation-link {
 display: flex;
 justify-content: center;
-margin: auto;
+margin: 0;
  }
 
 .search-icon {
