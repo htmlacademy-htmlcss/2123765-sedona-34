@@ -492,6 +492,7 @@ body {
 .title-booking-1 {
   margin: 0;
 }
+
 .datetravel {
   font-size: 22px;
   line-height: 26px;
@@ -505,6 +506,7 @@ body {
   padding-right: 304px;
   text-align: center;
 }
+
 .button-hotel-modal {
   padding-top: 56px;
   padding-left: 313px;
@@ -513,7 +515,7 @@ body {
 }
 
 .button-hotel-search {
-  font-family:"PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   margin: 0;
   border: 0;
   font-weight: 700;
@@ -537,10 +539,11 @@ body {
   margin: 0;
   background-repeat: no-repeat;
 }
-.mailing-header-1
-{
+
+.mailing-header-1 {
   color: #000000;
 }
+
 .mailing-header {
   color: #FFFFFF;
 }
@@ -580,18 +583,19 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
+
 .callto-1 {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
-    padding-top: 94px;
-    padding-left: 398px;
-    padding-right: 398px;
-    text-align: center;
-    color: #000000;
-  }
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 94px;
+  padding-left: 398px;
+  padding-right: 398px;
+  text-align: center;
+  color: #000000;
+}
 
 
 
@@ -633,24 +637,28 @@ div .advantages {
   margin: 0;
   padding-top: 31px;
 }
+
 .advant-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-align: center;
 }
+
 .advant-number {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
 }
+
 .advant-descr {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
 }
+
 .booking-title {
   font-size: 20px;
   line-height: 36px;
@@ -720,6 +728,7 @@ div .advantages {
   line-height: 26px;
   font-weight: 400;
 }
+
 .nospam-1 {
   color: #333333;
   margin: 0;
@@ -732,6 +741,7 @@ div .advantages {
   line-height: 26px;
   font-weight: 400;
 }
+
 .newsletter-form {
   margin: 0;
   padding-top: 46px;
@@ -824,6 +834,7 @@ div .advantages {
   color: #FFFFFF;
 
 }
+
 .catalog-background {
   width: 1200px;
   height: 411px;
