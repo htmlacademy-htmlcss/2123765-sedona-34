@@ -46,8 +46,8 @@ body {
   display: block;
   width: 1200px;
   height: 282px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+
 }
 
 
@@ -467,9 +467,9 @@ div .advantages {
   padding-right: 290px;
   width: 620px;
   height: 72px;
-  line-height: 93%;
+  font-weight: 700px;
   text-align: center;
-  vertical-align: top;
+
 }
 
 .fivereason {
