@@ -63,13 +63,13 @@ body {
   margin-left: 70px;
 
 }
-.container-nav-1 {
+ .container-nav-1 {
   display: flex;
   width: 390px;
   height: 66px;
-  justify-content: center;
-  margin: auto;
-  padding-right: 351px;
+  justify-content: flex-start;
+  margin: 0;
+ padding-right: 351px;
 
 }
 .container-nav-2 {
@@ -532,9 +532,11 @@ div .advantages {
 }
 .button-footer {
   margin: 0;
-  padding-right: 200px;
+  padding: 0;
   width: 200px;
   height: 60px;
+  border-collapse: collapse;
+  border: 0;
 }
 
 .button-footer {
@@ -549,6 +551,23 @@ div .advantages {
   border-bottom-right-radius: 10px;
 
 }
+.field-mail {
+  margin: 0;
+  border-collapse: collapse;
+  padding: 0;
+  text-align: left;
+  border: 0;
+
+}
+.button-submit-footer {
+display: flex;
+justify-content: flex-start;
+border-collapse: collapse;
+margin: 0;
+padding: 0;
+}
+
+
 .nospam {
   color: #FFFFFF;
   margin: 0;
