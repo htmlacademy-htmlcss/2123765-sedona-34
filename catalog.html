@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div class="body-index">
+    <div class="body-catalog">
       <header class="page-header">
         <nav class="navigation">
           <div class="nav-container">
@@ -55,20 +55,21 @@
       </header>
       <main>
 
-        <section class="hotelssedona">
-          <div class="filter-content"> <img src="images/catalog-background.jpg" width="1200" height="408" alt="Каньон">
+
+
+         <section class="hotelssedona">
             <h1 class="header-catalog">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
+
+              <div class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                   <img src="images/union.svg" width="12" height="12" alt="иконка домик">
                 </a>
-              </li>
-              <li class="breadcrumbs-item">
+                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.05145 4.0749L1.25145 0.674902C1.05145 0.474902 0.651448 0.474902 0.351448 0.674902C0.0514485 0.874902 0.151448 1.2749 0.351448 1.4749L3.65145 4.4749L0.451448 7.4749C0.251448 7.6749 0.251448 8.0749 0.451448 8.2749C0.451448 8.3749 0.751448 8.4749 0.851448 8.4749C0.951449 8.4749 1.15145 8.3749 1.25145 8.2749L5.05145 4.8749C5.35145 4.6749 5.35145 4.2749 5.05145 4.0749Z" fill="white"/>
+                  </svg>
                 <a class="breadcrumbs-link-hotels">Гостиницы</a>
-              </li>
-            </ul>
-          </div>
+              </div>
+
           <div class="filter-infrastructure-type">
             <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
               <h3 class="visually-hidden">Выбор инфраструктуры отеля</h3>
@@ -134,51 +135,43 @@
               </div>
             </form>
           </div>
-        </section>
+         </section>
 
-        <section class="sorting">
+        <section class="catalog-main-hotel">
+          <div class="catalog-sorting">
           <h2 class="hotelscat">Найдено гостиниц:38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярные</option>
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <ul>
-            <li>
+          <div class="mini-icons">
               <a class="button" href="#">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
-            </li>
-            <li>
               <a class="button" href="#">
                 <span class="visually-hidden">Слайдшоу</span>
               </a>
-            </li>
-            <li>
               <a class="button" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
-            </li>
-          </ul>
-        </section>
-        <section>
+          </div>
+          </div>
           <h3 class="visually-hidden">Раздел с отелями</h3>
-          <ul class="hotel-list">
-            <li class="hotel-card">
+            <div class="hotel-amara-block">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/hotel-1.jpg" width="300" height="211" alt="Ущелье">
                 <h3 class="hotel-card-title">Amara Resort&Spa</h3>
               </a>
-              <div>
                 <p class="hotel-card-price">Гостиница</p>
                 <p class="hotel-card-price">От 4000 рублей</p>
-              </div>
               <a class="hotel-card-button button" href="#">подробнее</a>
               <button class="blue-button" type="button">в Избранное</button>
               <img src="images/stars-four.svg" width="140" height="37" alt="четыре звезды">
-            </li>
-            <li class="amara-rating"><span>рейтинг:8,5</span></li>
-            <li class="hotel-card">
+            <p class="amara-rating">рейтинг:8,5</p>
+            </div>
+
+            <div class="hotel-diablo-block">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/hotel-2.jpg" width="300" height="211" alt="Радуга над горами">
                 <h3 class="hotel-card-title">Villas at poco diablo</h3>
@@ -190,9 +183,10 @@
               <a class="hotel-card-button button" href="#">подробнее</a>
               <button class="green-button" type="button">в Избранном</button>
               <img src="images/stars-four.svg" width="140" height="37" alt="четыре звезды">
-            </li>
-            <li class="pocodiablo-rating"><span>рейтинг:9,2</span></li>
-            <li class="hotel-card">
+            <p class="pocodiablo-rating">рейтинг:9,2</p>
+            </div>
+
+            <div class="hotel-desertinn-block">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/hotel-3.jpg" width="300" height="211" alt="Лес и горы">
                 <h3 class="hotel-card-title">Desert quail inn</h3>
@@ -204,9 +198,10 @@
               <a class="hotel-card-button button" href="#">подробнее</a>
               <button class="blue-button" type="button">в Избранное</button>
               <img src="images/stars-three.svg" width="140" height="37" alt="три звезды">
-            </li>
-            <li class="desertquail-rating"><span>рейтинг:6,9</span></li>
-            <li class="hotel-card">
+              <p class="desertquail-rating">рейтинг:6,9</p>
+            </div>
+
+            <div class="hotel-greentree-block">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/hotel-4.jpg" width="300" height="211"
                   alt="Звездное небо над скалой">
@@ -219,30 +214,33 @@
               <a class="hotel-card-button button" href="#">подробнее</a>
               <button class="blue-button" type="button">в избранное</button>
               <img src="images/stars-two.svg" width="140" height="37" alt="две звезды">
-            </li>
-            <li class="greentree-rating"><span>рейтинг:5,0</span></li>
-          </ul>
+            <p class="greentree-rating">рейтинг:5,0</p>
+            </div>
+
+
           <hr>
-          <ul class="pagination">
-            <li class="pagination-item">
+          <section class="pagination-select-block">
+           <div class="pagination-block">
+            <div class="pagination-item-1">
               <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
+            </div>
+            <div class="pagination-item">
               <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
+            </div>
+            <div class="pagination-item">
               <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
+            </div>
+            <div class="pagination-item">
               <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
+            </div>
+            <div class="pagination-item">
               <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
+            </div>
+            <div class="pagination-item">
               <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
+            </div>
+          </div>
+
           <div class="hotels-amount">
             <p class="hotels-on-page">Гостиниц на странице</p>
             <select class="hotels-select">
@@ -257,6 +255,7 @@
               <option value="9">9</option>
             </select>
           </div>
+          </section>
         </section>
 
         <section class="catalog-background">

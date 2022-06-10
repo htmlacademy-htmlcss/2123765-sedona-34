@@ -35,7 +35,15 @@ body {
   flex-direction: column;
   flex-grow: 1;
 }
-
+.body-catalog {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -822,72 +830,125 @@ div .advantages {
 }
 
 .header-catalog {
+  display: flex;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   color: #FFFFFF;
-
+  width: 495px;
+  height: 78px;
+  padding-top: 35px;
+  padding-left: 70px;
+  padding-right: 635px;
+  padding-bottom: 0;
+  margin: 0;
+}
+.filter-infrastructure-type {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 149px;
+  margin: 0;
+  border: 0;
+  padding-top: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+}
+.pagination-block {
+  display: flex;
+  width: 400px;
+  height: 60px;
+}
+.pagination-select-block {
+display: flex;
+justify-content: space-between;
+width: 1056px;
+height: 60px;
 }
 
+.catalog-main-hotel {
+  width: 1200px;
+  height: 1212px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #FFFFFF;
+}
+.breadcrumbs-item {
+
+width: 110px;
+height: 21px;
+padding-top: 10px;
+padding-left: 72px;
+padding-right: 1017px;
+padding-bottom: 0;
+margin: 0;
+border: 0;
+
+}
+.hotel-amara-block,
+.hotel-diablo-block,
+.hotel-deserttree-block,
+.hotel-greentree-block
+{
+
+  width: 340px;
+  height: 438px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 .catalog-background {
   width: 1200px;
   height: 411px;
   margin: 0;
   background-color: #FFFFFF;
 }
-
-
-
-
 .hotelssedona {
-  position: relative;
-  width: 100%;
+    width: 1200px;
+    height: 403px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-image: url("../images/catalog-background.jpg");
+    background-repeat: no-repeat;
 }
-
-.filter-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-
-}
-
-.header-catalog {
-  position: absolute;
-  top: 35px;
-  left: 70px;
-  width: 100%;
-}
-
 .breadcrumbs-link-hotels {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
   color: #FFFFFF;
-
 }
-
 .hotelscat {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+  width: 338px;
+  height: 37px;
+  text-transform: uppercase;
 }
-
+.catalog-sorting {
+  width: 1057px;
+  height: 49px;
+  padding-top: 50px;
+  padding-right: 71px;
+  padding-left: 72px;
+  padding-bottom: 0;
+}
 .hotel-card-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
 }
-
 .button-c {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #ffffff;
 }
-
 .pagination-current {
   font-size: 20px;
   line-height: 36px;
@@ -898,7 +959,6 @@ div .advantages {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 .pagination-link {
   font-size: 20px;
   line-height: 36px;
