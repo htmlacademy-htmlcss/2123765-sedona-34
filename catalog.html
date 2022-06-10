@@ -11,7 +11,7 @@
 
   <body>
     <div class="body-catalog">
-      <header class="page-header">
+      <header>
         <nav class="navigation">
           <div class="nav-container">
             <a class="page-header-logo" href="index.html">
@@ -73,55 +73,50 @@
           <div class="filter-infrastructure-type">
             <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
               <h3 class="visually-hidden">Выбор инфраструктуры отеля</h3>
-              <fieldset class="infrastructure">
-                <legend class="hotels-filter-title">Инфраструктура</legend>
-                <ul class="hotels-filter-list">
-                  <li class="hotels-filter-item">
+              <fieldset class="fieldset-infrastructure">
+                <legend class="hotels-filter-title">Инфраструктура:</legend>
+
                     <label class="control" for="pool">
                       <input class="control-input" type="checkbox" id="pool" name="infrastructure" checked>
                       Бассейн
                     </label>
-                  </li>
-                  <li class="hotels-filter-item">
+
+
                     <label class="control" for="parking">
                       <input class="control-input" type="checkbox" id="parking" name="infrastructure" checked>
                       Парковка
                     </label>
-                  </li>
-                  <li class="hotels-filter-item">
+
+
                     <label class="control" for="Wi-fi">
                       <input class="control-input" type="checkbox" id="Wi-fi" name="infrastructure">
                       Wi-fi
                     </label>
-                  </li>
-                </ul>
+
+
               </fieldset>
-              <fieldset class="type-house">
-                <legend class="house-filter-title">Тип жилья</legend>
-                <ul class="house-filter-list">
-                  <li class="house-filter-item">
+              <fieldset class="fieldset-type-house">
+                <legend class="house-filter-title">Тип жилья:</legend>
+
                     <label class="control" for="hotel">
                       <input class="control-input" type="radio" id="hotel" name="hotel" value="hotel" checked>
                       Гостиница
                     </label>
-                  </li>
-                  <li class="house-filter-item">
+
                     <label class="control" for="motel">
                       <input class="control-input" type="radio" id="motel" name="hotel" value="motel">
                       Мотель
                     </label>
-                  </li>
-                  <li class="house-filter-item">
+
                     <label class="control" for="apartments">
                       <input class="control-input" type="radio" id="apartments" name="hotel" value="apartments">
                       Апартаменты
                     </label>
-                  </li>
-                </ul>
+
               </fieldset>
             </form>
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset>
+              <fieldset class="fieldset-range">
                 <legend class="cost-regulator">Стоимость, &#x20bd; </legend>
                 <input type="number" min="0" placeholder="от">
                 <input type="number" max="9000" placeholder="до">
@@ -129,7 +124,7 @@
                   <input class="regulator" type="range" min="0" max="9000" value="8000">
                 </label>
               </fieldset>
-              <div class="hotels-filter">
+              <div class="hotels-filter-button">
                 <button class="button-c" type="submit">Применить</button>
                 <button class="button-c" type="reset">Сбросить</button>
               </div>
@@ -158,6 +153,7 @@
           </div>
           </div>
           <h3 class="visually-hidden">Раздел с отелями</h3>
+          <div class="container-allhotels">
             <div class="hotel-amara-block">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/hotel-1.jpg" width="300" height="211" alt="Ущелье">
@@ -216,7 +212,7 @@
               <img src="images/stars-two.svg" width="140" height="37" alt="две звезды">
             <p class="greentree-rating">рейтинг:5,0</p>
             </div>
-
+          </div>
 
           <hr>
           <section class="pagination-select-block">
@@ -260,6 +256,7 @@
 
         <section class="catalog-background">
           <h2 class="visually-hidden">Раздел подписки на почтовую рассылку</h2>
+          <div class="undersection-catalog">
           <div class="mailing-header-1">
             <p class="callto-1">Подпишитесь на рассылку</p>
           </div>
@@ -270,6 +267,7 @@
               <button class="button-footer" type="submit">Подписаться</button>
             </div>
           </form>
+        </div>
         </section>
       </main>
 
