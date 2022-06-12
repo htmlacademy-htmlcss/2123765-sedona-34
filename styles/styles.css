@@ -164,8 +164,15 @@ body {
   margin: 0;
 }
 
-.chosen-icon {
-  margin: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .header-button {
@@ -179,8 +186,8 @@ body {
   text-decoration: none;
   background-color: #756157;
   border-radius: 4px;
-  width: 160px;
-  height: 37px;
+  min-width: 160px;
+  min-height: 37px;
   text-transform: uppercase;
   margin: auto;
 }
@@ -540,6 +547,7 @@ body {
 .mailing {
   width: 1200px;
   height: 411px;
+  background-color: #000000;
   background-image: url("../images/background.jpg");
   margin: 0;
   background-repeat: no-repeat;
@@ -584,6 +592,7 @@ body {
 .welcome {
   width: 1200px;
   height: 485px;
+  background-color: #000000;
   background-image: url("../images/grand-canyon.jpg");
   background-repeat: no-repeat;
   margin-bottom: 0;
@@ -1004,6 +1013,7 @@ text-transform: capitalize;
   padding: 0;
   margin: 0;
   border: 0;
+  background-color: #000000;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
 }
@@ -1019,8 +1029,8 @@ text-transform: capitalize;
 .button-c-c {
   background-color: #82B3D3;
   color: #FFFFFF;
-  width: 160px;
-  height: 48px;
+  min-width: 160px;
+  min-height: 48px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
@@ -1034,7 +1044,7 @@ text-transform: capitalize;
    display: flex;
    flex-direction: column;
    align-items: flex-end;
-  width: 65px;
+  min-width: 65px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
