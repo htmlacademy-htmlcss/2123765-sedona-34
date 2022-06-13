@@ -856,10 +856,6 @@ div .advantages {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.visually-hidden {
-  display: none;
-}
-
 .header-catalog {
   display: flex;
   font-size: 60px;
