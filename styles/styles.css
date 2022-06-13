@@ -66,12 +66,13 @@ body {
 }
 
 .advantages {
-  display: block;
-  width: 1200px;
+
   height: 282px;
   margin: 0;
 }
-
+.index-photo {
+  display: block;
+}
 .twelve {
   position: absolute;
   padding-top: 17px;
@@ -185,14 +186,16 @@ body {
   text-transform: uppercase;
   margin: auto;
 }
-
-.town-block-life,
-.town-block-2,
-.underlist,
-.underlist-2 {
+.list-advants {
   display: flex;
-}
+  list-style-type: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
 
+}
 .town-block-1 {
   width: 1200px;
   height: 384px;
@@ -584,6 +587,7 @@ body {
 }
 
 .welcome {
+  display: flex;
   width: 1200px;
   height: 485px;
   background-color: #000000;
