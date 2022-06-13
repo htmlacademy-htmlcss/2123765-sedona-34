@@ -72,9 +72,9 @@ body {
 }
 
 .twelve {
-
+  position: absolute;
   padding-top: 17px;
-
+  padding-left: 12px;
   padding-bottom: 35px;
 }
 .icon-search-search {
@@ -82,7 +82,7 @@ body {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-right: 12px;
+  padding-right: 30px;
 }
 .iconfooter-1 {
   width: 18px;
