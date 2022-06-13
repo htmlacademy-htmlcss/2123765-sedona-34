@@ -56,6 +56,12 @@ body {
   color: #000000;
   text-decoration: none;
   background-color: #FFFFFF;
+  display: block;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 19px;
 }
 
 .advantages {
@@ -89,27 +95,7 @@ body {
   padding-bottom: 24px;
 }
 
-.link-1 {
-  margin: o;
-  padding-left: 47px;
-  padding-top: 20px;
-  padding-bottom: 19px;
-}
 
-.link-2 {
-  margin: o;
-  padding-left: 34px;
-  padding-top: 20px;
-  padding-bottom: 19px;
-}
-
-.link-3 {
-  margin: o;
-  padding-left: 34px;
-  padding-top: 20px;
-  padding-bottom: 19px;
-  margin-right: 311px;
-}
 
 .nav-container {
   display: flex;
@@ -122,7 +108,7 @@ body {
 
 .page-header-logo {
   margin-left: 70px;
-  position: relative;
+  margin-right: 30px;
   z-index: 1;
 }
 
@@ -132,14 +118,16 @@ body {
   height: 66px;
   justify-content: flex-start;
   margin: 0;
-  padding-right: 351px;
+  list-style-type: none;
+  padding-left: 0;
+
 }
 
 .container-nav-2 {
   display: flex;
   justify-content: flex-end;
   width: 264px;
-  margin: 0;
+  margin-left: auto;
 }
 
 .navigation-icon-1 {
@@ -158,11 +146,6 @@ body {
   margin-right: 70px;
 }
 
-.navigation-link {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
 
 .visually-hidden {
   position: absolute;
