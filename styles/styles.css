@@ -84,7 +84,7 @@ body {
   padding-bottom: 24px;
   padding-right: 30px;
 }
-.iconfooter-1 {
+.iconsearch-header {
   width: 18px;
   height: 18px;
   margin: 0;
@@ -95,8 +95,7 @@ body {
   padding-bottom: 24px;
 
 }
-
-.iconfooter-2 {
+.iconchosen-header {
   display: flex;
   margin: 0;
   padding-top: 24px;
@@ -122,7 +121,7 @@ body {
   z-index: 1;
 }
 
-.container-nav-1 {
+.container-nav {
   display: flex;
   width: 390px;
   height: 66px;
@@ -133,7 +132,7 @@ body {
 
 }
 
-.container-nav-2 {
+.container-nav-icons {
   display: flex;
   justify-content: flex-end;
   width: 264px;
@@ -144,14 +143,11 @@ body {
   margin-right: 70px;
 }
 
-.navigation-icon-1 {
-  display: flex;
-  margin: auto;
-}
 
-.navigation-icon-2 {
+
+.icon-chosen-digit {
   display: flex;
-  margin: auto;
+
 }
 
 .navigation-item-want {
@@ -189,7 +185,7 @@ body {
   margin: auto;
 }
 
-.town-block-1,
+.town-block-life,
 .town-block-2,
 .underlist,
 .underlist-2 {
@@ -500,7 +496,7 @@ body {
   font-weight: 700;
 }
 
-.title-booking-1 {
+.booking-interest {
   margin: 0;
 }
 
@@ -790,19 +786,19 @@ div .advantages {
   margin: 0;
 }
 
-.footer-social-item-1 {
+.footer-social-item-vk {
   padding-left: 82px;
   padding-top: 58px;
   padding-bottom: 48px;
 }
 
-.footer-social-item-2 {
+.footer-social-item-tg {
   padding-left: 26px;
   padding-top: 57px;
   padding-bottom: 48px;
 }
 
-.footer-social-item-3 {
+.footer-social-item-yot {
   padding-left: 27px;
   padding-top: 58px;
   padding-bottom: 47px;
