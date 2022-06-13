@@ -534,8 +534,8 @@ body {
   text-decoration: none;
   background-color: #756157;
   border-radius: 4px;
-  width: 574px;
-  height: 60px;
+  min-width: 574px;
+  min-height: 60px;
   text-transform: uppercase;
   border-radius: 4px;
   text-align: center;
@@ -704,20 +704,13 @@ div .advantages {
 }
 
 .button-footer {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  height: 60px;
-  border-collapse: collapse;
+  min-width: 200px;
+  min-height: 60px;
   border: 0;
-}
-
-.button-footer {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
   color: #FFFFFF;
   background-color: #82B3D3;
   text-transform: uppercase;
@@ -930,8 +923,10 @@ text-transform: capitalize;
 .pagination-block {
   display: flex;
   width: 400px;
+  height: 60px;
   justify-content: space-between;
   align-content: center;
+  list-style-type: none;
 }
 
 .pagination-select-block {
