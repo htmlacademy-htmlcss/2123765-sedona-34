@@ -676,14 +676,6 @@ div .advantages {
   padding-bottom: 0;
 }
 
-.divbuttonfooter {
-  display: flex;
-  width: 800px;
-  height: 60px;
-  margin: 0;
-  padding: auto;
-}
-
 .footer-social {
   display: flex;
   width: 1200px;
