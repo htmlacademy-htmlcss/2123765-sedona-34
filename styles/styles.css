@@ -814,6 +814,9 @@ div .advantages {
   justify-content: space-between;
   align-content: center;
   list-style-type: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .pagination-select-block {
@@ -823,24 +826,33 @@ div .advantages {
   margin: auto;
 }
 
-.pagination-item-1 {
+.pagination-item-current {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
+  padding: 12px 24px;
   color: #000000;
   background-color: #F2F2F2;
   border-radius: 4px;
-}
 
+}
+.pagination-link-current {
+  color: #000000;
+  text-decoration: none;
+}
+.pagination-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 .pagination-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
+  padding: 12px 24px;
   background-color: #82B3D3;
   color: #FFFFFF;
   border-radius: 4px;
+
 }
 
 .catalog-main-hotel {
@@ -902,7 +914,7 @@ div .advantages {
   background-color: #82B3D3;
   color: #FFFFFF;
   min-width: 160px;
-  min-height: 48px;
+  padding: 14px 15px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
