@@ -70,15 +70,18 @@ body {
   height: 282px;
   margin: 0;
 }
+
 .index-photo {
   display: block;
 }
+
 .twelve {
   position: absolute;
   padding-top: 17px;
   padding-left: 12px;
   padding-bottom: 35px;
 }
+
 .icon-search-search {
   display: flex;
   align-items: center;
@@ -86,6 +89,7 @@ body {
   padding-bottom: 24px;
   padding-right: 30px;
 }
+
 .iconsearch-header {
   width: 18px;
   height: 18px;
@@ -97,6 +101,7 @@ body {
   padding-bottom: 24px;
 
 }
+
 .iconchosen-header {
   display: flex;
   margin: 0;
@@ -186,6 +191,7 @@ body {
   text-transform: uppercase;
   margin: auto;
 }
+
 .list-advants {
   display: flex;
   list-style-type: none;
@@ -225,10 +231,6 @@ body {
   margin: 0;
 }
 
-.underlist-a {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
 
 
 .advant-descr {
@@ -238,14 +240,19 @@ body {
   padding-right: 85px;
 }
 
-.underlist-house,
+.underlist-house {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .underlist-souv {
   width: 400px;
 }
 
 .underlist-souv {
-background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
+
 .icon-house {
   padding-top: 80px;
 }
@@ -330,14 +337,11 @@ background-color: rgba(131, 179, 211, 0.12);
   color: #FFFFFF;
 }
 
-.town-block-medium-2 {
-  display: block;
-  width: 400px;
-  height: 384px;
+.town-block-bridge {
   background-color: #82B3D3;
 }
 
-.advant-title-4 {
+.advant-title-bridge {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -346,44 +350,32 @@ background-color: rgba(131, 179, 211, 0.12);
   padding-top: 92px;
 }
 
-.advant-number-2 {
+.advant-number-bridge {
   margin: 0;
   padding-top: 30px;
 }
 
-.advant-descr-5 {
+.advant-descr-bridge {
   margin: 0;
   padding-top: 30px;
   padding-left: 85px;
   padding-right: 85px;
   width: 230px;
-  height: 63px;
 }
 
-.underlist-2 {
-  width: 1200px;
-  height: 384px;
-}
 
-.underlist-d,
-.underlist-e,
-.underlist-f {
-  width: 400px;
-  height: 384px;
-}
 
-.underlist-d {
-  width: 400px;
-  height: 384px;
+
+
+
+.underlist-square {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advant-title-5 {
+.advant-title-square {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  width: 230px;
-  height: 56px;
   margin: 0;
   padding-top: 103px;
   padding-left: 85px;
@@ -391,31 +383,27 @@ background-color: rgba(131, 179, 211, 0.12);
   text-transform: uppercase;
 }
 
-.advant-number-3 {
+.advant-number-square {
   margin: 0;
-  width: 230px;
-  height: 21px;
   padding-top: 30px;
   padding-left: 85px;
   padding-right: 85px;
 }
 
-.advant-descr-6 {
+.advant-descr-square {
   width: 230px;
-  height: 42px;
   padding-top: 30px;
   margin: 0;
   padding-left: 85px;
   padding-right: 85px;
 }
 
-.underlist-e {
+.underlist-road {
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
-  height: 384px;
 }
 
-.advant-title-6 {
+.advant-title-road {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -424,49 +412,48 @@ background-color: rgba(131, 179, 211, 0.12);
   padding-top: 103px;
   padding-left: 85px;
   padding-right: 85px;
-  width: 230px;
-  height: 56px;
+
 }
 
-.advant-number-4 {
+.advant-number-road {
   padding-top: 30px;
   margin: 0;
 }
 
-.advant-descr-7 {
+.advant-descr-road {
   margin: 0;
   padding: 30px;
 }
 
-.underlist-f {
+.underlist-tourist {
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 384px;
+
 }
 
-.advant-title-7 {
+.advant-title-tourist {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  width: 230px;
-  height: 56px;
   padding-top: 103px;
   padding-left: 85px;
   padding-right: 85px;
 }
 
-.advant-number-5 {
+.advant-number-tourist {
   margin: 0;
   padding-top: 30px;
 }
 
-.advant-descr-8 {
+.advant-descr-tourist {
   margin: 0;
   padding-top: 30px;
   padding-left: 85px;
   padding-right: 85px;
-  width: 230px;
-  height: 42px;
+
 }
 
 .booking-header {
@@ -506,6 +493,7 @@ background-color: rgba(131, 179, 211, 0.12);
   padding-left: 304px;
   padding-right: 304px;
 }
+
 .button-hotel-modal {
   padding-top: 56px;
   padding-left: 313px;
@@ -854,11 +842,13 @@ div .advantages {
   margin: auto;
   border: 0;
 }
+
 .hotels-filter {
   display: flex;
   width: 1060px;
   justify-content: space-between;
 }
+
 .filter-infrastructure-type {
   display: flex;
   width: 1060px;
@@ -870,19 +860,22 @@ div .advantages {
   padding-bottom: 70px;
   color: #FFFFFF;
 }
+
 .hotels-filter-title,
-.house-filter-title
-{
+.house-filter-title {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
 }
+
 .house-filter-title {
-text-transform: capitalize;
+  text-transform: capitalize;
 }
+
 .hotels-on-page {
   margin: 0;
 }
+
 .catalog-view {
   width: 160px;
   height: 48px;
@@ -900,12 +893,14 @@ text-transform: capitalize;
   text-align: left;
   border: none 0;
 }
+
 .select-control {
   display: flex;
   width: 290px;
   border-radius: 4px;
 
 }
+
 .pagination-block {
   display: flex;
   width: 400px;
@@ -921,6 +916,7 @@ text-transform: capitalize;
   width: 1056px;
   margin: auto;
 }
+
 .pagination-item-1 {
   display: flex;
   align-items: center;
@@ -931,6 +927,7 @@ text-transform: capitalize;
   border-radius: 4px;
 
 }
+
 .pagination-item {
   display: flex;
   align-items: center;
@@ -940,6 +937,7 @@ text-transform: capitalize;
   color: #FFFFFF;
   border-radius: 4px;
 }
+
 .catalog-main-hotel {
   display: flex;
   flex-direction: column;
@@ -1014,10 +1012,11 @@ text-transform: capitalize;
   border-color: #82B3D3;
 
 }
+
 .button-c {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   min-width: 65px;
   text-align: center;
   font-size: 16px;
@@ -1029,7 +1028,6 @@ text-transform: capitalize;
   margin: 0 auto;
   padding-top: 20px;
   background-color: transparent
-
 }
 
 
@@ -1040,7 +1038,7 @@ text-transform: capitalize;
 }
 
 .fieldset-range {
-border: none 0;
+  border: none 0;
 }
 
 .breadcrumbs-link-hotels {
