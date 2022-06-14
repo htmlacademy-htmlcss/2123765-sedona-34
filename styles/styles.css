@@ -182,7 +182,6 @@ body {
 .town-block-micro {
   display: block;
   width: 400px;
-  height: 384px;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -212,17 +211,9 @@ body {
   padding-left: 85px;
   padding-right: 85px;
 }
-
+.underlist-souv,
 .underlist-house {
-  width: 400px;
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.underlist-souv {
-  width: 400px;
-}
-
-.underlist-souv {
+  min-width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -234,7 +225,7 @@ body {
   background-color: #FFFFFF;
   text-align: center;
   vertical-align: middle;
-  width: 400px;
+  min-width: 400px;
   height: 384px;
 }
 
@@ -301,6 +292,7 @@ body {
   border-collapse: collapse;
 }
 .town-block-bridge {
+  min-width: 400px;
   background-color: #82B3D3;
 }
 
@@ -358,7 +350,7 @@ body {
 
 .underlist-road {
   background-color: rgba(131, 179, 211, 0.2);
-  width: 400px;
+  min-width: 400px;
 }
 
 .advant-title-road {
@@ -574,8 +566,7 @@ div .advantages {
   padding-top: 63px;
   padding-left: 290px;
   padding-right: 290px;
-  width: 620px;
-  height: 72px;
+  min-width: 620px;
   font-weight: 700;
 }
 
