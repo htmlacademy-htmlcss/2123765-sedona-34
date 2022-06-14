@@ -196,12 +196,9 @@ body {
   padding: 0;
 
 }
-.town-block-1 {
-  width: 1200px;
-  height: 384px;
-}
 
-.town-block-micro-1 {
+
+.town-block-micro {
   display: block;
   width: 400px;
   height: 384px;
@@ -214,7 +211,7 @@ body {
   padding-top: 30px;
 }
 
-.advant-title-x {
+.advant-title-town {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -232,11 +229,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advant-descr-2 {
-  width: 230px;
-  height: 63px;
-  margin: 0;
-}
+
 
 .advant-descr {
   margin: 0;
@@ -245,21 +238,24 @@ body {
   padding-right: 85px;
 }
 
-.underlist-a,
-.underlist-b,
-.underlist-c {
+.underlist-house,
+.underlist-souv {
   width: 400px;
-  height: 384px;
 }
 
+.underlist-souv {
+background-color: rgba(131, 179, 211, 0.12);
+}
 .icon-house {
   padding-top: 80px;
 }
 
-.underlist-b {
+.underlist-burger {
   background-color: #FFFFFF;
   text-align: center;
   vertical-align: middle;
+  width: 400px;
+  height: 384px;
 }
 
 .icon-burger {
@@ -267,7 +263,7 @@ body {
   padding-bottom: 0;
 }
 
-.advant-title-1 {
+.advant-title-house {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -276,23 +272,20 @@ body {
   text-transform: uppercase;
 }
 
-.advant-descr-2 {
+.advant-descr-house {
   padding-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 0;
 }
 
-.advant-descr-3 {
+.advant-descr-burger {
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
   margin-top: 0;
   width: 230px;
-  height: 63px;
 }
 
-.advant-title-2 {
+.advant-title-burger {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -305,7 +298,7 @@ body {
   padding-top: 78px;
 }
 
-.advant-title-3 {
+.advant-title-souv {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -314,18 +307,15 @@ body {
   text-transform: uppercase;
 }
 
-.advant-descr-4 {
+.advant-descr-souv {
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
   margin-top: 0;
   width: 230px;
-  height: 63px;
+
 }
 
-.underlist-c {
-  background-color: rgba(131, 179, 211, 0.12);
-}
 
 .underlist {
   margin: 0;
@@ -688,12 +678,7 @@ div .advantages {
   text-align: center;
 }
 
-.advant-descr {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  text-align: center;
-}
+
 
 .booking-title {
   font-size: 20px;
@@ -791,19 +776,19 @@ div .advantages {
   margin: 0;
 }
 
-.footer-social-item-vk {
+.footer-social-vk {
   padding-left: 82px;
   padding-top: 58px;
   padding-bottom: 48px;
 }
 
-.footer-social-item-tg {
+.footer-social-tg {
   padding-left: 26px;
   padding-top: 57px;
   padding-bottom: 48px;
 }
 
-.footer-social-item-yot {
+.footer-social-yot {
   padding-left: 27px;
   padding-top: 58px;
   padding-bottom: 47px;
