@@ -22,20 +22,22 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #E5E5E5;
+  min-height: 100%;
   margin: 0;
+}
+html {
+  height: 100%;
 }
 
 .body-index,
 .body-catalog {
   width: 1200px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation-link {
@@ -112,8 +114,8 @@ body {
 
 .container-nav {
   display: flex;
-  width: 390px;
-  height: 66px;
+  min-width: 390px;
+  min-height: 66px;
   justify-content: flex-start;
   margin: 0;
   list-style-type: none;
