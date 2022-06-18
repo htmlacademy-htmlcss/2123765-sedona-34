@@ -1040,12 +1040,38 @@ div .advantages {
 }
 
 .hotel-card-title {
+  display: flex;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  width: 300px;
   color: #000000;
   text-decoration: none;
+  margin: 0 auto;
+  padding-top: 16px;
+  text-align: left;
 }
 .hotel-card-link {
   text-decoration: none;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 340px;
+
+}
+.hotel-card-price,
+.amara-rating {
+  margin: 0;
+  display: flex;
+}
+.hotel-stars {
+  display: flex;
+  padding-top: 16px;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0 auto;
 }
