@@ -183,7 +183,9 @@ html {
 }
 
 .town-block-micro {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   width: 400px;
   background-color: #82B3D3;
   color: #FFFFFF;
@@ -295,6 +297,9 @@ html {
   border-collapse: collapse;
 }
 .town-block-bridge {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   min-width: 400px;
   background-color: #82B3D3;
 }
@@ -448,7 +453,7 @@ html {
   padding-top: 56px;
   padding-left: 313px;
   padding-right: 313px;
-  border: no;
+  border: none;
 }
 
 .button-hotel-search {
@@ -478,6 +483,10 @@ html {
 }
 
 .mailing-main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
   height: 411px;
   background-color: #FFFFFF;
 }
@@ -672,37 +681,43 @@ div .advantages {
 
 .footer-social {
   display: flex;
+  justify-content: center;
   width: 1200px;
   height: 120px;
   background-color: #FFFFFF;
   padding: 0;
   margin: 0;
 }
-
+.footer-social-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 142px;
+}
 .footer-social-vk {
-  padding-left: 82px;
   padding-top: 58px;
   padding-bottom: 48px;
 }
 
 .footer-social-tg {
-  padding-left: 26px;
   padding-top: 57px;
   padding-bottom: 48px;
 }
 
 .footer-social-yot {
-  padding-left: 27px;
   padding-top: 58px;
   padding-bottom: 47px;
 }
 
 .footerphone {
   padding-top: 45px;
-  padding-left: 249px;
+  padding-left: 230px;
   padding-bottom: 35px;
   width: 331px;
-  height: 40px;
   text-decoration: none;
 }
 
@@ -741,9 +756,15 @@ div .advantages {
 .container-allhotels {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 1056px;
-  margin: auto;
-  border: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 66px;
+  list-style-type: none;
+
 }
 
 .hotels-filter {
@@ -760,7 +781,6 @@ div .advantages {
   padding-top: 40px;
   padding-left: 70px;
   padding-right: 70px;
-  padding-bottom: 70px;
   color: #FFFFFF;
 }
 
@@ -777,6 +797,10 @@ div .advantages {
 
 .hotels-on-page {
   margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  min-height: 22px;
 }
 
 .catalog-view {
@@ -787,14 +811,51 @@ div .advantages {
   align-items: center;
 }
 
-.fieldset-infrastructure,
+.fieldset-infrastructure {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: none 0;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+
+}
 .fieldset-type-house {
   display: flex;
   flex-direction: column;
   text-align: left;
   border: none 0;
+  width: 145px;
+  margin: 0;
+  padding: 0;
+  align-content: space-between;
 }
-
+.control-pool {
+  padding-top: 30px;
+}
+.control-parking {
+  padding-top: 15px;
+}
+.control-wifi {
+  padding-top: 15px;
+}
+.control-checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  margin-right: 19px;
+}
+.control-hotel {
+  padding-top: 35px;
+}
+.control-motel {
+  padding-top: 20px;
+}
+.control-apartments {
+  padding-top: 20px;
+}
 .select-control {
   display: flex;
   width: 290px;
@@ -811,13 +872,18 @@ div .advantages {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  padding-left: 0;
 }
 
 .pagination-select-block {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1056px;
-  margin: auto;
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 .pagination-item-current {
@@ -837,12 +903,12 @@ div .advantages {
 .pagination-link {
   color: #FFFFFF;
   text-decoration: none;
+  padding: 12px 24px;
 }
 .pagination-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
   background-color: #82B3D3;
   color: #FFFFFF;
   border-radius: 4px;
@@ -853,7 +919,6 @@ div .advantages {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  height: 1212px;
   margin: 0;
   padding: 0;
   border: 0;
@@ -871,14 +936,6 @@ div .advantages {
   border: 0;
 }
 
-.cards {
-  width: 340px;
-  height: 438px;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
 .catalog-background {
   display: flex;
   width: 1200px;
@@ -888,6 +945,8 @@ div .advantages {
 }
 
 .hotelssedona {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   height: 403px;
   padding: 0;
@@ -901,7 +960,13 @@ div .advantages {
 .hotels-filter-button {
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
+  padding-top: 70px;
+}
+.hotels-select {
+  display: flex;
+  width: 160px;
+  border-radius: 4px;
+  height: 49px;
 }
 
 .button-submit-catalog {
@@ -939,6 +1004,8 @@ div .advantages {
   display: flex;
   flex-direction: column;
   border: none 0;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-link-hotels {
@@ -965,6 +1032,7 @@ div .advantages {
   justify-content: space-between;
   width: 1057px;
   height: 49px;
+  margin-bottom: 56px;
   padding-top: 50px;
   padding-right: 71px;
   padding-left: 72px;
@@ -976,4 +1044,8 @@ div .advantages {
   line-height: 28px;
   font-weight: 700;
   color: #000000;
+  text-decoration: none;
+}
+.hotel-card-link {
+  text-decoration: none;
 }
