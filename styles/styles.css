@@ -805,10 +805,10 @@ div .advantages {
 
 .catalog-view {
   width: 160px;
-  height: 48px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+
+
 }
 
 .fieldset-infrastructure {
@@ -860,6 +860,39 @@ div .advantages {
   display: flex;
   width: 290px;
   border-radius: 4px;
+  padding: 12px 18px;
+  color: #333333;
+  background-color: transparent;
+  border: 2px solid #E5E5E5;
+  margin-left: 191px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+
+}
+.button-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #E5E5E5;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+
+}
+.button-view-current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
 }
 
 .pagination-block {
@@ -1030,6 +1063,7 @@ div .advantages {
 .catalog-sorting {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1057px;
   height: 49px;
   margin-bottom: 56px;
