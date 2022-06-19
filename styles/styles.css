@@ -866,10 +866,12 @@ div .advantages {
 .control-checkbox {
   width: 20px;
   height: 20px;
+  color: #FFFFFF;
   background-color: #FFFFFF;
   border-radius: 4px;
   margin-right: 17px;
 }
+
 
 .control-hotel {
   display: flex;
