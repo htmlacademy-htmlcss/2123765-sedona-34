@@ -438,7 +438,7 @@ html {
 
 .datetravel {
   display: flex;
-  justify-content: flex-start;
+  text-align: center;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -534,7 +534,7 @@ html {
   font-weight: 400;
 }
 
-.callto,
+
 .callto-mail {
   font-size: 30px;
   line-height: 36px;
@@ -548,8 +548,18 @@ html {
   color: #000000;
 }
 
+
 .callto {
   color: #FFFFFF;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 94px;
+  padding-left: 398px;
+  padding-right: 398px;
+  text-align: center;
 }
 
 .headermedia {
@@ -686,6 +696,9 @@ div .advantages {
   background-color: #FFFFFF;
   padding-top: 94px;
   margin: 0;
+}
+.footer {
+  padding-top: 0;
 }
 .footer-social-container {
   display: flex;
