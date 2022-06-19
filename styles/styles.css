@@ -25,6 +25,7 @@ body {
   min-height: 100%;
   margin: 0;
 }
+
 html {
   height: 100%;
 }
@@ -133,6 +134,7 @@ html {
   padding: 0;
   margin-right: 70px;
 }
+
 .icon-chosen-digit {
   display: flex;
 }
@@ -216,10 +218,15 @@ html {
   padding-left: 85px;
   padding-right: 85px;
 }
+
 .underlist-souv,
 .underlist-house {
   min-width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.icon-house::after {
+  content: url(../images/iconhouse.svg);
 }
 
 .icon-house {
@@ -233,7 +240,7 @@ html {
   min-width: 400px;
   height: 384px;
 }
-
+.icon-burger::after {content: url(../images/food.svg);}
 .icon-burger {
   padding-top: 81px;
   padding-bottom: 0;
@@ -269,7 +276,7 @@ html {
   padding-top: 31px;
   text-transform: uppercase;
 }
-
+.icon-souvenir::after {content: url(../images/souv.svg);}
 .icon-souvenir {
   padding-top: 78px;
 }
@@ -296,6 +303,7 @@ html {
   padding: 0;
   border-collapse: collapse;
 }
+
 .town-block-bridge {
   display: flex;
   flex-direction: column;
@@ -472,6 +480,7 @@ html {
   border-radius: 4px;
   text-align: center;
 }
+
 .divider-catalog {
   display: flex;
   background-image: url("../images/divider-catalog.svg");
@@ -485,6 +494,7 @@ html {
   margin-right: auto;
 
 }
+
 .mailing {
   width: 1200px;
   height: 411px;
@@ -709,9 +719,11 @@ div .advantages {
   padding-top: 94px;
   margin: 0;
 }
+
 .footer {
   padding-top: 0;
 }
+
 .footer-social-container {
   display: flex;
   flex-wrap: wrap;
@@ -722,6 +734,7 @@ div .advantages {
   padding: 0;
   width: 142px;
 }
+
 .footer-social-vk {
   padding-top: 58px;
   padding-bottom: 48px;
@@ -842,6 +855,7 @@ div .advantages {
   padding: 0;
   margin: 0;
 }
+
 .fieldset-type-house {
   display: flex;
   flex-direction: column;
@@ -851,17 +865,20 @@ div .advantages {
   margin: 0;
   padding: 0;
 }
+
 .control-pool {
   padding-top: 25px;
   display: flex;
   align-items: center;
 }
+
 .control-wifi,
 .control-parking {
   padding-top: 12px;
   display: flex;
   align-items: center;
 }
+
 .control-input,
 .control-checkbox {
   width: 20px;
@@ -878,16 +895,19 @@ div .advantages {
   align-items: center;
   padding-top: 25px;
 }
+
 .control-motel {
   display: flex;
   align-items: center;
   padding-top: 15px;
 }
+
 .control-apartments {
   display: flex;
   align-items: center;
   padding-top: 15px;
 }
+
 .select-control {
   display: flex;
   min-width: 290px;
@@ -904,6 +924,7 @@ div .advantages {
   font-weight: 400;
 
 }
+
 .button-view {
   display: flex;
   justify-content: center;
@@ -917,6 +938,7 @@ div .advantages {
 
 
 }
+
 .button-view-current {
   display: flex;
   justify-content: center;
@@ -963,15 +985,18 @@ div .advantages {
   border-radius: 4px;
 
 }
+
 .pagination-link-current {
   color: #000000;
   text-decoration: none;
 }
+
 .pagination-link {
   color: #FFFFFF;
   text-decoration: none;
   padding: 12px 24px;
 }
+
 .pagination-item {
   display: flex;
   align-items: center;
@@ -1030,6 +1055,7 @@ div .advantages {
   flex-direction: column;
   padding-top: 60px;
 }
+
 .hotels-select {
   display: flex;
   min-width: 160px;
@@ -1127,9 +1153,11 @@ div .advantages {
   padding-top: 11px;
   text-align: left;
 }
+
 .hotel-card-link {
   text-decoration: none;
 }
+
 .hotel-card-button {
   display: flex;
   font-size: 16px;
@@ -1147,6 +1175,7 @@ div .advantages {
   box-sizing: border-box;
 
 }
+
 .blue-button,
 .green-button {
   min-width: 140px;
@@ -1166,9 +1195,11 @@ div .advantages {
   border: 0;
 
 }
+
 .green {
   background-color: #7DB54F;
 }
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -1176,11 +1207,13 @@ div .advantages {
   width: 340px;
 
 }
+
 .hotel-card-price {
   margin: 0;
   display: flex;
   width: 140px;
 }
+
 .hotel-stars {
   display: flex;
   padding-top: 16px;
@@ -1188,9 +1221,11 @@ div .advantages {
   width: 300px;
   margin: 0 auto;
 }
+
 .hotel-greentree {
-padding-top: 40px;
+  padding-top: 40px;
 }
+
 .icon-rating {
   margin: 0;
   display: flex;
