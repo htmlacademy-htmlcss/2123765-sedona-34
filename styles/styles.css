@@ -759,7 +759,7 @@ div .advantages {
   justify-content: space-between;
   width: 1056px;
   padding: 0;
-  margin-top: 0;
+  margin-top: 22px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 66px;
@@ -800,7 +800,8 @@ div .advantages {
   display: flex;
   align-items: center;
   padding: 0;
-  min-height: 22px;
+  margin-left: 270px;
+
 }
 
 .catalog-view {
@@ -858,9 +859,10 @@ div .advantages {
 }
 .select-control {
   display: flex;
-  width: 290px;
+  min-width: 290px;
   border-radius: 4px;
   padding: 12px 18px;
+  margin-right: 78px;
   color: #333333;
   background-color: transparent;
   border: 2px solid #E5E5E5;
@@ -945,6 +947,7 @@ div .advantages {
   background-color: #82B3D3;
   color: #FFFFFF;
   border-radius: 4px;
+  width: 60px;
 
 }
 
@@ -997,9 +1000,16 @@ div .advantages {
 }
 .hotels-select {
   display: flex;
-  width: 160px;
+  min-width: 160px;
   border-radius: 4px;
-  height: 49px;
+  padding: 12px 18px;
+  color: #333333;
+  background-color: transparent;
+  border: 2px solid #E5E5E5;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .button-submit-catalog {
@@ -1056,7 +1066,7 @@ div .advantages {
   font-weight: 700;
   color: #000000;
   width: 338px;
-  height: 37px;
+
   text-transform: uppercase;
 }
 
@@ -1065,8 +1075,7 @@ div .advantages {
   justify-content: space-between;
   align-items: center;
   width: 1057px;
-  height: 49px;
-  margin-bottom: 56px;
+  margin-bottom: 58px;
   padding-top: 50px;
   padding-right: 71px;
   padding-left: 72px;
@@ -1088,8 +1097,45 @@ div .advantages {
 .hotel-card-link {
   text-decoration: none;
 }
+.hotel-card-button {
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  min-width: 140px;
+  padding: 9px 15px 8px;
+  background-color: #756157;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 
+}
+.blue-button,
+.green-button {
+  min-width: 140px;
+  display: flex;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 9px 15px 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  border: 0;
 
+}
+.green {
+  background-color: #7DB54F;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -1097,10 +1143,10 @@ div .advantages {
   width: 340px;
 
 }
-.hotel-card-price,
-.amara-rating {
+.hotel-card-price {
   margin: 0;
   display: flex;
+  width: 140px;
 }
 .hotel-stars {
   display: flex;
@@ -1108,4 +1154,25 @@ div .advantages {
   justify-content: space-between;
   width: 300px;
   margin: 0 auto;
+}
+.hotel-greentree {
+padding-top: 20px;
+}
+.icon-rating {
+  margin: 0;
+  display: flex;
+  min-width: 140px;
+  background-color: #F2F2F2;
+  color: #333333;
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 9px 22px 8px 23px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  border: 0;
 }
