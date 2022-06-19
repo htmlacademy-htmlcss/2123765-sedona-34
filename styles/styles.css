@@ -53,7 +53,7 @@ html {
   padding-top: 20px;
   padding-left: 17px;
   padding-right: 17px;
-  padding-bottom: 19px;
+  padding-bottom: 3px;
 }
 
 .advantages {
@@ -240,7 +240,11 @@ html {
   min-width: 400px;
   height: 384px;
 }
-.icon-burger::after {content: url(../images/food.svg);}
+
+.icon-burger::after {
+  content: url(../images/food.svg);
+}
+
 .icon-burger {
   padding-top: 81px;
   padding-bottom: 0;
@@ -276,9 +280,28 @@ html {
   padding-top: 31px;
   text-transform: uppercase;
 }
-.icon-souvenir::after {content: url(../images/souv.svg);}
+
+.icon-souvenir::after {
+  content: url(../images/souv.svg);
+}
+
 .icon-souvenir {
   padding-top: 78px;
+}
+
+.navmain::after {
+  content: url(../images/indicator.svg);
+  color: #756257;
+  width: 68px;
+  position: relative;
+}
+
+.navcatalog::after {
+  content: url(../images/indicator-cat.svg);
+  color: #756257;
+  width: 93px;
+  position: relative;
+
 }
 
 .advant-title-souv {
