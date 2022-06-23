@@ -64,14 +64,6 @@ html {
 .index-photo {
   display: block;
 }
-
-.twelve {
-  position: absolute;
-  padding-top: 17px;
-  padding-left: 12px;
-  padding-bottom: 35px;
-}
-
 .icon-search-search {
   display: flex;
   align-items: center;
@@ -97,7 +89,30 @@ html {
   padding-left: 0;
   padding-bottom: 24px;
 }
+.digit-twelve {
+  background-image: url("../images/twelve.svg");
+  position: relative;
+  top: 15px;
+  left: -34px;
+  display: block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  padding: 2.5px 0.47px 4.5px;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 400;
+  letter-spacing: -0.1em;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 10px;
 
+  /* position: absolute;
+  padding-top: 17px;
+  padding-left: 12px;
+   padding-bottom: 35px; */
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -697,6 +712,13 @@ div .advantages {
 .button-submit-footer {
   display: flex;
 }
+.socialvk:hover,
+.socialvk:focus {
+  fill: #68A2CA;
+}
+.socialvk:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
 
 .nospam {
   color: #FFFFFF;
@@ -797,6 +819,15 @@ div .advantages {
   background-color: #FFFFFF;
   text-decoration: none;
 }
+.contacts-phone:hover,
+.contacts-phone:focus  {
+  fill: #756157;
+}
+.contacts-phone:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+
 
 .header-catalog {
   display: flex;
