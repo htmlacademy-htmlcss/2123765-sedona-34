@@ -64,6 +64,7 @@ html {
 .index-photo {
   display: block;
 }
+
 .icon-search-search {
   display: flex;
   align-items: center;
@@ -89,6 +90,7 @@ html {
   padding-left: 0;
   padding-bottom: 24px;
 }
+
 .digit-twelve {
   background-image: url("../images/twelve.svg");
   position: relative;
@@ -113,6 +115,7 @@ html {
   padding-left: 12px;
    padding-bottom: 35px; */
 }
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -712,10 +715,12 @@ div .advantages {
 .button-submit-footer {
   display: flex;
 }
+
 .socialvk:hover,
 .socialvk:focus {
   fill: #68A2CA;
 }
+
 .socialvk:active {
   fill: rgba(104, 162, 202, 0.3);
 }
@@ -809,13 +814,16 @@ div .advantages {
   padding-top: 49px;
   padding-bottom: 38px;
 }
+
 .icons-sc {
   fill: #83B3D3;
 }
+
 .icons-sc:hover,
 .icons-sc:focus {
   fill: #68A2CA;
 }
+
 .icons-sc:active {
   fill: rgba(104, 162, 202, 0.3);
 }
@@ -829,20 +837,25 @@ div .advantages {
   background-color: #FFFFFF;
   text-decoration: none;
 }
+
 .contacts-phone:hover,
-.contacts-phone:focus  {
+.contacts-phone:focus {
   color: #756157;
 }
+
 .contacts-phone:active {
   color: rgba(117, 97, 87, 0.3);
 }
+
 .icon-academy {
   fill: #000000;
 }
+
 .icon-academy:hover,
 .icon-academy:focus {
   fill: #756157;
 }
+
 .icon-academy:active {
   fill: rgba(117, 97, 87, 0.3);
 }
@@ -1002,24 +1015,52 @@ div .advantages {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  border: 2px solid #E5E5E5;
+  border: 2px solid;
+  border-color: #E5E5E5;
   width: 48px;
   height: 48px;
   border-radius: 4px;
   box-sizing: border-box;
+}
 
+.table {
+  background-image: url(../images/icon-table.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
 
 }
 
-.button-view-current {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button-view:hover {
+  border-color: #000000;
+}
+
+.button-view:focus {
+  border-color: #68A2CA;
+}
+
+.button-view:active {
+  border-color: #000000;
+}
+
+.current-table {
   border: 2px solid #000000;
-  border-radius: 4px;
-  box-sizing: border-box;
-  width: 48px;
-  height: 48px;
+  border-color: #000000;
+}
+
+.slide {
+  background-image: url(../images/icon-slideshow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.list {
+  background-image: url(../images/icon-list.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+
 }
 
 .pagination-block {
