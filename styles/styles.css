@@ -809,6 +809,16 @@ div .advantages {
   padding-top: 49px;
   padding-bottom: 38px;
 }
+.icons-sc {
+  fill: #83B3D3;
+}
+.icons-sc:hover,
+.icons-sc:focus {
+  fill: #68A2CA;
+}
+.icons-sc:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
 
 .contacts-phone {
   font-size: 40px;
@@ -821,13 +831,21 @@ div .advantages {
 }
 .contacts-phone:hover,
 .contacts-phone:focus  {
-  fill: #756157;
+  color: #756157;
 }
 .contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+.icon-academy {
+  fill: #000000;
+}
+.icon-academy:hover,
+.icon-academy:focus {
+  fill: #756157;
+}
+.icon-academy:active {
   fill: rgba(117, 97, 87, 0.3);
 }
-
-
 
 .header-catalog {
   display: flex;
