@@ -973,13 +973,24 @@ div .advantages {
   border-radius: 4px;
   margin-right: 17px;
 }
-
+.radio-disk:focus {
+  border: 3px solid #83B3D3;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
+.checkbox-vector:focus {
+  border: 3px solid #83B3D3;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
 .radio-disk {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   margin-right: 17px;
-  border: 1px solid #CDCDCD;
+  border: none;
   background-color: #FFFFFF;
   position: relative;
   cursor: pointer;
@@ -997,7 +1008,23 @@ div .advantages {
   transform: translate(-50%, -50%);
 }
 
-
+.checkbox-vector {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 17px;
+  border: none;
+  background-color: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+.control-checkbox[type="checkbox"]:checked + .checkbox-vector::after {
+  content: url("../images/vector-check.svg");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .control-hotel {
   display: flex;
