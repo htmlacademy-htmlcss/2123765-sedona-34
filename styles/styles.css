@@ -70,7 +70,7 @@ html {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-right: 30px;
+  padding-right: 10px;
 }
 
 .iconsearch-header {
@@ -95,7 +95,7 @@ html {
   background-image: url("../images/twelve.svg");
   position: relative;
   top: 15px;
-  left: -34px;
+  left: -16px;
   display: block;
   box-sizing: border-box;
   width: 20px;
@@ -961,7 +961,7 @@ div .advantages {
 
 .control-wifi,
 .control-parking {
-  padding-top: 12px;
+  padding-top: 18px;
   display: flex;
   align-items: center;
 }
@@ -973,18 +973,21 @@ div .advantages {
   border-radius: 4px;
   margin-right: 17px;
 }
+
 .radio-disk:focus {
   border: 3px solid #83B3D3;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
 }
+
 .checkbox-vector:focus {
   border: 3px solid #83B3D3;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
 }
+
 .radio-disk {
   width: 20px;
   height: 20px;
@@ -1018,6 +1021,7 @@ div .advantages {
   position: relative;
   cursor: pointer;
 }
+
 .control-checkbox[type="checkbox"]:checked + .checkbox-vector::after {
   content: url("../images/vector-check.svg");
   position: absolute;
@@ -1029,7 +1033,7 @@ div .advantages {
 .control-hotel {
   display: flex;
   align-items: center;
-  padding-top: 25px;
+  padding-top: 27px;
 }
 
 .control-motel {
