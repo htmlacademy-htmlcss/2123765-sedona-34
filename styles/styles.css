@@ -900,6 +900,18 @@ div .advantages {
   background-position: center;
   color: #FFFFFF;
 }
+.vector-container {
+  display: inline-block;
+  background-image: url("../images/vectorcat.svg");
+  width: 5px;
+  height: 8px;
+  color: #FFFFFF;
+  background-position: center;
+  margin-right: 2px;
+  margin-bottom: 2px;
+
+
+}
 .hotels-filter {
   display: flex;
   width: 1060px;
@@ -1071,8 +1083,15 @@ div .advantages {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  appearance: none;
+  background-image: url("../images/vector-select.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  cursor: pointer;
+
 
 }
+
 
 .button-view {
   display: flex;
@@ -1245,6 +1264,11 @@ div .advantages {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  appearance: none;
+  background-image: url("../images/vector-select.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  cursor: pointer;
 }
 
 .button-submit-catalog {
