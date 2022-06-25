@@ -890,7 +890,16 @@ div .advantages {
   list-style-type: none;
 
 }
-
+.union-vector {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  background-image: url("../images/union.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFFFFF;
+}
 .hotels-filter {
   display: flex;
   width: 1060px;
