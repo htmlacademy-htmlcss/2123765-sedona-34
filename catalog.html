@@ -98,11 +98,13 @@
                 </label>
               </fieldset>
               <fieldset class="fieldset-range">
-                <span>Стоимость, &#x20bd;:</span>
-                <input type="number" min="0" placeholder="от">
-                <input type="number" max="9000" placeholder="до">
-                <label class="value-house">
-                  <input class="regulator" type="range" min="0" max="9000" value="8000">
+                <span class="value-catalog">Стоимость, &#x20bd;:</span>
+                <div class="range-wrapper-inputs">
+                <input class="range-input" type="number" min="0" placeholder="0 от">
+                <input class="range-input" type="number" max="9000" placeholder="9000 до">
+                </div>
+                <label class="range">
+                  <input class="range-bar range-scale" type="range" min="0" max="9000" value="8000">
                 </label>
               </fieldset>
               <div class="hotels-filter-button">

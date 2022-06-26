@@ -890,6 +890,7 @@ div .advantages {
   list-style-type: none;
 
 }
+
 .union-vector {
   display: inline-block;
   width: 12px;
@@ -900,6 +901,7 @@ div .advantages {
   background-position: center;
   color: #FFFFFF;
 }
+
 .vector-container {
   display: inline-block;
   background-image: url("../images/vectorcat.svg");
@@ -912,6 +914,7 @@ div .advantages {
 
 
 }
+
 .hotels-filter {
   display: flex;
   width: 1060px;
@@ -1301,12 +1304,30 @@ div .advantages {
   line-height: 20px;
   font-weight: 400;
   padding: 0;
-  border: 0;
+  border: none;
   color: #FFFFFF;
   margin: 0 auto;
   padding-top: 20px;
   background-color: transparent;
   cursor: pointer;
+}
+
+.button-reset-catalog:hover {
+  opacity: 0.6;
+  border: hidden;
+}
+
+.button-reset-catalog:focus {
+  border-radius: 4px;
+  outline: 0;
+  border: 3px solid #83B3D3;
+
+
+}
+
+.button-reset-catalog:active {
+  opacity: 0.3;
+  border: hidden;
 }
 
 .fieldset-range {
@@ -1316,6 +1337,101 @@ div .advantages {
   border: none 0;
   margin-left: 120px;
   padding: 0;
+}
+
+.range-wrapper-inputs {
+  width: 288px;
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.range-input {
+  width: 144px;
+  color: #FFFFFF;
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  appearance: textfield;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 19px;
+}
+
+.range-input::placeholder {
+  position: absolute;
+  color: #FFFFFF;
+  display: block;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 41px;
+}
+
+.range {
+  position: relative;
+}
+
+.range-scale {
+  position: absolute;
+  width: 288px;
+  height: 4px;
+  top: 75px;
+  left: 0;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.range-bar {
+  position: absolute;
+  width: 228px;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 2;
+}
+
+.value-catalog {
+  font-size: 20px;
+  line-height: 26px;
+  font-family: inherit;
+  color: #FFFFFF;
+  font-weight: 700;
+  position: relative;
+  left: -110px;
 }
 
 .breadcrumbs-link-hotels {
