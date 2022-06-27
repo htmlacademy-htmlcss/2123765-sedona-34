@@ -65,19 +65,12 @@ html {
   display: block;
 }
 
-.twelve {
-  position: absolute;
-  padding-top: 17px;
-  padding-left: 12px;
-  padding-bottom: 35px;
-}
-
 .icon-search-search {
   display: flex;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-right: 30px;
+  padding-right: 10px;
 }
 
 .iconsearch-header {
@@ -96,6 +89,31 @@ html {
   padding-top: 24px;
   padding-left: 0;
   padding-bottom: 24px;
+}
+
+.digit-twelve {
+  background-image: url("../images/twelve.svg");
+  position: relative;
+  top: 15px;
+  left: -16px;
+  display: block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  padding: 2.5px 0.47px 4.5px;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 400;
+  letter-spacing: -0.1em;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 10px;
+
+  /* position: absolute;
+  padding-top: 17px;
+  padding-left: 12px;
+   padding-bottom: 35px; */
 }
 
 .nav-container {
@@ -502,6 +520,7 @@ html {
   text-transform: uppercase;
   border-radius: 4px;
   text-align: center;
+  cursor: pointer;
 }
 
 .divider-catalog {
@@ -681,6 +700,7 @@ div .advantages {
   text-transform: uppercase;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
 }
 
 .field-mail {
@@ -788,6 +808,19 @@ div .advantages {
   padding-bottom: 38px;
 }
 
+.icons-sc {
+  fill: #83B3D3;
+}
+
+.icons-sc:hover,
+.icons-sc:focus {
+  fill: #68A2CA;
+}
+
+.icons-sc:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -796,6 +829,28 @@ div .advantages {
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
+}
+
+.contacts-phone:hover,
+.contacts-phone:focus {
+  color: #756157;
+}
+
+.contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.icon-academy {
+  fill: #000000;
+}
+
+.icon-academy:hover,
+.icon-academy:focus {
+  fill: #756157;
+}
+
+.icon-academy:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .header-catalog {
@@ -824,6 +879,32 @@ div .advantages {
   margin-right: auto;
   margin-bottom: 66px;
   list-style-type: none;
+
+}
+
+.union-vector {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  background-image: url("../images/union.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFFFFF;
+}
+.union-vector:hover {
+  opacity: 0.6;;
+}
+.vector-container {
+  display: inline-block;
+  background-image: url("../images/vectorcat.svg");
+  width: 5px;
+  height: 8px;
+  color: #FFFFFF;
+  background-position: center;
+  margin-right: 2px;
+  margin-bottom: 2px;
+
 
 }
 
@@ -887,6 +968,7 @@ div .advantages {
   width: 145px;
   margin: 0;
   padding: 0;
+  margin-left: 5px;
 }
 
 .control-pool {
@@ -897,7 +979,7 @@ div .advantages {
 
 .control-wifi,
 .control-parking {
-  padding-top: 12px;
+  padding-top: 18px;
   display: flex;
   align-items: center;
 }
@@ -906,17 +988,70 @@ div .advantages {
 .control-checkbox {
   width: 20px;
   height: 20px;
-  color: #FFFFFF;
-  background-color: #FFFFFF;
   border-radius: 4px;
   margin-right: 17px;
 }
 
+.radio-disk:focus {
+  border: 3px solid #83B3D3;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+.checkbox-vector:focus {
+  border: 3px solid #83B3D3;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+.radio-disk {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 17px;
+  border: none;
+  background-color: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.control-input[type="radio"]:checked + .radio-disk::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3F5E72;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-vector {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 17px;
+  border: none;
+  background-color: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.control-checkbox[type="checkbox"]:checked + .checkbox-vector::after {
+  content: url("../images/vector-check.svg");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .control-hotel {
   display: flex;
   align-items: center;
-  padding-top: 25px;
+  padding-top: 27px;
 }
 
 .control-motel {
@@ -945,32 +1080,74 @@ div .advantages {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-
+  appearance: none;
+  background-image: url("../images/vector-select.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  cursor: pointer;
 }
-
+.select-control:hover,
+.select-control:focus {
+  border-color: #68A2CA;
+}
+.select-control:active {
+  border-color: #3F5E72;
+}
+.select-control:disabled {
+ border-color: rgba(0, 0, 0, 0.3);
+ color: rgba(0, 0, 0, 0.3);
+}
 .button-view {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  border: 2px solid #E5E5E5;
+  border: 2px solid;
+  border-color: #E5E5E5;
   width: 48px;
   height: 48px;
   border-radius: 4px;
   box-sizing: border-box;
+}
 
+.table {
+  background-image: url(../images/icon-table.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
 
 }
 
-.button-view-current {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button-view:hover {
+  border-color: #000000;
+}
+
+.button-view:focus {
+  border-color: #68A2CA;
+}
+
+.button-view:active {
+  border-color: #000000;
+}
+
+.current-table {
   border: 2px solid #000000;
-  border-radius: 4px;
-  box-sizing: border-box;
-  width: 48px;
-  height: 48px;
+  border-color: #000000;
+}
+
+.slide {
+  background-image: url(../images/icon-slideshow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.list {
+  background-image: url(../images/icon-list.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+
 }
 
 .pagination-block {
@@ -1022,15 +1199,28 @@ div .advantages {
 
 .pagination-item {
   display: flex;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
   background-color: #82B3D3;
   color: #FFFFFF;
   border-radius: 4px;
   width: 60px;
-
 }
-
+.pagination-item:hover,
+.pagination-item:focus {
+  background-color: #68A2CA;
+}
+.pagination-item:active {
+  color:rgba(255, 255, 255, 0.3);
+}
+.last-link {
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
 .catalog-main-hotel {
   display: flex;
   flex-direction: column;
@@ -1050,6 +1240,10 @@ div .advantages {
   padding-bottom: 0;
   margin: 0;
   border: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .catalog-background {
@@ -1091,6 +1285,11 @@ div .advantages {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  appearance: none;
+  background-image: url("../images/vector-select.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  cursor: pointer;
 }
 
 .button-submit-catalog {
@@ -1106,23 +1305,43 @@ div .advantages {
   text-transform: uppercase;
   border-radius: 4px;
   border-color: #82B3D3;
+  cursor: pointer;
 }
 
 .button-reset-catalog {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  min-width: 65px;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  min-height: 32px;
   text-align: center;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   padding: 0;
-  border: 0;
+  border: none;
   color: #FFFFFF;
   margin: 0 auto;
-  padding-top: 20px;
-  background-color: transparent
+  margin-top: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-reset-catalog:hover {
+  opacity: 0.6;
+  border: hidden;
+}
+
+.button-reset-catalog:focus {
+  border-radius: 4px;
+  outline: 3px solid #83B3D3;
+}
+
+.button-reset-catalog:active {
+  opacity: 0.3;
+  border: hidden;
 }
 
 .fieldset-range {
@@ -1132,6 +1351,105 @@ div .advantages {
   border: none 0;
   margin-left: 120px;
   padding: 0;
+}
+
+.range-wrapper-inputs {
+  width: 288px;
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.range-input {
+  width: 144px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  appearance: textfield;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 19px;
+
+}
+
+.range-input::placeholder {
+  color: #FFFFFF;
+  display: block;
+
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 41px;
+}
+
+.range {
+  position: relative;
+}
+
+.range-scale {
+  position: absolute;
+  width: 288px;
+  height: 4px;
+  top: 75px;
+  left: 0;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.range-bar {
+  position: absolute;
+  width: 228px;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 2;
+}
+
+.value-catalog {
+  font-size: 20px;
+  line-height: 26px;
+  font-family: inherit;
+  color: #FFFFFF;
+  font-weight: 700;
+  position: relative;
+  left: -95px;
 }
 
 .breadcrumbs-link-hotels {
@@ -1196,7 +1514,16 @@ div .advantages {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-
+}
+.hotel-card-button:hover,
+.hotel-card-button:focus {
+  background-color: #615048;
+}
+.hotel-card-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.hotel-card-button:disabled {
+  color: #E5E5E5;
 }
 
 .blue-button,
@@ -1216,19 +1543,36 @@ div .advantages {
   align-items: center;
   justify-content: center;
   border: 0;
-
+  cursor: pointer;
 }
-
 .green {
   background-color: #7DB54F;
 }
-
+.blue-button:hover,
+.blue-button:focus {
+  background-color: #68A2CA;
+}
+.blue-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.blue-button:disabled {
+  color: #E5E5E5;
+}
+.green-button:hover,
+.green-button:focus {
+background-color: #6C9E42;
+}
+.green-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.green-button:disabled {
+  background-color: #E5E5E5;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 340px;
-
 }
 
 .hotel-card-price {
