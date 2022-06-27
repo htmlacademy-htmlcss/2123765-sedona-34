@@ -975,6 +975,7 @@ div .advantages {
   width: 145px;
   margin: 0;
   padding: 0;
+  margin-left: 5px;
 }
 
 .control-pool {
@@ -1297,9 +1298,12 @@ div .advantages {
 .button-reset-catalog {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  min-width: 65px;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  min-height: 32px;
   text-align: center;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1307,7 +1311,7 @@ div .advantages {
   border: none;
   color: #FFFFFF;
   margin: 0 auto;
-  padding-top: 20px;
+  margin-top: 10px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -1319,10 +1323,7 @@ div .advantages {
 
 .button-reset-catalog:focus {
   border-radius: 4px;
-  outline: 0;
-  border: 3px solid #83B3D3;
-
-
+  outline: 3px solid #83B3D3;
 }
 
 .button-reset-catalog:active {
@@ -1344,10 +1345,13 @@ div .advantages {
   display: flex;
   justify-content: center;
   margin-top: 34px;
+  margin-right: 20px;
+  box-sizing: border-box;
 }
 
 .range-input {
   width: 144px;
+  box-sizing: border-box;
   color: #FFFFFF;
   font: inherit;
   background-color: transparent;
@@ -1357,12 +1361,13 @@ div .advantages {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 19px;
+
 }
 
 .range-input::placeholder {
-  position: absolute;
   color: #FFFFFF;
   display: block;
+
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1431,7 +1436,7 @@ div .advantages {
   color: #FFFFFF;
   font-weight: 700;
   position: relative;
-  left: -110px;
+  left: -95px;
 }
 
 .breadcrumbs-link-hotels {
