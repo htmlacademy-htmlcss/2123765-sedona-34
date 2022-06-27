@@ -718,15 +718,6 @@ div .advantages {
   display: flex;
 }
 
-.socialvk:hover,
-.socialvk:focus {
-  fill: #68A2CA;
-}
-
-.socialvk:active {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
 .nospam {
   color: #FFFFFF;
   margin: 0;
@@ -1199,15 +1190,28 @@ div .advantages {
 
 .pagination-item {
   display: flex;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
   background-color: #82B3D3;
   color: #FFFFFF;
   border-radius: 4px;
   width: 60px;
-
 }
-
+.pagination-item:hover,
+.pagination-item:focus {
+  background-color: #68A2CA;
+}
+.pagination-item:active {
+  color:rgba(255, 255, 255, 0.3);
+}
+.last-link {
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
 .catalog-main-hotel {
   display: flex;
   flex-direction: column;
@@ -1501,7 +1505,16 @@ div .advantages {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-
+}
+.hotel-card-button:hover,
+.hotel-card-button:focus {
+  background-color: #615048;
+}
+.hotel-card-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.hotel-card-button:disabled {
+  color: #E5E5E5;
 }
 
 .blue-button,
@@ -1523,17 +1536,34 @@ div .advantages {
   border: 0;
   cursor: pointer;
 }
-
 .green {
   background-color: #7DB54F;
 }
-
+.blue-button:hover,
+.blue-button:focus {
+  background-color: #68A2CA;
+}
+.blue-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.blue-button:disabled {
+  color: #E5E5E5;
+}
+.green-button:hover,
+.green-button:focus {
+background-color: #6C9E42;
+}
+.green-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.green-button:disabled {
+  background-color: #E5E5E5;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 340px;
-
 }
 
 .hotel-card-price {
