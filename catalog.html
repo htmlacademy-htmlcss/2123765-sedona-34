@@ -57,7 +57,7 @@
             <li><span class="vector-container"></span></li>
             <li><a class="breadcrumbs-link-hotels">Гостиницы</a></li>
           </ul>
-          <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="post">
             <h3 class="visually-hidden">Выбор инфраструктуры отеля</h3>
             <fieldset class="fieldset-infrastructure">
               <legend class="hotels-filter-title">Инфраструктура:</legend>
@@ -96,10 +96,11 @@
               </label>
             </fieldset>
             <fieldset class="fieldset-range">
+              <legend class="visually-hidden">Фильтр стоимости отелей</legend>
               <span class="value-catalog">Стоимость, &#x20bd;:</span>
               <div class="range-wrapper-inputs">
-                <input class="range-input" type="number" min="0" placeholder="0 от">
-                <input class="range-input" type="number" max="9000" placeholder="9000 до">
+                <input class="range-input" type="number" value="0" placeholder="от">
+                <input class="range-input" type="number" value="9000" placeholder="до">
               </div>
               <label class="range">
                 <input class="range-bar range-scale" type="range" min="0" max="9000" value="8000">
