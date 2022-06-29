@@ -1415,24 +1415,24 @@ div .advantages {
   position: relative;
   top: 32px;
   left: 10px;
+  width: 276px;
 }
 
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #FFFFFF;
-  width: 228px;
+  background-color: #fff;
+  width: 216px;
+
 
 }
 
 .range-scale {
   position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
   height: 4px;
   margin-bottom: 16px;
-  background-color: #242424;
   border-radius: 2px;
-
-
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1468,12 +1468,8 @@ div .advantages {
 
 .toggle-max {
   top: -8px;
-  right: 41px;
+  right: -10px;
 }
-
-
-
-
 
 .value-catalog {
   font-size: 20px;
