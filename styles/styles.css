@@ -339,11 +339,6 @@ html {
   width: 230px;
 }
 
-.underlist {
-  margin: 0;
-  padding: 0;
-  border-collapse: collapse;
-}
 
 .town-block-bridge {
   display: flex;
@@ -706,7 +701,6 @@ div .advantages {
 .field-mail {
   display: flex;
   margin: 0;
-  border-collapse: collapse;
   padding: 0;
   text-align: left;
   border: 0;
