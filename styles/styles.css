@@ -1373,6 +1373,15 @@ div .advantages {
   margin-top: 34px;
   margin-right: 20px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.range-wrapper-inputs .range-input {
+  background: transparent;
+  color: white;
+  padding: 14px 20px;
+  border: 2px solid white;
+  width: 144px;
 }
 
 .range-input {
@@ -1389,6 +1398,29 @@ div .advantages {
   padding-left: 19px;
   height: 48px;
 }
+
+.range-input-min {
+  border-radius: 4px 0 0 4px;
+  border-right: 1px;
+}
+
+.range-wrapper-inputs .range-input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+.range-wrapper-inputs .range-input:active {
+  border: 2px solid #FFFFFF;
+  background-color: #756257;}
+
+.range-wrapper-inputs .range-input:focus {
+  box-shadow: 0 0 0 3px #81B3D2,
+    inset 0 0 0 3px #81B3D2;
+}
+
+.range-input-max {
+  border-radius: 0 4px 4px 0;
+  border-left: 1px;
+}
+
 
 .input-from {
   position: absolute;
