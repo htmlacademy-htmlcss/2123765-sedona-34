@@ -102,9 +102,18 @@
                 <input class="range-input" type="text" value="0"><span class="input-from">от</span>
                 <input class="range-input" type="text" value="9000"><span class="input-before">до</span>
               </div>
-              <label class="range">
-                <input class="range-bar range-scale" type="range" min="0" max="9000" value="8000">
-              </label>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 266px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="hotels-filter-button">
               <button class="button-submit-catalog" type="submit">Применить</button>

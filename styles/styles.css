@@ -1363,6 +1363,7 @@ div .advantages {
 
 .fieldset-range {
   display: flex;
+  position: relative;
   width: 287px;
   flex-direction: column;
   border: none 0;
@@ -1409,19 +1410,33 @@ div .advantages {
   right: 15px;
 }
 
+.range {
+  position: relative;
+}
 
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #242424;
+  border-radius: 2px;
+}
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
-  margin: 0;
-}
+  margin: 0;}
 
 .range-toggle {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -1447,28 +1462,9 @@ div .advantages {
   right: 41px;
 }
 
-.range {
-  position: relative;
-}
 
-.range-scale {
-  position: absolute;
-  width: 288px;
-  height: 4px;
-  top: 75px;
-  left: 0;
-  background-color: #FFFFFF;
-  opacity: 0.3;
-  z-index: 1;
-}
 
-.range-bar {
-  position: absolute;
-  width: 228px;
-  height: 4px;
-  background-color: #FFFFFF;
-  z-index: 2;
-}
+
 
 .value-catalog {
   font-size: 20px;
