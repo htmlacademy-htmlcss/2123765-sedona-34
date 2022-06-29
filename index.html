@@ -205,49 +205,26 @@
         <section class="modal-content">
           <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
-
-              <p class="booking-item">
-
-                <label class="item-name modal-date-check" for="checkindata">Дата Заезда:</label>
-                  <input class="modal-input" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020">
-
-              </p>
-              <span class="modal-warning">Мы не можем отправить вас в прошлое.</span>
-
-              <p class="booking-item">
-
-                <label class="item-name" for="checkoutdata">Дата Выезда:</label>
-                  <input class="modal-input" type="text" name="check-out" id="checkoutdata" placeholder="01 сентября 2021">
-
-              </p>
-              <span class="modal-warning-accept">На эти даты есть свободные номера. Пока есть.</span>
-
-              <p class="booking-adults">
-                <label for="adults" class="item-name">Взрослые:</label>
-                <div class="adults-form">
-                  <button class="quantity-button minus" type="button">
-                    <span class="visually-hidden">Кнопка меньше</span>
-                  </button>
-                  <input id="adults" type="number" name="number-of-adults" placeholder="2">
-                  <button class="quantity-button plus" type="button">
-                    <span class="visually-hidden">Кнопка больше</span>
-                  </button>
-                </div>
-              </p>
-
-              <p class="booking-kids">
-                <label for="kids" class="item-name">Дети:</label>
-                <div class="kids-form">
-                  <button class="quantity-button minus" type="button">
-                    <span class="visually-hidden">Кнопка меньше</span>
-                  </button>
-                  <input id="kids" type="number" name="number-of-kids" placeholder="1">
-                  <button class="quantity-button plus" type="button">
-                    <span class="visually-hidden">Кнопка больше</span>
-                  </button>
-                </div>
-              </p>
-
+            <p class="booking-item">
+              <label class="item-name modal-date-check" for="checkindata">Дата Заезда:</label>
+              <input class="modal-input" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020">
+            </p>
+            <div class="modal-warning">Мы не можем отправить вас в прошлое.</div>
+            <p class="booking-item">
+              <label class="item-name" for="checkoutdata">Дата Выезда:</label>
+              <input class="modal-input" type="text" name="check-out" id="checkoutdata" placeholder="01 сентября 2021">
+            </p>
+            <div class="modal-warning-accept">На эти даты есть свободные номера. Пока есть.</div>
+            <div class="modal-container-choices">
+            <p class="booking-adults">
+              <label for="adults" class="modal-label-adult">Взрослые:</label>
+              <input id="adults" class="modal-input-field" type="text" name="number-of-adults" placeholder="2">
+            </p>
+            <p class="booking-kids">
+              <label for="kids" class="modal-label-kids">Дети:</label>
+              <input id="kids" class="modal-input-field" type="text" name="number-of-kids" placeholder="1">
+            </p>
+            </div>
             <button class="search-button" type="submit">Найти</button>
           </form>
         </section>

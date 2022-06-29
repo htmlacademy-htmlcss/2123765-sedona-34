@@ -915,6 +915,7 @@ div .advantages {
   background-color: #F2F2F2;
   width: 420px;
   height: 50px;
+  color: #000000;
   border: none;
   border-radius: 4px;
   }
@@ -935,9 +936,76 @@ div .advantages {
   color:  #FF5757;
   font-size: 16px;
   margin-left: 155px;
-  margin-bottom: 11px;
+  margin-top: 11px;
+  margin-bottom: 11px;}
 
+.modal-warning-accept {
+  font-size: 16px;
+  margin-left: 155px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  color: #333333;
 }
+.booking-adults {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 288px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+.booking-kids {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 230px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-18px);
+}
+.modal-input-field {
+  width: 133px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+  padding: 0;
+}
+.modal-input-field::placeholder {
+padding: 15px 62px 14px 61px;
+color: #000000;
+font-family: "PT Sans", sans-serif;
+font-size: 18px;
+line-height: 21px;
+font-weight: 400;
+}
+
+.modal-label-adult {
+  display: flex;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: inherit;
+  font-weight: 700;
+  align-items: center;
+}
+.modal-label-kids {
+  display: flex;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: inherit;
+  font-weight: 700;
+  align-items: center;
+}
+.modal-container-choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+
 .header-catalog {
   display: flex;
   font-size: 60px;
