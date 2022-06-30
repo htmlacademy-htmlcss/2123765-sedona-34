@@ -225,7 +225,28 @@
               <button class="button-adult-plus" type="button"></button>
             </p>
             <p class="booking-kids">
+              <span class="form-label form-label-icon">
               <label for="kids" class="modal-label-kids">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg width="25" height="25" aria-hidden="true" focusable="false" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/>
+                    </svg>
+                    <svg width="1" height="9" aria-hidden="true" focusable="false" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_33716_651)">
+                      <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+                      <path d="M1 0H0V1H1V0Z" fill="white"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_33716_651">
+                      <rect width="1" height="9" fill="white"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+              </span>
               <button class="button-adult-min button-kids-min" type="button"></button>
               <input id="kids" class="modal-input-field" type="text" name="number-of-kids" placeholder="1">
               <button class="button-adult-plus button-kids-plus" type="button"></button>
