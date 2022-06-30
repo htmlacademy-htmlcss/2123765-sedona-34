@@ -14,7 +14,7 @@
       <header>
         <nav class="nav-container">
           <a class="page-header-logo" href="index.html">
-            <img src="../images/logo.svg" width="139" height="70" alt="Логотип Седоны.">
+            <img src="images/logo.svg" width="139" height="70" alt="Логотип Седоны.">
           </a>
           <ul class="container-nav">
             <li class="navmain"><a class="navigation-link " href="index.html">Главная</a></li>
@@ -196,6 +196,74 @@
           </a>
         </div>
       </footer>
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <svg class="close-icon" width="13" height="13" aria-hidden="true" focusable="false" viewBox="0 0 13 13"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" />
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <p class="booking-item">
+              <label class="item-name modal-date-check" for="checkindata">Дата Заезда:</label>
+              <input class="modal-input" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020">
+              <button class="calendar" type="button"></button>
+            </p>
+            <div class="modal-warning">Мы не можем отправить вас в прошлое.</div>
+            <p class="booking-item">
+              <label class="item-name" for="checkoutdata">Дата Выезда:</label>
+              <input class="modal-input" type="text" name="check-out" id="checkoutdata" placeholder="1 сентября 2021">
+              <button class="calendar" type="button"></button>
+            </p>
+            <div class="modal-warning-accept">На эти даты есть свободные номера. Пока есть.</div>
+            <div class="modal-container-choices">
+              <p class="booking-adults">
+                <label for="adults" class="modal-label-adult">Взрослые:</label>
+                <button class="button-adult-min" type="button"></button>
+                <input id="adults" class="modal-input-field" type="text" name="number-of-adults" placeholder="2">
+                <button class="button-adult-plus" type="button"></button>
+              </p>
+              <p class="booking-kids">
+                <span class="form-label form-label-icon">
+                  <label for="kids" class="modal-label-kids">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="icon-modal-circle" width="25" height="25" aria-hidden="true" focusable="false"
+                        viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12.5" cy="12.5" r="12.5" />
+                      </svg>
+                      <svg class="toggle-icon-info" width="1" height="9" aria-hidden="true" focusable="false"
+                        viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_33716_651)">
+                          <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
+                          <path d="M1 0H0V1H1V0Z" fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_33716_651">
+                            <rect width="1" height="9" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
+                      с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <button class="button-adult-min button-kids-min" type="button"></button>
+                <input id="kids" class="modal-input-field" type="text" name="number-of-kids" placeholder="1">
+                <button class="button-adult-plus button-kids-plus" type="button"></button>
+              </p>
+            </div>
+            <button class="modal-button-search" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 
