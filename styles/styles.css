@@ -56,6 +56,19 @@ html {
   padding-bottom: 3px;
 }
 
+
+.navigation-link:hover {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.navigation-link:focus {
+  color: #756157
+}
+
 .advantages {
   height: 282px;
   margin: 0;
@@ -151,6 +164,17 @@ html {
 .icon-chosen-digit {
   display: flex;
 }
+.icon-chosen-digit:hover {
+  fill: #756157;
+}
+
+.icon-chosen-digit:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.icon-chosen-digit:focus {
+  fill: #756157
+}
 
 .navigation-item-want {
   margin-top: 14px;
@@ -205,6 +229,21 @@ html {
   background-color: #82B3D3;
   color: #FFFFFF;
 }
+
+.icon-header-search:hover {
+  fill: #756157;
+}
+
+.icon-header-search:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.icon-header-search:focus {
+  fill: #756157
+}
+
+
+
 
 .advant-number {
   margin: 0;
@@ -820,14 +859,19 @@ div .advantages {
   text-decoration: none;
 }
 
-.contacts-phone:hover,
-.contacts-phone:focus {
+.contacts-phone:hover {
   color: #756157;
 }
 
 .contacts-phone:active {
   color: rgba(117, 97, 87, 0.3);
 }
+
+.contacts-phone:focus {
+  color: #756157
+}
+
+
 
 .icon-academy {
   fill: #000000;
@@ -944,12 +988,30 @@ div .advantages {
   background-color: #F2F2F2;
   width: 420px;
   height: 50px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
   border: none;
   border-radius: 4px;
   transform: translateX(5px);
-  padding: 0;
+
+
 }
+
+.modal-input:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-input:active {
+  background-color: #FFFFFF;
+  color: #000000;
+  outline: 2px solid #000000;
+}
+
+.modal-input:focus {
+  background-color: #E6E6E6;
+  fill-opacity: 0.6;
+  outline: 3px solid #83B3D3;
+}
+
 
 .modal-input::placeholder {
   padding-top: 30px;
@@ -1080,7 +1142,7 @@ div .advantages {
 .modal-button-search:focus {
   background-color: #68A2CA;
   border-radius: 10px;
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
   color: #FFFFFF;
 }
 
@@ -1264,7 +1326,8 @@ div .advantages {
 }
 
 .union-vector:hover {
-  opacity: 0.6; }
+  opacity: 0.6;
+}
 
 .vector-container {
   display: inline-block;
