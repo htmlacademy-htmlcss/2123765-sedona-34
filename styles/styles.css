@@ -164,6 +164,7 @@ html {
 .icon-chosen-digit {
   display: flex;
 }
+
 .icon-chosen-digit:hover {
   fill: #756157;
 }
@@ -210,6 +211,20 @@ html {
   text-transform: uppercase;
   margin: auto;
 }
+
+.header-button:hover,
+.header-button:focus {
+  background-color: #615048;
+}
+
+.header-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.header-button:disabled {
+  color: #E5E5E5;
+}
+
 
 .list-advants {
   display: flex;
@@ -552,6 +567,22 @@ html {
   cursor: pointer;
 }
 
+.button-hotel-search:hover,
+.button-hotel-search:focus {
+  background-color: #615048;
+}
+
+.button-hotel-search:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-hotel-search:disabled {
+  color: #E5E5E5;
+}
+
+
+
+
 .divider-catalog {
   display: flex;
   background-image: url("../images/divider-catalog.svg");
@@ -618,7 +649,20 @@ html {
   width: 600px;
   height: 60px;
   background-color: #F2F2F2;
+  cursor: pointer;
 }
+.field-mail:hover {
+background-color: #E6E6E6;
+}
+.field-mail:active {
+  background-color: #E6E6E6;
+  outline: 2px solid #000000;
+  }
+  .field-mail:focus {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+    }
+
 
 .field-mail::placeholder {
   padding-left: 22px;
@@ -731,6 +775,19 @@ div .advantages {
   border-bottom-right-radius: 10px;
   cursor: pointer;
 }
+
+.button-footer:hover {
+  background-color: #68A2CA;
+}
+
+.button-footer:active {
+  background-color: rgba(104, 162, 202, 0.3);
+}
+
+.button-footer:focus {
+  background-color: #68A2CA;
+}
+
 
 .field-mail {
   display: flex;
@@ -1429,6 +1486,20 @@ div .advantages {
   border-radius: 4px;
   margin-right: 17px;
 }
+.checkbox-vector:hover {
+ background-color: rgba(255, 255, 255, 0.6);
+}
+.checkbox-vector:active {
+  background-color: rgba(255, 255, 255, 0.3);
+ }
+ .checkbox-vector:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+ }
+
+
+
+
 
 .radio-disk:focus {
   border: 3px solid #83B3D3;
@@ -1767,6 +1838,20 @@ div .advantages {
   border-color: #82B3D3;
   cursor: pointer;
 }
+.button-submit-catalog:hover {
+  background-color: #68A2CA;
+}
+
+.button-submit-catalog:active {
+  background-color: rgba(104, 162, 202, 0.3);
+}
+
+.button-submit-catalog:focus {
+  background-color: #68A2CA;
+}
+
+
+
 
 .button-reset-catalog {
   display: flex;
@@ -1866,6 +1951,7 @@ div .advantages {
   box-shadow: 0 0 0 3px #81B3D2,
     inset 0 0 0 3px #81B3D2;
 }
+
 
 .range-input-max {
   border-radius: 0 4px 4px 0;
