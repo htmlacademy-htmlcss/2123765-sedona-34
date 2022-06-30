@@ -109,11 +109,6 @@ html {
   color: #ffffff;
   background-color: #7db54f;
   border-radius: 10px;
-
-  /* position: absolute;
-  padding-top: 17px;
-  padding-left: 12px;
-   padding-bottom: 35px; */
 }
 
 .nav-container {
@@ -244,7 +239,7 @@ html {
 }
 
 .icon-house::after {
-  content: url(../images/iconhouse.svg);
+  content: url("../images/iconhouse.svg");
 }
 
 .icon-house {
@@ -260,7 +255,7 @@ html {
 }
 
 .icon-burger::after {
-  content: url(../images/food.svg);
+  content: url("../images/food.svg");
 }
 
 .icon-burger {
@@ -300,7 +295,7 @@ html {
 }
 
 .icon-souvenir::after {
-  content: url(../images/souv.svg);
+  content: url("../images/souv.svg");
 }
 
 .icon-souvenir {
@@ -308,14 +303,14 @@ html {
 }
 
 .navmain::after {
-  content: url(../images/indicator.svg);
+  content: url("../images/indicator.svg");
   color: #756257;
   width: 68px;
   position: relative;
 }
 
 .navcatalog::after {
-  content: url(../images/indicator-cat.svg);
+  content: url("../images/indicator-cat.svg");
   color: #756257;
   width: 93px;
   position: relative;
@@ -858,7 +853,7 @@ div .advantages {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
@@ -889,6 +884,7 @@ div .advantages {
   border: none;
   cursor: pointer;
 }
+
 .close-icon {
   position: absolute;
   top: 10px;
@@ -896,6 +892,7 @@ div .advantages {
   width: 13px;
   height: 33px;
 }
+
 .modal-close-button:hover {
   fill: #000000;
   background-color: #E6E6E6;
@@ -905,6 +902,7 @@ div .advantages {
   background-color: #E6E6E6;
   fill-opacity: 0.3;
 }
+
 .modal-close-button:focus {
   fill: #000000;
   background-color: #E6E6E6;
@@ -1067,15 +1065,18 @@ div .advantages {
   margin-left: 4px;
   cursor: pointer;
 }
+
 .modal-button-search:hover {
   background-color: #68A2CA;
   border-radius: 10px;
 }
+
 .modal-button-search:active {
   background-color: #68A2CA;
   border-radius: 10px;
   color: rgba(205, 214, 219, 0.3);
 }
+
 .modal-button-search:focus {
   background-color: #68A2CA;
   border-radius: 10px;
@@ -1115,12 +1116,15 @@ div .advantages {
 .button-adult-min:hover {
   opacity: 1;
 }
+
 .button-adult-plus:hover {
   opacity: 1;
 }
+
 .button-adult-min:active {
   opacity: 0.2;
 }
+
 .button-adult-plus:active {
   opacity: 0.2;
 }
@@ -1141,8 +1145,9 @@ div .advantages {
   display: block;
   position: absolute;
   transform: translate(65px, -10px);
-
 }
+
+
 .toggle-icon-info {
   position: absolute;
   transform: translate(-13px, 8px);
@@ -1156,13 +1161,19 @@ div .advantages {
   display: block;
 }
 
-.tooltip-toggle:hover .tooltip-icon {
-  fill: #68A2CA;
-  }
+.icon-modal-circle {
+  fill: #83B3D3;
+}
+
 .icon-modal-circle:hover {
   fill: #68A2CA;
 
 }
+
+.icon-modal-circle:hover {
+  fill: #68A2CA;
+}
+
 .tooltip-text {
   box-sizing: border-box;
   background-color: #333333;
@@ -1182,18 +1193,20 @@ div .advantages {
   display: none;
 
 }
+
 .tooltip-text:after {
-  content:'';
+  content: '';
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
-  position:absolute;
+  position: absolute;
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
+
 .tooltip {
   position: absolute;
   width: 25px;
@@ -1235,9 +1248,8 @@ div .advantages {
   margin-top: 22px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 66px;
+  margin-bottom: 84px;
   list-style-type: none;
-
 }
 
 .union-vector {
@@ -1252,9 +1264,7 @@ div .advantages {
 }
 
 .union-vector:hover {
-  opacity: 0.6;
-  ;
-}
+  opacity: 0.6; }
 
 .vector-container {
   display: inline-block;
@@ -1265,8 +1275,6 @@ div .advantages {
   background-position: center;
   margin-right: 2px;
   margin-bottom: 2px;
-
-
 }
 
 .hotels-filter {
@@ -1629,7 +1637,7 @@ div .advantages {
   background-color: #FFFFFF;
 }
 
-.hotelssedona {
+.container-hotels-sedona {
   display: flex;
   flex-direction: column;
   width: 1200px;
@@ -1665,6 +1673,20 @@ div .advantages {
   background-repeat: no-repeat;
   background-position: center right 20px;
   cursor: pointer;
+}
+
+.hotels-select:hover,
+.hotels-select:focus {
+  border-color: #68A2CA;
+}
+
+.hotels-select:active {
+  border-color: #3F5E72;
+}
+
+.hotels-select:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .button-submit-catalog {
