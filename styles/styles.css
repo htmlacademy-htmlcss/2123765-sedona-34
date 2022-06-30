@@ -884,21 +884,31 @@ div .advantages {
   right: 72px;
   width: 53px;
   height: 53px;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
+  border-radius: 50%;
   border: none;
-  background-image: url("../images/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
-.modal-close-button:hover {
-  background-color: #E6E6E6;
-  border-radius: 50%;
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 13px;
+  height: 33px;
 }
+.modal-close-button:hover {
+  fill: #000000;
+  background-color: #E6E6E6;
+}
+
 .modal-close-button:active {
   background-color: #E6E6E6;
-  color: rgba(205, 214, 219, 0.3);;
-  border-radius: 50%;
+  fill-opacity: 0.3;
+}
+.modal-close-button:focus {
+  fill: #000000;
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
 .modal-title {
