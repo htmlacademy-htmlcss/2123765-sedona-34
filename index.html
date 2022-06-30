@@ -208,24 +208,30 @@
             <p class="booking-item">
               <label class="item-name modal-date-check" for="checkindata">Дата Заезда:</label>
               <input class="modal-input" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020">
+              <button class="calendar" type="button"></button>
             </p>
             <div class="modal-warning">Мы не можем отправить вас в прошлое.</div>
             <p class="booking-item">
               <label class="item-name" for="checkoutdata">Дата Выезда:</label>
               <input class="modal-input" type="text" name="check-out" id="checkoutdata" placeholder="01 сентября 2021">
+              <button class="calendar" type="button"></button>
             </p>
             <div class="modal-warning-accept">На эти даты есть свободные номера. Пока есть.</div>
             <div class="modal-container-choices">
             <p class="booking-adults">
               <label for="adults" class="modal-label-adult">Взрослые:</label>
+              <button class="button-adult-min" type="button"></button>
               <input id="adults" class="modal-input-field" type="text" name="number-of-adults" placeholder="2">
+              <button class="button-adult-plus" type="button"></button>
             </p>
             <p class="booking-kids">
               <label for="kids" class="modal-label-kids">Дети:</label>
+              <button class="button-adult-min button-kids-min" type="button"></button>
               <input id="kids" class="modal-input-field" type="text" name="number-of-kids" placeholder="1">
+              <button class="button-adult-plus button-kids-plus" type="button"></button>
             </p>
             </div>
-            <button class="search-button" type="submit">Найти</button>
+            <button class="modal-button-search" type="submit">Найти</button>
           </form>
         </section>
       </div>

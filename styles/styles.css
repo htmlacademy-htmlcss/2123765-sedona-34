@@ -912,12 +912,15 @@ div .advantages {
   font-weight: 700;
 }
 .modal-input {
+  position: relative;
   background-color: #F2F2F2;
   width: 420px;
   height: 50px;
   color: #000000;
   border: none;
   border-radius: 4px;
+  transform: translateX(5px);
+  padding: 0;
   }
   .modal-input::placeholder {
     padding-top: 15px;
@@ -963,7 +966,7 @@ div .advantages {
   height: 50px;
   margin: 0;
   padding: 0;
-  transform: translateX(-18px);
+  transform: translateX(-13px);
 }
 .modal-input-field {
   width: 133px;
@@ -1004,7 +1007,53 @@ font-weight: 400;
   align-items: center;
   height: 50px;
 }
+.modal-button-search {
+  background-color: #83B3D3;
+  width: 575px;
+  color: #FFFFFF;
+  font-family: "PT Sans","sans-serif";
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  padding: 12px 26px;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.calendar {
+  position: absolute;
+  background-image: url("../images/calendar-modal.svg");
+  width: 15px;
+  height: 15px;
+  transform: translate(548px);
+  border: none;
+}
+.button-adult-min {
+  position: absolute;
+  background-image: url("../images/modal-min.svg");
+  width: 1px;
+  border: none;
+  transform: translate(178px, 23px);
+  opacity: 0.3;
+}
 
+.button-adult-plus {
+  position: absolute;
+  background-image: url("../images/modal-plus.svg");
+  width: 1px;
+  height: 13px;
+  border: none;
+  transform: translate(253px, 17px);
+  opacity: 0.3;
+}
+.button-kids-min {
+  transform: translate(118px, 23px);
+}
+.button-kids-plus {
+  transform: translate(199px, 17px);
+}
 
 .header-catalog {
   display: flex;
