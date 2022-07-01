@@ -56,6 +56,19 @@ html {
   padding-bottom: 3px;
 }
 
+
+.navigation-link:hover {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.navigation-link:focus {
+  color: #756157
+}
+
 .advantages {
   height: 282px;
   margin: 0;
@@ -152,6 +165,18 @@ html {
   display: flex;
 }
 
+.icon-chosen-digit:hover {
+  fill: #756157;
+}
+
+.icon-chosen-digit:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.icon-chosen-digit:focus {
+  fill: #756157
+}
+
 .navigation-item-want {
   margin-top: 14px;
   margin-bottom: 14px;
@@ -171,6 +196,7 @@ html {
 
 .header-button {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-weight: 700;
@@ -186,6 +212,20 @@ html {
   text-transform: uppercase;
   margin: auto;
 }
+
+.header-button:hover,
+.header-button:focus {
+  background-color: #615048;
+}
+
+.header-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.header-button:disabled {
+  color: #E5E5E5;
+}
+
 
 .list-advants {
   display: flex;
@@ -205,6 +245,21 @@ html {
   background-color: #82B3D3;
   color: #FFFFFF;
 }
+
+.icon-header-search:hover {
+  fill: #756157;
+}
+
+.icon-header-search:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.icon-header-search:focus {
+  fill: #756157
+}
+
+
+
 
 .advant-number {
   margin: 0;
@@ -274,7 +329,11 @@ html {
 
 .advant-descr-house {
   padding-top: 30px;
-  margin-top: 0;
+  margin: 0 auto;
+  width: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .advant-descr-burger {
@@ -283,6 +342,9 @@ html {
   padding-top: 30px;
   margin-top: 0;
   width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .advant-title-burger {
@@ -332,6 +394,9 @@ html {
   padding-top: 30px;
   margin-top: 0;
   width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 
@@ -341,6 +406,7 @@ html {
   flex-wrap: wrap;
   min-width: 400px;
   background-color: #82B3D3;
+  color: #FFFFFF;
 }
 
 .advant-title-bridge {
@@ -363,6 +429,9 @@ html {
   padding-left: 85px;
   padding-right: 85px;
   width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .underlist-square {
@@ -393,6 +462,8 @@ html {
   margin: 0;
   padding-left: 85px;
   padding-right: 85px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .underlist-road {
@@ -417,8 +488,11 @@ html {
 }
 
 .advant-descr-road {
-  margin: 0;
+  margin: 0 auto;
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .underlist-tourist {
@@ -448,6 +522,8 @@ html {
   padding-top: 30px;
   padding-left: 85px;
   padding-right: 85px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .booking-header {
@@ -511,7 +587,26 @@ html {
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.button-hotel-search:hover,
+.button-hotel-search:focus {
+  background-color: #615048;
+}
+
+.button-hotel-search:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-hotel-search:disabled {
+  color: #E5E5E5;
+}
+
+
+
 
 .divider-catalog {
   display: flex;
@@ -579,7 +674,20 @@ html {
   width: 600px;
   height: 60px;
   background-color: #F2F2F2;
+  cursor: pointer;
 }
+.field-mail:hover {
+background-color: #E6E6E6;
+}
+.field-mail:active {
+  background-color: #E6E6E6;
+  outline: 2px solid #000000;
+  }
+  .field-mail:focus {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+    }
+
 
 .field-mail::placeholder {
   padding-left: 22px;
@@ -691,7 +799,23 @@ div .advantages {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.button-footer:hover {
+  background-color: #68A2CA;
+}
+
+.button-footer:active {
+  background-color: rgba(104, 162, 202, 0.3);
+}
+
+.button-footer:focus {
+  background-color: #68A2CA;
+}
+
 
 .field-mail {
   display: flex;
@@ -820,14 +944,19 @@ div .advantages {
   text-decoration: none;
 }
 
-.contacts-phone:hover,
-.contacts-phone:focus {
+.contacts-phone:hover {
   color: #756157;
 }
 
 .contacts-phone:active {
   color: rgba(117, 97, 87, 0.3);
 }
+
+.contacts-phone:focus {
+  color: #756157
+}
+
+
 
 .icon-academy {
   fill: #000000;
@@ -944,12 +1073,29 @@ div .advantages {
   background-color: #F2F2F2;
   width: 420px;
   height: 50px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
   border: none;
   border-radius: 4px;
   transform: translateX(5px);
-  padding: 0;
+  cursor: pointer;
 }
+
+.modal-input:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-input:active {
+  background-color: #FFFFFF;
+  color: #000000;
+  outline: 2px solid #000000;
+}
+
+.modal-input:focus {
+  background-color: #E6E6E6;
+  fill-opacity: 0.6;
+  outline: 3px solid #83B3D3;
+}
+
 
 .modal-input::placeholder {
   padding-top: 30px;
@@ -1010,7 +1156,25 @@ div .advantages {
   border: none;
   border-radius: 4px;
   padding: 0;
+  cursor: pointer;
 }
+.modal-input-field:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-input-field:active {
+  background-color: #FFFFFF;
+  color: #000000;
+  outline: 2px solid #000000;
+}
+
+.modal-input-field:focus {
+  background-color: #E6E6E6;
+  fill-opacity: 0.6;
+  outline: 3px solid #83B3D3;
+}
+
+
 
 .modal-input-field::placeholder {
   padding: 15px 62px 14px 61px;
@@ -1053,7 +1217,7 @@ div .advantages {
   background-color: #83B3D3;
   width: 575px;
   color: #FFFFFF;
-  font-family: "PT Sans", "sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -1080,7 +1244,7 @@ div .advantages {
 .modal-button-search:focus {
   background-color: #68A2CA;
   border-radius: 10px;
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
   color: #FFFFFF;
 }
 
@@ -1264,7 +1428,8 @@ div .advantages {
 }
 
 .union-vector:hover {
-  opacity: 0.6; }
+  opacity: 0.6;
+}
 
 .vector-container {
   display: inline-block;
@@ -1366,6 +1531,20 @@ div .advantages {
   border-radius: 4px;
   margin-right: 17px;
 }
+.checkbox-vector:hover {
+ background-color: rgba(255, 255, 255, 0.6);
+}
+.checkbox-vector:active {
+  background-color: rgba(255, 255, 255, 0.3);
+ }
+ .checkbox-vector:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+ }
+
+
+
+
 
 .radio-disk:focus {
   border: 3px solid #83B3D3;
@@ -1703,7 +1882,24 @@ div .advantages {
   border-radius: 4px;
   border-color: #82B3D3;
   cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+.button-submit-catalog:hover {
+  background-color: #68A2CA;
+}
+
+.button-submit-catalog:active {
+  background-color: rgba(104, 162, 202, 0.3);
+}
+
+.button-submit-catalog:focus {
+  background-color: #68A2CA;
+}
+
+
+
 
 .button-reset-catalog {
   display: flex;
@@ -1803,6 +1999,7 @@ div .advantages {
   box-shadow: 0 0 0 3px #81B3D2,
     inset 0 0 0 3px #81B3D2;
 }
+
 
 .range-input-max {
   border-radius: 0 4px 4px 0;
