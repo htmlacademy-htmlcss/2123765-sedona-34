@@ -1049,8 +1049,7 @@ div .advantages {
   border: none;
   border-radius: 4px;
   transform: translateX(5px);
-
-
+  cursor: pointer;
 }
 
 .modal-input:hover {
@@ -1129,7 +1128,25 @@ div .advantages {
   border: none;
   border-radius: 4px;
   padding: 0;
+  cursor: pointer;
 }
+.modal-input-field:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-input-field:active {
+  background-color: #FFFFFF;
+  color: #000000;
+  outline: 2px solid #000000;
+}
+
+.modal-input-field:focus {
+  background-color: #E6E6E6;
+  fill-opacity: 0.6;
+  outline: 3px solid #83B3D3;
+}
+
+
 
 .modal-input-field::placeholder {
   padding: 15px 62px 14px 61px;
