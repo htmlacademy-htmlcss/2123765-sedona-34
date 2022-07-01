@@ -196,6 +196,7 @@ html {
 
 .header-button {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-weight: 700;
@@ -328,7 +329,11 @@ html {
 
 .advant-descr-house {
   padding-top: 30px;
-  margin-top: 0;
+  margin: 0 auto;
+  width: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .advant-descr-burger {
@@ -337,6 +342,9 @@ html {
   padding-top: 30px;
   margin-top: 0;
   width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .advant-title-burger {
@@ -386,6 +394,9 @@ html {
   padding-top: 30px;
   margin-top: 0;
   width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 
@@ -395,6 +406,7 @@ html {
   flex-wrap: wrap;
   min-width: 400px;
   background-color: #82B3D3;
+  color: #FFFFFF;
 }
 
 .advant-title-bridge {
@@ -417,6 +429,9 @@ html {
   padding-left: 85px;
   padding-right: 85px;
   width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .underlist-square {
@@ -447,6 +462,8 @@ html {
   margin: 0;
   padding-left: 85px;
   padding-right: 85px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .underlist-road {
@@ -471,8 +488,11 @@ html {
 }
 
 .advant-descr-road {
-  margin: 0;
+  margin: 0 auto;
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .underlist-tourist {
@@ -502,6 +522,8 @@ html {
   padding-top: 30px;
   padding-left: 85px;
   padding-right: 85px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .booking-header {
@@ -565,6 +587,9 @@ html {
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .button-hotel-search:hover,
@@ -774,6 +799,9 @@ div .advantages {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .button-footer:hover {
@@ -1189,7 +1217,7 @@ div .advantages {
   background-color: #83B3D3;
   width: 575px;
   color: #FFFFFF;
-  font-family: "PT Sans", "sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -1854,6 +1882,9 @@ div .advantages {
   border-radius: 4px;
   border-color: #82B3D3;
   cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .button-submit-catalog:hover {
   background-color: #68A2CA;
