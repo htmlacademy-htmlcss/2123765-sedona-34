@@ -226,7 +226,6 @@ html {
   color: #E5E5E5;
 }
 
-
 .list-advants {
   display: flex;
   list-style-type: none;
@@ -257,9 +256,6 @@ html {
 .icon-header-search:focus {
   fill: #756157
 }
-
-
-
 
 .advant-number {
   margin: 0;
@@ -676,17 +672,20 @@ html {
   background-color: #F2F2F2;
   cursor: pointer;
 }
+
 .field-mail:hover {
-background-color: #E6E6E6;
+  background-color: #E6E6E6;
 }
+
 .field-mail:active {
   background-color: #E6E6E6;
   outline: 2px solid #000000;
-  }
-  .field-mail:focus {
-    background-color: #E6E6E6;
-    outline: 3px solid #83B3D3;
-    }
+}
+
+.field-mail:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
 
 
 .field-mail::placeholder {
@@ -1158,6 +1157,7 @@ div .advantages {
   padding: 0;
   cursor: pointer;
 }
+
 .modal-input-field:hover {
   background-color: #E6E6E6;
 }
@@ -1506,9 +1506,8 @@ div .advantages {
   text-align: left;
   border: none 0;
   width: 145px;
-  margin: 0;
+  margin: 0 0 0 5px;
   padding: 0;
-  margin-left: 5px;
 }
 
 .control-pool {
@@ -1531,16 +1530,19 @@ div .advantages {
   border-radius: 4px;
   margin-right: 17px;
 }
+
 .checkbox-vector:hover {
- background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
+
 .checkbox-vector:active {
   background-color: rgba(255, 255, 255, 0.3);
- }
- .checkbox-vector:focus {
+}
+
+.checkbox-vector:focus {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
- }
+}
 
 
 
@@ -1669,7 +1671,7 @@ div .advantages {
 }
 
 .table {
-  background-image: url(../images/icon-table.svg);
+  background-image: url("../images/icon-table.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
@@ -1694,14 +1696,14 @@ div .advantages {
 }
 
 .slide {
-  background-image: url(../images/icon-slideshow.svg);
+  background-image: url("../images/icon-slideshow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
 }
 
 .list {
-  background-image: url(../images/icon-list.svg);
+  background-image: url("../images/icon-list.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
@@ -1750,9 +1752,14 @@ div .advantages {
 }
 
 .pagination-link {
+  min-width: 60px;
   color: #FFFFFF;
   text-decoration: none;
   padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .pagination-item {
@@ -1763,23 +1770,33 @@ div .advantages {
   background-color: #82B3D3;
   color: #FFFFFF;
   border-radius: 4px;
-  width: 60px;
+  flex-wrap: wrap;
 }
 
-.pagination-item:hover,
-.pagination-item:focus {
+.pagination-link:hover,
+.pagination-link:focus {
   background-color: #68A2CA;
+  border-radius: 4px;
 }
 
-.pagination-item:active {
+.pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
-
-.last-link {
-  width: 60px;
-  height: 60px;
+.pre-last-link {
+  min-width: 60px;
+  padding: 12px 22px;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.last-link {
+  min-width: 60px;
+  padding: 12px 19px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -1872,6 +1889,7 @@ div .advantages {
   background-color: #82B3D3;
   color: #FFFFFF;
   min-width: 160px;
+  border: none;
   padding: 14px 15px;
   text-align: center;
   font-size: 16px;
@@ -1880,12 +1898,12 @@ div .advantages {
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 4px;
-  border-color: #82B3D3;
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .button-submit-catalog:hover {
   background-color: #68A2CA;
 }
