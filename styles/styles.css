@@ -235,7 +235,18 @@ html {
   margin: 0;
   padding: 0;
 }
+.index-photo-container {
+  background-image: url("../images/photo-city.jpg");
+  width: 800px;
+  height: 384px;
 
+
+}
+.index-photo-wrapper {
+  background-image: url("../images/canyon-bridge.jpg");
+  width: 800px;
+  height: 384px;
+}
 .town-block-micro {
   display: flex;
   flex-wrap: wrap;
@@ -1576,26 +1587,12 @@ div .advantages {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
-
-.control-input[type="radio"]:checked:focus {
-  border: 3px solid #83B3D3;
-}
-
-
 .control-input:focus {
-  outline: 3px solid #83B3D3;
+  border: 3px solid #83B3D3;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
 }
-
-.radio-disk:focus {
-  outline: 3px solid #83B3D3;
-  width: 20px;
-  height: 20px;
-  box-sizing: border-box;
-}
-
 .checkbox-vector:focus {
   outline: 3px solid #83B3D3;
   width: 20px;
@@ -1611,10 +1608,6 @@ div .advantages {
   box-shadow: 0 0 0 2px #83B3D3;
 }
 
-.control-input[type="radio"]:focus {
-  box-shadow: 0 0 0 2px #83B3D3;
-}
-
 .radio-disk {
   width: 20px;
   height: 20px;
@@ -1625,6 +1618,7 @@ div .advantages {
   position: relative;
   cursor: pointer;
 }
+
 
 .control-input[type="radio"]:checked + .radio-disk::after {
   content: "";
