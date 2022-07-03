@@ -226,7 +226,6 @@ html {
   color: #E5E5E5;
 }
 
-
 .list-advants {
   display: flex;
   list-style-type: none;
@@ -236,7 +235,18 @@ html {
   margin: 0;
   padding: 0;
 }
+.index-photo-container {
+  background-image: url("../images/photo-city.jpg");
+  width: 800px;
+  height: 384px;
 
+
+}
+.index-photo-wrapper {
+  background-image: url("../images/canyon-bridge.jpg");
+  width: 800px;
+  height: 384px;
+}
 .town-block-micro {
   display: flex;
   flex-wrap: wrap;
@@ -257,9 +267,6 @@ html {
 .icon-header-search:focus {
   fill: #756157
 }
-
-
-
 
 .advant-number {
   margin: 0;
@@ -292,7 +299,9 @@ html {
   min-width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
 }
-
+.underlist-souv {
+  display: flex;
+}
 .icon-house::after {
   content: url("../images/iconhouse.svg");
 }
@@ -302,11 +311,13 @@ html {
 }
 
 .underlist-burger {
+  display: flex;
   background-color: #FFFFFF;
   text-align: center;
   vertical-align: middle;
   min-width: 400px;
   height: 384px;
+  margin: 0 auto;
 }
 
 .icon-burger::after {
@@ -434,6 +445,16 @@ html {
 
 }
 
+.underlist-index {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .underlist-square {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -460,6 +481,7 @@ html {
   width: 230px;
   padding-top: 30px;
   margin: 0;
+  padding-bottom: 102px;
   padding-left: 85px;
   padding-right: 85px;
   display: flex;
@@ -490,6 +512,7 @@ html {
 .advant-descr-road {
   margin: 0 auto;
   padding: 30px;
+  padding-bottom: 102px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -498,7 +521,12 @@ html {
 .underlist-tourist {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 384px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
 }
 
 .advant-title-tourist {
@@ -522,6 +550,7 @@ html {
   padding-top: 30px;
   padding-left: 85px;
   padding-right: 85px;
+  padding-bottom: 102px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -676,17 +705,20 @@ html {
   background-color: #F2F2F2;
   cursor: pointer;
 }
+
 .field-mail:hover {
-background-color: #E6E6E6;
+  background-color: #E6E6E6;
 }
+
 .field-mail:active {
   background-color: #E6E6E6;
   outline: 2px solid #000000;
-  }
-  .field-mail:focus {
-    background-color: #E6E6E6;
-    outline: 3px solid #83B3D3;
-    }
+}
+
+.field-mail:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
 
 
 .field-mail::placeholder {
@@ -1014,6 +1046,11 @@ div .advantages {
   cursor: pointer;
 }
 
+.left-field {
+
+  transform: translateX(5px);
+}
+
 .close-icon {
   position: absolute;
   top: 10px;
@@ -1078,6 +1115,11 @@ div .advantages {
   border-radius: 4px;
   transform: translateX(5px);
   cursor: pointer;
+  padding-top: 15px;
+  padding-left: 19px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
+  align-items: center;
 }
 
 .modal-input:hover {
@@ -1098,8 +1140,7 @@ div .advantages {
 
 
 .modal-input::placeholder {
-  padding-top: 30px;
-  padding-left: 18px;
+
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-size: 18px;
@@ -1155,9 +1196,12 @@ div .advantages {
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
-  padding: 0;
   cursor: pointer;
+  padding: 15px 62px 14px 61px;
+  box-sizing: border-box;
+
 }
+
 .modal-input-field:hover {
   background-color: #E6E6E6;
 }
@@ -1177,7 +1221,6 @@ div .advantages {
 
 
 .modal-input-field::placeholder {
-  padding: 15px 62px 14px 61px;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -1263,8 +1306,10 @@ div .advantages {
   background-image: url("../images/modal-min.svg");
   width: 1px;
   border: none;
-  transform: translate(178px, 23px);
+  transform: translate(183px, 23px);
+  z-index: 1;
   opacity: 0.3;
+
 }
 
 .button-adult-plus {
@@ -1273,7 +1318,7 @@ div .advantages {
   width: 13px;
   height: 13px;
   border: none;
-  transform: translate(253px, 17px);
+  transform: translate(258px, 17px);
   opacity: 0.3;
 }
 
@@ -1506,9 +1551,8 @@ div .advantages {
   text-align: left;
   border: none 0;
   width: 145px;
-  margin: 0;
+  margin: 0 0 0 5px;
   padding: 0;
-  margin-left: 5px;
 }
 
 .control-pool {
@@ -1531,33 +1575,41 @@ div .advantages {
   border-radius: 4px;
   margin-right: 17px;
 }
+
+.control-checkbox:hover,
 .checkbox-vector:hover {
- background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
+
+.control-checkbox:active,
 .checkbox-vector:active {
   background-color: rgba(255, 255, 255, 0.3);
- }
- .checkbox-vector:focus {
+}
+
+.control-checkbox:focus,
+.checkbox-vector:focus {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
- }
-
-
-
-
-
-.radio-disk:focus {
+}
+.control-input:focus {
   border: 3px solid #83B3D3;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
 }
-
 .checkbox-vector:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
+}
+
+.control-checkbox[type="checkbox"]:focus + .checkbox-vector {
+  box-shadow: 0 0 0 2px #81b3d2;
+}
+
+.control-input[type="radio"]:focus + .radio-disk {
+  box-shadow: 0 0 0 2px #83B3D3;
 }
 
 .radio-disk {
@@ -1570,6 +1622,7 @@ div .advantages {
   position: relative;
   cursor: pointer;
 }
+
 
 .control-input[type="radio"]:checked + .radio-disk::after {
   content: "";
@@ -1669,7 +1722,7 @@ div .advantages {
 }
 
 .table {
-  background-image: url(../images/icon-table.svg);
+  background-image: url("../images/icon-table.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
@@ -1694,14 +1747,14 @@ div .advantages {
 }
 
 .slide {
-  background-image: url(../images/icon-slideshow.svg);
+  background-image: url("../images/icon-slideshow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
 }
 
 .list {
-  background-image: url(../images/icon-list.svg);
+  background-image: url("../images/icon-list.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
@@ -1750,9 +1803,14 @@ div .advantages {
 }
 
 .pagination-link {
+  min-width: 60px;
   color: #FFFFFF;
   text-decoration: none;
   padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .pagination-item {
@@ -1763,23 +1821,35 @@ div .advantages {
   background-color: #82B3D3;
   color: #FFFFFF;
   border-radius: 4px;
-  width: 60px;
+  flex-wrap: wrap;
 }
 
-.pagination-item:hover,
-.pagination-item:focus {
+.pagination-link:hover,
+.pagination-link:focus {
   background-color: #68A2CA;
+  border-radius: 4px;
 }
 
-.pagination-item:active {
+.pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.pre-last-link {
+  min-width: 60px;
+  padding: 12px 22px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .last-link {
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  padding: 12px 19px;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -1872,6 +1942,7 @@ div .advantages {
   background-color: #82B3D3;
   color: #FFFFFF;
   min-width: 160px;
+  border: none;
   padding: 14px 15px;
   text-align: center;
   font-size: 16px;
@@ -1880,12 +1951,12 @@ div .advantages {
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 4px;
-  border-color: #82B3D3;
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .button-submit-catalog:hover {
   background-color: #68A2CA;
 }
