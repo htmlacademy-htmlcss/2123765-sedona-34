@@ -299,7 +299,9 @@ html {
   min-width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
 }
-
+.underlist-souv {
+  display: flex;
+}
 .icon-house::after {
   content: url("../images/iconhouse.svg");
 }
@@ -309,11 +311,13 @@ html {
 }
 
 .underlist-burger {
+  display: flex;
   background-color: #FFFFFF;
   text-align: center;
   vertical-align: middle;
   min-width: 400px;
   height: 384px;
+  margin: 0 auto;
 }
 
 .icon-burger::after {
