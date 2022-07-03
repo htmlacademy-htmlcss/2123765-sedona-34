@@ -429,6 +429,7 @@ html {
   flex-wrap: wrap;
 
 }
+
 .underlist-index {
   list-style-type: none;
   display: flex;
@@ -438,6 +439,7 @@ html {
   margin: 0 auto;
   padding: 0;
 }
+
 .underlist-square {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -464,6 +466,7 @@ html {
   width: 230px;
   padding-top: 30px;
   margin: 0;
+  padding-bottom: 102px;
   padding-left: 85px;
   padding-right: 85px;
   display: flex;
@@ -494,6 +497,7 @@ html {
 .advant-descr-road {
   margin: 0 auto;
   padding: 30px;
+  padding-bottom: 102px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -502,7 +506,12 @@ html {
 .underlist-tourist {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 384px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
 }
 
 .advant-title-tourist {
@@ -526,6 +535,7 @@ html {
   padding-top: 30px;
   padding-left: 85px;
   padding-right: 85px;
+  padding-bottom: 102px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1021,6 +1031,11 @@ div .advantages {
   cursor: pointer;
 }
 
+.left-field {
+
+  transform: translateX(5px);
+}
+
 .close-icon {
   position: absolute;
   top: 10px;
@@ -1085,6 +1100,11 @@ div .advantages {
   border-radius: 4px;
   transform: translateX(5px);
   cursor: pointer;
+  padding-top: 15px;
+  padding-left: 19px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
+  align-items: center;
 }
 
 .modal-input:hover {
@@ -1105,8 +1125,7 @@ div .advantages {
 
 
 .modal-input::placeholder {
-  padding-top: 30px;
-  padding-left: 18px;
+
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-size: 18px;
@@ -1162,8 +1181,10 @@ div .advantages {
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
-  padding: 0;
   cursor: pointer;
+  padding: 15px 62px 14px 61px;
+  box-sizing: border-box;
+
 }
 
 .modal-input-field:hover {
@@ -1185,7 +1206,6 @@ div .advantages {
 
 
 .modal-input-field::placeholder {
-  padding: 15px 62px 14px 61px;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -1271,8 +1291,10 @@ div .advantages {
   background-image: url("../images/modal-min.svg");
   width: 1px;
   border: none;
-  transform: translate(178px, 23px);
+  transform: translate(183px, 23px);
+  z-index: 1;
   opacity: 0.3;
+
 }
 
 .button-adult-plus {
@@ -1281,7 +1303,7 @@ div .advantages {
   width: 13px;
   height: 13px;
   border: none;
-  transform: translate(253px, 17px);
+  transform: translate(258px, 17px);
   opacity: 0.3;
 }
 
@@ -1538,30 +1560,35 @@ div .advantages {
   border-radius: 4px;
   margin-right: 17px;
 }
+
 .control-checkbox:hover,
 .checkbox-vector:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
+
 .control-checkbox:active,
 .checkbox-vector:active {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
 .control-checkbox:focus,
 .checkbox-vector:focus {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
+
 .control-input[type="radio"]:checked:focus {
   border: 3px solid #83B3D3;
 }
 
 
 .control-input:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
 }
+
 .radio-disk:focus {
   outline: 3px solid #83B3D3;
   width: 20px;
@@ -1574,6 +1601,18 @@ div .advantages {
   width: 20px;
   height: 20px;
   box-sizing: border-box;
+}
+
+.control-checkbox[type="checkbox"]:focus + .checkbox-vector {
+  box-shadow: 0 0 0 2px #81b3d2;
+}
+
+.control-input[type="radio"]:focus + .radio-disk {
+  box-shadow: 0 0 0 2px #83B3D3;
+}
+
+.control-input[type="radio"]:focus {
+  box-shadow: 0 0 0 2px #83B3D3;
 }
 
 .radio-disk {
@@ -1797,6 +1836,7 @@ div .advantages {
   color: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
+
 .pre-last-link {
   min-width: 60px;
   padding: 12px 22px;
@@ -1805,6 +1845,7 @@ div .advantages {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .last-link {
   min-width: 60px;
   padding: 12px 19px;
