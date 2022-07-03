@@ -1530,33 +1530,39 @@ div .advantages {
   border-radius: 4px;
   margin-right: 17px;
 }
-
+.control-checkbox:hover,
 .checkbox-vector:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
-
+.control-checkbox:active,
 .checkbox-vector:active {
   background-color: rgba(255, 255, 255, 0.3);
 }
-
+.control-checkbox:focus,
 .checkbox-vector:focus {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
-
-
-
-
-
-.radio-disk:focus {
+.control-input[type="radio"]:checked:focus {
   border: 3px solid #83B3D3;
+}
+
+
+.control-input:focus {
+  border: 3px solid #83B3D3;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
+.radio-disk:focus {
+  outline: 3px solid #83B3D3;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
 }
 
 .checkbox-vector:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
