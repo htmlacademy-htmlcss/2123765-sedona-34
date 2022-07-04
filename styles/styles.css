@@ -301,6 +301,7 @@ html {
 }
 .underlist-souv {
   display: flex;
+  flex-direction: column;
 }
 .icon-house::after {
   content: url("../images/iconhouse.svg");
@@ -312,6 +313,8 @@ html {
 
 .underlist-burger {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   background-color: #FFFFFF;
   text-align: center;
   vertical-align: middle;
@@ -451,7 +454,7 @@ html {
   flex-direction: row;
   justify-content: center;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
