@@ -235,6 +235,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 .index-photo-container {
   background-image: url("../images/photo-city.jpg");
   width: 800px;
@@ -242,11 +243,13 @@ html {
 
 
 }
+
 .index-photo-wrapper {
   background-image: url("../images/canyon-bridge.jpg");
   width: 800px;
   height: 384px;
 }
+
 .town-block-micro {
   display: flex;
   flex-wrap: wrap;
@@ -299,10 +302,12 @@ html {
   min-width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
 }
+
 .underlist-souv {
   display: flex;
   flex-direction: column;
 }
+
 .icon-house::after {
   content: url("../images/iconhouse.svg");
 }
@@ -445,17 +450,6 @@ html {
   width: 230px;
   display: flex;
   flex-wrap: wrap;
-
-}
-
-.underlist-index {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .underlist-square {
@@ -1594,12 +1588,14 @@ div .advantages {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
+
 .control-input:focus {
   border: 3px solid #83B3D3;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
 }
+
 .checkbox-vector:focus {
   outline: 3px solid #83B3D3;
   width: 20px;
