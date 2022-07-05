@@ -35,9 +35,17 @@ html {
   width: 1200px;
   text-align: center;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -79,7 +87,11 @@ html {
 }
 
 .icon-search-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -97,6 +109,8 @@ html {
 }
 
 .iconchosen-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding-top: 24px;
@@ -110,6 +124,7 @@ html {
   top: 15px;
   left: -16px;
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 20px;
   height: 20px;
@@ -125,7 +140,11 @@ html {
 }
 
 .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 1200px;
   height: 65px;
@@ -139,11 +158,20 @@ html {
   z-index: 1;
 }
 
+.page-header-logo:hover {
+  opacity: 0.6;
+}
+
 .container-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-width: 390px;
   min-height: 66px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   list-style-type: none;
@@ -151,9 +179,15 @@ html {
 }
 
 .container-nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   width: 264px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-left: auto;
   list-style-type: none;
@@ -162,6 +196,8 @@ html {
 }
 
 .icon-chosen-digit {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -195,9 +231,16 @@ html {
 }
 
 .header-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-weight: 700;
   font-size: 16px;
@@ -227,9 +270,15 @@ html {
 }
 
 .list-advants {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 1200px;
   margin: 0;
@@ -251,8 +300,14 @@ html {
 }
 
 .town-block-micro {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 400px;
   background-color: #82B3D3;
@@ -304,7 +359,12 @@ html {
 }
 
 .underlist-souv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -317,8 +377,14 @@ html {
 }
 
 .underlist-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #FFFFFF;
   text-align: center;
@@ -350,8 +416,12 @@ html {
   padding-top: 30px;
   margin: 0 auto;
   width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -361,8 +431,12 @@ html {
   padding-top: 30px;
   margin-top: 0;
   width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -413,15 +487,25 @@ html {
   padding-top: 30px;
   margin-top: 0;
   width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 
 .town-block-bridge {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-width: 400px;
   background-color: #82B3D3;
@@ -448,7 +532,10 @@ html {
   padding-left: 85px;
   padding-right: 85px;
   width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -481,7 +568,10 @@ html {
   padding-bottom: 102px;
   padding-left: 85px;
   padding-right: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -510,16 +600,27 @@ html {
   margin: 0 auto;
   padding: 30px;
   padding-bottom: 102px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .underlist-tourist {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -548,7 +649,10 @@ html {
   padding-left: 85px;
   padding-right: 85px;
   padding-bottom: 102px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -578,6 +682,8 @@ html {
 }
 
 .datetravel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
   font-size: 22px;
@@ -613,8 +719,13 @@ html {
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -635,6 +746,8 @@ html {
 
 
 .divider-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url("../images/divider-catalog.svg");
   background-repeat: no-repeat;
@@ -658,9 +771,16 @@ html {
 }
 
 .mailing-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-line-pack: center;
   align-content: center;
   background-color: #FFFFFF;
 }
@@ -674,6 +794,8 @@ html {
 }
 
 .undersection-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   height: 411px;
@@ -687,6 +809,8 @@ html {
 }
 
 .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   height: 485px;
@@ -701,6 +825,18 @@ html {
   height: 60px;
   background-color: #F2F2F2;
   cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  padding-left: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  border: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .field-mail:hover {
@@ -718,8 +854,35 @@ html {
 }
 
 
+.field-mail::-webkit-input-placeholder {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+.field-mail::-moz-placeholder {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+.field-mail:-ms-input-placeholder {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+.field-mail::-ms-input-placeholder {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
 .field-mail::placeholder {
-  padding-left: 22px;
   font-size: 17px;
   line-height: 21px;
   font-weight: 400;
@@ -768,6 +931,8 @@ div .advantages {
 }
 
 .titlehead {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 30px;
   line-height: 36px;
@@ -828,8 +993,13 @@ div .advantages {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -845,18 +1015,9 @@ div .advantages {
   background-color: #68A2CA;
 }
 
-
-.field-mail {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  border: 0;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
 .button-submit-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -896,7 +1057,11 @@ div .advantages {
 }
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
   height: 120px;
@@ -910,9 +1075,15 @@ div .advantages {
 }
 
 .footer-social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   list-style-type: none;
   margin: 0;
@@ -1004,6 +1175,8 @@ div .advantages {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
@@ -1019,11 +1192,13 @@ div .advantages {
   margin: auto;
   padding: 62px;
   background-color: #FFFFFF;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
 }
 
 .modal-auth {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 715px;
   height: 561px;
@@ -1044,6 +1219,10 @@ div .advantages {
 }
 
 .left-field {
+
+  -webkit-transform: translateX(5px);
+
+  -ms-transform: translateX(5px);
 
   transform: translateX(5px);
 }
@@ -1081,14 +1260,25 @@ div .advantages {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(5px);
   transform: translateX(5px);
 }
 
 .booking-item {
   width: 575px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -1099,6 +1289,8 @@ div .advantages {
   line-height: 26px;
   font-family: inherit;
   font-weight: 700;
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(5px);
   transform: translateX(5px);
 }
 
@@ -1110,12 +1302,17 @@ div .advantages {
   color: rgba(0, 0, 0, 0.6);
   border: none;
   border-radius: 4px;
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(5px);
   transform: translateX(5px);
   cursor: pointer;
   padding-top: 15px;
   padding-left: 19px;
   padding-bottom: 14px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1133,6 +1330,46 @@ div .advantages {
   background-color: #E6E6E6;
   fill-opacity: 0.6;
   outline: 3px solid #83B3D3;
+}
+
+
+.modal-input::-webkit-input-placeholder {
+
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+.modal-input::-moz-placeholder {
+
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+.modal-input:-ms-input-placeholder {
+
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+.modal-input::-ms-input-placeholder {
+
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 
@@ -1155,6 +1392,8 @@ div .advantages {
   margin-left: 155px;
   margin-top: 11px;
   margin-bottom: 11px;
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(5px);
   transform: translateX(5px);
 }
 
@@ -1164,12 +1403,21 @@ div .advantages {
   margin-top: 11px;
   margin-bottom: 11px;
   color: #333333;
+  -webkit-transform: translate(5px, -5px);
+  -ms-transform: translate(5px, -5px);
   transform: translate(5px, -5px);
 }
 
 .booking-adults {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 288px;
   height: 50px;
@@ -1178,13 +1426,22 @@ div .advantages {
 }
 
 .booking-kids {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 230px;
   height: 50px;
   margin: 0;
   padding: 0;
+  -webkit-transform: translateX(-13px);
+  -ms-transform: translateX(-13px);
   transform: translateX(-13px);
 }
 
@@ -1195,6 +1452,7 @@ div .advantages {
   border-radius: 4px;
   cursor: pointer;
   padding: 15px 62px 14px 61px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
 }
@@ -1217,6 +1475,46 @@ div .advantages {
 
 
 
+.modal-input-field::-webkit-input-placeholder {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+
+.modal-input-field::-moz-placeholder {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+
+.modal-input-field:-ms-input-placeholder {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+
+.modal-input-field::-ms-input-placeholder {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+
 .modal-input-field::placeholder {
   color: #000000;
   font-family: "PT Sans", sans-serif;
@@ -1226,29 +1524,50 @@ div .advantages {
 }
 
 .modal-label-adult {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 20px;
   line-height: 26px;
   font-family: inherit;
   font-weight: 700;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transform: translate(5px, -5px);
+  -ms-transform: translate(5px, -5px);
   transform: translate(5px, -5px);
 }
 
 .modal-label-kids {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 20px;
   line-height: 26px;
   font-family: inherit;
   font-weight: 700;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transform: translateY(8px);
+  -ms-transform: translateY(8px);
   transform: translateY(8px);
 }
 
 .modal-container-choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 50px;
 }
@@ -1294,6 +1613,8 @@ div .advantages {
   background-image: url("../images/calendar-modal.svg");
   width: 15px;
   height: 15px;
+  -webkit-transform: translate(548px);
+  -ms-transform: translate(548px);
   transform: translate(548px);
   border: none;
 }
@@ -1303,6 +1624,8 @@ div .advantages {
   background-image: url("../images/modal-min.svg");
   width: 1px;
   border: none;
+  -webkit-transform: translate(183px, 23px);
+  -ms-transform: translate(183px, 23px);
   transform: translate(183px, 23px);
   z-index: 1;
   opacity: 0.3;
@@ -1315,6 +1638,8 @@ div .advantages {
   width: 13px;
   height: 13px;
   border: none;
+  -webkit-transform: translate(258px, 17px);
+  -ms-transform: translate(258px, 17px);
   transform: translate(258px, 17px);
   opacity: 0.3;
 }
@@ -1336,10 +1661,14 @@ div .advantages {
 }
 
 .button-kids-min {
+  -webkit-transform: translate(118px, 23px);
+  -ms-transform: translate(118px, 23px);
   transform: translate(118px, 23px);
 }
 
 .button-kids-plus {
+  -webkit-transform: translate(199px, 17px);
+  -ms-transform: translate(199px, 17px);
   transform: translate(199px, 17px);
 }
 
@@ -1350,12 +1679,16 @@ div .advantages {
   margin: 0;
   display: block;
   position: absolute;
+  -webkit-transform: translate(65px, -10px);
+  -ms-transform: translate(65px, -10px);
   transform: translate(65px, -10px);
 }
 
 
 .toggle-icon-info {
   position: absolute;
+  -webkit-transform: translate(-13px, 8px);
+  -ms-transform: translate(-13px, 8px);
   transform: translate(-13px, 8px);
   color: #FFFFFF;
 }
@@ -1381,6 +1714,7 @@ div .advantages {
 }
 
 .tooltip-text {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #333333;
   color: #ffffff;
@@ -1395,6 +1729,8 @@ div .advantages {
   position: absolute;
   top: 100%;
   z-index: 1;
+  -webkit-transform: translateX(-20%) translateY(5px);
+  -ms-transform: translateX(-20%) translateY(5px);
   transform: translateX(-20%) translateY(5px);
   display: none;
 
@@ -1417,6 +1753,8 @@ div .advantages {
   position: absolute;
   width: 25px;
   height: 25px;
+  -webkit-transform: translate(-10px, -5px);
+  -ms-transform: translate(-10px, -5px);
   transform: translate(-10px, -5px);
 }
 
@@ -1431,6 +1769,8 @@ div .advantages {
 }
 
 .header-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 60px;
   line-height: 78px;
@@ -1446,8 +1786,13 @@ div .advantages {
 }
 
 .container-allhotels {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 1056px;
   padding: 0;
@@ -1485,8 +1830,12 @@ div .advantages {
 }
 
 .hotels-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1060px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
   border: 0;
@@ -1497,6 +1846,8 @@ div .advantages {
 }
 
 .filter-infrastructure-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1060px;
   margin: 0;
@@ -1520,7 +1871,11 @@ div .advantages {
 
 .hotels-on-page {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0;
   margin-left: 220px;
@@ -1528,12 +1883,20 @@ div .advantages {
 
 .catalog-view {
   width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 .fieldset-infrastructure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: left;
   border: none 0;
@@ -1543,7 +1906,12 @@ div .advantages {
 }
 
 .fieldset-type-house {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: left;
   border: none 0;
@@ -1554,14 +1922,22 @@ div .advantages {
 
 .control-pool {
   padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .control-wifi,
 .control-parking {
   padding-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1593,6 +1969,7 @@ div .advantages {
   border: 3px solid #83B3D3;
   width: 20px;
   height: 20px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1600,14 +1977,17 @@ div .advantages {
   outline: 3px solid #83B3D3;
   width: 20px;
   height: 20px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .control-checkbox[type="checkbox"]:focus + .checkbox-vector {
+  -webkit-box-shadow: 0 0 0 2px #81b3d2;
   box-shadow: 0 0 0 2px #81b3d2;
 }
 
 .control-input[type="radio"]:focus + .radio-disk {
+  -webkit-box-shadow: 0 0 0 2px #83B3D3;
   box-shadow: 0 0 0 2px #83B3D3;
 }
 
@@ -1632,6 +2012,8 @@ div .advantages {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -1651,28 +2033,44 @@ div .advantages {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .control-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-top: 27px;
 }
 
 .control-motel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-top: 15px;
 }
 
 .control-apartments {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-top: 15px;
 }
 
 .select-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-width: 290px;
   border-radius: 4px;
@@ -1686,6 +2084,8 @@ div .advantages {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   background-image: url("../images/vector-select.svg");
   background-repeat: no-repeat;
@@ -1708,8 +2108,14 @@ div .advantages {
 }
 
 .button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
   border: 2px solid;
@@ -1717,6 +2123,7 @@ div .advantages {
   width: 48px;
   height: 48px;
   border-radius: 4px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1761,10 +2168,15 @@ div .advantages {
 }
 
 .pagination-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 400px;
   height: 60px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-line-pack: center;
   align-content: center;
   list-style-type: none;
   font-size: 20px;
@@ -1774,8 +2186,14 @@ div .advantages {
 }
 
 .pagination-select-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 1056px;
   margin-top: 10px;
@@ -1786,8 +2204,14 @@ div .advantages {
 }
 
 .pagination-item-current {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 12px 24px;
   color: #000000;
@@ -1806,20 +2230,34 @@ div .advantages {
   color: #FFFFFF;
   text-decoration: none;
   padding: 12px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .pagination-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background-color: #82B3D3;
   color: #FFFFFF;
   border-radius: 4px;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1837,23 +2275,40 @@ div .advantages {
 .pre-last-link {
   min-width: 60px;
   padding: 12px 22px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .last-link {
   min-width: 60px;
   padding: 12px 19px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .catalog-main-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 1200px;
   margin: 0;
@@ -1872,12 +2327,21 @@ div .advantages {
   margin: 0;
   border: 0;
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .catalog-background {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   height: 411px;
@@ -1886,7 +2350,12 @@ div .advantages {
 }
 
 .container-hotels-sedona {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 1200px;
   height: 403px;
@@ -1899,12 +2368,19 @@ div .advantages {
 }
 
 .hotels-filter-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding-top: 60px;
 }
 
 .hotels-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-width: 160px;
   border-radius: 4px;
@@ -1916,6 +2392,8 @@ div .advantages {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   background-image: url("../images/vector-select.svg");
   background-repeat: no-repeat;
@@ -1951,8 +2429,13 @@ div .advantages {
   text-transform: uppercase;
   border-radius: 4px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -1972,9 +2455,18 @@ div .advantages {
 
 
 .button-reset-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   min-width: 100px;
   min-height: 32px;
@@ -2008,9 +2500,14 @@ div .advantages {
 }
 
 .fieldset-range {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 287px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   border: none 0;
   margin-left: 120px;
@@ -2020,10 +2517,15 @@ div .advantages {
 .range-wrapper-inputs {
   position: relative;
   width: 288px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 34px;
   margin-right: 20px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -2038,12 +2540,15 @@ div .advantages {
 
 .range-input {
   width: 144px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #FFFFFF;
   font: inherit;
   background-color: transparent;
   border: 2px solid #FFFFFF;
   border-radius: 4px;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
   appearance: textfield;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -2066,6 +2571,8 @@ div .advantages {
 }
 
 .range-wrapper-inputs .range-input:focus {
+  -webkit-box-shadow: 0 0 0 3px #81B3D2,
+    inset 0 0 0 3px #81B3D2;
   box-shadow: 0 0 0 3px #81B3D2,
     inset 0 0 0 3px #81B3D2;
 }
@@ -2118,6 +2625,7 @@ div .advantages {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -2134,11 +2642,13 @@ div .advantages {
 
 .range-toggle:focus {
   border: 3px solid #83B3D3;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
   border: 2px solid #83B3D3;
+  -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -2170,6 +2680,8 @@ div .advantages {
 }
 
 .hotelscat {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding-top: 5px;
@@ -2181,8 +2693,14 @@ div .advantages {
 }
 
 .catalog-sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 1057px;
   margin-bottom: 58px;
@@ -2193,6 +2711,8 @@ div .advantages {
 }
 
 .hotel-card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 24px;
   line-height: 28px;
@@ -2210,6 +2730,8 @@ div .advantages {
 }
 
 .hotel-card-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 16px;
   line-height: 20px;
@@ -2221,8 +2743,13 @@ div .advantages {
   padding: 9px 15px 8px;
   background-color: #756157;
   border-radius: 4px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2242,18 +2769,25 @@ div .advantages {
 .blue-button,
 .green-button {
   min-width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #82B3D3;
   color: #FFFFFF;
   font-family: inherit;
   border-radius: 4px;
   padding: 9px 15px 8px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border: 0;
   cursor: pointer;
@@ -2290,21 +2824,33 @@ div .advantages {
 }
 
 .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 340px;
 }
 
 .hotel-card-price {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 140px;
 }
 
 .hotel-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 16px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 300px;
   margin: 0 auto;
@@ -2316,6 +2862,8 @@ div .advantages {
 
 .icon-rating {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-width: 140px;
   background-color: #F2F2F2;
@@ -2323,12 +2871,17 @@ div .advantages {
   font-family: inherit;
   border-radius: 4px;
   padding: 9px 22px 8px 23px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border: 0;
 }
