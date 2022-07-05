@@ -124,7 +124,7 @@
           <p class="nospam">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="button-submit-footer">
-              <input class="field-mail" type="email" id="mailing-address" placeholder="Ваш e-mail">
+              <input class="field-mail" type="email" id="mailing-address" name="mailing"placeholder="Ваш e-mail" required>
               <button class="button-footer" type="submit">Подписаться</button>
             </div>
           </form>
@@ -210,13 +210,13 @@
           <form action="https://echo.htmlacademy.ru/" method="post">
             <p class="booking-item">
               <label class="item-name modal-date-check" for="checkindata">Дата Заезда:</label>
-              <input class="modal-input" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020">
+              <input class="modal-input" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020" required>
               <button class="calendar" type="button"></button>
             </p>
             <div class="modal-warning">Мы не можем отправить вас в прошлое.</div>
             <p class="booking-item">
               <label class="item-name" for="checkoutdata">Дата Выезда:</label>
-              <input class="modal-input" type="text" name="check-out" id="checkoutdata" placeholder="1 сентября 2021">
+              <input class="modal-input" type="text" name="check-out" id="checkoutdata" placeholder="1 сентября 2021" required>
               <button class="calendar" type="button"></button>
             </p>
             <div class="modal-warning-accept">На эти даты есть свободные номера. Пока есть.</div>
@@ -225,7 +225,7 @@
                 <label for="adults" class="modal-label-adult">Взрослые:</label>
                 <button class="button-adult-min" type="button"></button>
                 <input id="adults" class="modal-input-field left-field" type="text" name="number-of-adults"
-                  placeholder="2">
+                  placeholder="2" required>
                 <button class="button-adult-plus" type="button"></button>
               </p>
               <p class="booking-kids">
