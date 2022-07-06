@@ -6,7 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -17,14 +17,14 @@
             <img src="images/logo.svg" width="139" height="70" alt="Логотип Седоны.">
           </a>
           <ul class="container-nav">
-            <li><a class="navigation-link" href="index.html">Главная</a></li>
-            <li><a class="navigation-link" href="index.html">О Седоне</a></li>
-            <li class="navcatalog"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+            <li class="nav-main-wrapper"><a class="navigation-link catalog-link-main" href="index.html">Главная</a></li>
+            <li class="nav-sedona-wrapper"><a class="navigation-link catalog-link-sedona" href="index.html">О Седоне</a></li>
+            <li class="navcatalog nav-hotels-wrapper"><a class="navigation-link catalog-link" href="catalog.html">Гостиницы</a></li>
           </ul>
           <ul class="container-nav-icons">
-            <li class="iconsearch-header">
+            <li>
               <a class="icon-header-search" href="#">
-                <svg aria-hidden="true" focusable="false" width="19" height="19" role="img" aria-label="иконка поиска."
+                <svg aria-hidden="true" focusable="false" width="19" height="19" role="img" aria-label="Иконка поиска."
                   viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M18.1585 17.05L14.448 13.35C15.4508 12.05 16.1528 10.35 16.1528 8.44995C16.1528 4.04995 12.5426 0.449951 8.13013 0.449951C3.71764 0.449951 0.107422 4.14995 0.107422 8.54995C0.107422 12.95 3.71764 16.55 8.13013 16.55C9.93524 16.55 11.6401 15.95 13.044 14.85L16.7545 18.55L18.1585 17.05ZM8.13013 14.55C4.82076 14.55 2.1131 11.85 2.1131 8.54995C2.1131 5.24995 4.82076 2.54995 8.13013 2.54995C11.4395 2.54995 14.1472 5.24995 14.1472 8.54995C14.1472 11.85 11.4395 14.55 8.13013 14.55Z" />
@@ -40,7 +40,7 @@
                 </svg><span class="digit-twelve"></span>
               </a>
             </li>
-            <li class="navigation-item-want">
+            <li>
               <a class="header-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
