@@ -30,6 +30,11 @@ html {
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .body-index,
 .body-catalog {
   width: 1200px;
@@ -96,16 +101,6 @@ html {
   padding-top: 24px;
   padding-bottom: 24px;
   padding-right: 10px;
-}
-
-.iconsearch-header {
-  width: 18px;
-  height: 18px;
-  margin: 0;
-  padding-left: 0;
-  padding-top: 24px;
-  padding-right: 24px;
-  padding-bottom: 24px;
 }
 
 .iconchosen-header {
@@ -314,6 +309,18 @@ html {
   color: #FFFFFF;
 }
 
+.icon-header-search {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  padding-left: 0;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  margin: 0;
+
+}
+
 .icon-header-search:hover {
   fill: #756157;
 }
@@ -339,8 +346,7 @@ html {
   padding-left: 85px;
   padding-right: 85px;
   text-align: center;
-  width: 230px;
-  height: 56px;
+  min-width: 230px;
   text-transform: uppercase;
   margin: 0;
 }
@@ -390,7 +396,7 @@ html {
   text-align: center;
   vertical-align: middle;
   min-width: 400px;
-  height: 384px;
+  min-height: 384px;
   margin: 0 auto;
 }
 
@@ -1110,7 +1116,6 @@ div .advantages {
   padding-top: 45px;
   padding-left: 230px;
   padding-bottom: 35px;
-  width: 331px;
   text-decoration: none;
 }
 
