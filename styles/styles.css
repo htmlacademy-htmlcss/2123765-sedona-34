@@ -62,7 +62,7 @@ img {
   color: #000000;
   text-decoration: none;
   background-color: #FFFFFF;
-  display: block;
+  display: flex;
   margin: 0;
   padding-top: 20px;
   padding-left: 17px;
@@ -113,9 +113,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding-top: 24px;
   padding-left: 0;
-  padding-bottom: 24px;
 }
 
 .digit-twelve {
@@ -148,7 +146,8 @@ img {
   justify-content: space-between;
   width: 1200px;
   min-height: 65px;
-  margin: auto;
+  margin: 0;
+  padding: 0;
   background-color: #FFFFFF;
 }
 
@@ -162,6 +161,22 @@ img {
 .page-header-logo:hover {
   opacity: 0.6;
 }
+.nav-main-wrapper {
+  display: flex;
+  min-width: 68px;
+  min-height: 26px;
+}
+.nav-sedona-wrapper {
+  display: flex;
+  min-width: 82px;
+  min-height: 26px;
+}
+.nav-hotels-wrapper {
+  display: flex;
+  min-width: 93px;
+  min-height: 26px;
+}
+
 
 .container-nav {
   display: -webkit-box;
@@ -187,6 +202,7 @@ img {
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 264px;
+  min-height: 65px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -194,6 +210,8 @@ img {
   list-style-type: none;
   padding: 0;
   margin-right: 70px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .icon-chosen-digit {
@@ -214,11 +232,7 @@ img {
   fill: #756157
 }
 
-.navigation-item-want {
-  margin-top: 14px;
-  margin-bottom: 14px;
-  margin-right: 0;
-}
+
 
 .visually-hidden {
   position: absolute;
