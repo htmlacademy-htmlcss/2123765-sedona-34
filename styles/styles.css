@@ -70,7 +70,6 @@ img {
   padding-bottom: 13px;
 }
 
-
 .navigation-link:hover {
   color: #756157;
 }
@@ -157,7 +156,6 @@ img {
   margin-left: 70px;
   margin-right: 30px;
   z-index: 1;
-
 }
 
 .page-header-logo:hover {
@@ -185,7 +183,6 @@ img {
   min-width: 93px;
   min-height: 26px;
 }
-
 
 .container-nav {
   display: -webkit-box;
@@ -242,8 +239,6 @@ img {
 .icon-chosen-digit:focus {
   fill: #756157
 }
-
-
 
 .visually-hidden {
   position: absolute;
@@ -335,7 +330,6 @@ img {
   padding-right: 24px;
   padding-bottom: 24px;
   margin: 0;
-
 }
 
 .icon-header-search:hover {
@@ -491,12 +485,15 @@ img {
 .catalog-link-main {
   top: -13px;
 }
+
 .catalog-link-sedona {
   top: -2px;
 }
+
 .catalog-link {
   transform: translateY(10px);
 }
+
 .navcatalog::after {
   content: url("../images/indicator-cat.svg");
   color: #756257;
@@ -528,7 +525,6 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 
 .town-block-bridge {
   display: -webkit-box;
@@ -657,7 +653,6 @@ img {
   flex-direction: column;
   margin: 0;
   padding: 0;
-
 }
 
 .advant-title-tourist {
@@ -718,15 +713,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
   background-color: #FFFFFF;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 29px;
-  padding-left: 304px;
-  padding-right: 304px;
+  justify-content: center;
+
 }
 
 .button-hotel-modal {
@@ -775,9 +769,6 @@ img {
   color: #E5E5E5;
 }
 
-
-
-
 .divider-catalog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,7 +782,6 @@ img {
   width: 1055px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .mailing {
@@ -823,7 +813,7 @@ img {
   padding-top: 46px;
   padding-left: 200px;
   padding-right: 200px;
-  padding-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .undersection-catalog {
@@ -886,13 +876,11 @@ img {
   outline: 3px solid #83B3D3;
 }
 
-
 .field-mail::-webkit-input-placeholder {
   font-size: 17px;
   line-height: 21px;
   font-weight: 400;
 }
-
 
 .field-mail::-moz-placeholder {
   font-size: 17px;
@@ -900,13 +888,11 @@ img {
   font-weight: 400;
 }
 
-
 .field-mail:-ms-input-placeholder {
   font-size: 17px;
   line-height: 21px;
   font-weight: 400;
 }
-
 
 .field-mail::-ms-input-placeholder {
   font-size: 17px;
@@ -914,27 +900,22 @@ img {
   font-weight: 400;
 }
 
-
 .field-mail::placeholder {
   font-size: 17px;
   line-height: 21px;
   font-weight: 400;
 }
 
-
 .callto-mail {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 75px;
-  padding-left: 398px;
-  padding-right: 398px;
-  text-align: center;
+  justify-content: center;
   color: #000000;
 }
-
 
 .callto {
   color: #FFFFFF;
@@ -942,11 +923,9 @@ img {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 94px;
-  padding-left: 398px;
-  padding-right: 398px;
-  text-align: center;
+  justify-content: center;
 }
 
 .headermedia {
@@ -972,10 +951,9 @@ div .advantages {
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 33px;
-  padding-left: 260px;
-  padding-right: 260px;
+  justify-content: center;
   min-width: 620px;
   font-weight: 700;
 }
@@ -1056,12 +1034,11 @@ div .advantages {
 
 .nospam {
   color: #FFFFFF;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 29px;
-  padding-right: 362px;
-  padding-left: 363px;
-  width: 475px;
-  height: 52px;
+  justify-content: center;
+  min-width: 475px;
+  min-height: 52px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -1069,10 +1046,9 @@ div .advantages {
 
 .nospam-mail {
   color: #333333;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 29px;
-  padding-right: 361px;
-  padding-left: 363px;
+  justify-content: center;
   padding-bottom: 0;
   width: 475px;
   font-size: 22px;
@@ -1097,9 +1073,9 @@ div .advantages {
   -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
-  height: 120px;
+  min-height: 120px;
   background-color: #FFFFFF;
-  padding-top: 94px;
+  padding-top: 84px;
   margin: 0;
 }
 
@@ -1188,8 +1164,6 @@ div .advantages {
   color: #756157
 }
 
-
-
 .icon-academy {
   fill: #000000;
 }
@@ -1226,7 +1200,6 @@ div .advantages {
   background-color: #FFFFFF;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 
 .modal-auth {
@@ -1364,39 +1337,31 @@ div .advantages {
   outline: 3px solid #83B3D3;
 }
 
-
 .modal-input::-webkit-input-placeholder {
-
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
-
 
 .modal-input::-moz-placeholder {
-
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
-
 
 .modal-input:-ms-input-placeholder {
-
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
-
 
 .modal-input::-ms-input-placeholder {
-
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-size: 18px;
@@ -1404,9 +1369,7 @@ div .advantages {
   font-weight: 400;
 }
 
-
 .modal-input::placeholder {
-
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-size: 18px;
@@ -1486,7 +1449,6 @@ div .advantages {
   padding: 15px 62px 14px 61px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 
 .modal-input-field:hover {
@@ -1505,8 +1467,6 @@ div .advantages {
   outline: 3px solid #83B3D3;
 }
 
-
-
 .modal-input-field::-webkit-input-placeholder {
   color: #000000;
   font-family: "PT Sans", sans-serif;
@@ -1514,8 +1474,6 @@ div .advantages {
   line-height: 21px;
   font-weight: 400;
 }
-
-
 
 .modal-input-field::-moz-placeholder {
   color: #000000;
@@ -1525,8 +1483,6 @@ div .advantages {
   font-weight: 400;
 }
 
-
-
 .modal-input-field:-ms-input-placeholder {
   color: #000000;
   font-family: "PT Sans", sans-serif;
@@ -1535,8 +1491,6 @@ div .advantages {
   font-weight: 400;
 }
 
-
-
 .modal-input-field::-ms-input-placeholder {
   color: #000000;
   font-family: "PT Sans", sans-serif;
@@ -1544,8 +1498,6 @@ div .advantages {
   line-height: 21px;
   font-weight: 400;
 }
-
-
 
 .modal-input-field::placeholder {
   color: #000000;
@@ -1639,7 +1591,6 @@ div .advantages {
   color: #FFFFFF;
 }
 
-
 .calendar {
   position: absolute;
   background-image: url("../images/calendar-modal.svg");
@@ -1661,7 +1612,6 @@ div .advantages {
   transform: translate(183px, 23px);
   z-index: 1;
   opacity: 0.3;
-
 }
 
 .button-adult-plus {
@@ -1716,7 +1666,6 @@ div .advantages {
   transform: translate(65px, -10px);
 }
 
-
 .toggle-icon-info {
   position: absolute;
   -webkit-transform: translate(-13px, 8px);
@@ -1765,7 +1714,6 @@ div .advantages {
   -ms-transform: translateX(-20%) translateY(5px);
   transform: translateX(-20%) translateY(5px);
   display: none;
-
 }
 
 .tooltip-text:after {
@@ -1825,14 +1773,17 @@ div .advantages {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
   width: 1056px;
   padding: 0;
-  margin-top: 22px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 84px;
   list-style-type: none;
+}
+
+.container-allhotels:nth-child(3n) {
+  margin-right: 0;
 }
 
 .union-vector {
@@ -2034,7 +1985,6 @@ div .advantages {
   cursor: pointer;
 }
 
-
 .control-input[type="radio"]:checked + .radio-disk::after {
   content: "";
   width: 10px;
@@ -2157,6 +2107,7 @@ div .advantages {
   border-radius: 4px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .table {
@@ -2164,7 +2115,6 @@ div .advantages {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
-
 }
 
 .button-view:hover {
@@ -2196,7 +2146,6 @@ div .advantages {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
-
 }
 
 .pagination-block {
@@ -2204,7 +2153,7 @@ div .advantages {
   display: -ms-flexbox;
   display: flex;
   width: 400px;
-  height: 60px;
+  min-height: 60px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2232,7 +2181,6 @@ div .advantages {
   margin-bottom: 25px;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .pagination-item-current {
@@ -2249,7 +2197,6 @@ div .advantages {
   color: #000000;
   background-color: #F2F2F2;
   border-radius: 4px;
-
 }
 
 .pagination-link-current {
@@ -2483,9 +2430,6 @@ div .advantages {
   background-color: #68A2CA;
 }
 
-
-
-
 .button-reset-catalog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2564,9 +2508,9 @@ div .advantages {
 
 .range-wrapper-inputs .range-input {
   background: transparent;
-  color: white;
+  color: #FFFFFF;
   padding: 14px 20px;
-  border: 2px solid white;
+  border: 2px solid #FFFFFF;
   width: 144px;
 }
 
@@ -2609,12 +2553,10 @@ div .advantages {
     inset 0 0 0 3px #81B3D2;
 }
 
-
 .range-input-max {
   border-radius: 0 4px 4px 0;
   border-left: 1px;
 }
-
 
 .input-from {
   position: absolute;
@@ -2643,8 +2585,6 @@ div .advantages {
   height: 4px;
   background-color: #fff;
   width: 216px;
-
-
 }
 
 .range-scale {
@@ -2711,6 +2651,10 @@ div .advantages {
   color: #FFFFFF;
 }
 
+.hotel-amara {
+  margin-right: 18px;
+}
+
 .hotelscat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2735,11 +2679,15 @@ div .advantages {
   -ms-flex-align: center;
   align-items: center;
   width: 1057px;
-  margin-bottom: 58px;
+  margin-bottom: 38px;
   padding-top: 50px;
   padding-right: 71px;
   padding-left: 72px;
   padding-bottom: 0;
+}
+
+.hotel-diablo {
+  margin-right: 18px;
 }
 
 .hotel-card-title {
@@ -2866,6 +2814,8 @@ div .advantages {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 340px;
+  padding: 40px 0 0 0;
+
 }
 
 .hotel-card-price {
@@ -2886,10 +2836,6 @@ div .advantages {
   justify-content: space-between;
   width: 300px;
   margin: 0 auto;
-}
-
-.hotel-greentree {
-  padding-top: 40px;
 }
 
 .icon-rating {

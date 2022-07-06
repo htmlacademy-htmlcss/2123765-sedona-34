@@ -18,8 +18,10 @@
           </a>
           <ul class="container-nav">
             <li class="nav-main-wrapper"><a class="navigation-link catalog-link-main" href="index.html">Главная</a></li>
-            <li class="nav-sedona-wrapper"><a class="navigation-link catalog-link-sedona" href="index.html">О Седоне</a></li>
-            <li class="navcatalog nav-hotels-wrapper"><a class="navigation-link catalog-link" href="catalog.html">Гостиницы</a></li>
+            <li class="nav-sedona-wrapper"><a class="navigation-link catalog-link-sedona" href="index.html">О Седоне</a>
+            </li>
+            <li class="navcatalog nav-hotels-wrapper"><a class="navigation-link catalog-link"
+                href="catalog.html">Гостиницы</a></li>
           </ul>
           <ul class="container-nav-icons">
             <li>
@@ -131,15 +133,15 @@
               <option value="expensive">Сначала дорогие</option>
             </select>
             <div class="catalog-view">
-              <a class="button-view table current-table" href="#">
+              <button class="button-view table current-table" type="button" href="#">
                 <span class="visually-hidden">Таблица</span>
-              </a>
-              <a class="button-view slide" href="#">
+              </button>
+              <button class="button-view slide" type="button" href="#">
                 <span class="visually-hidden">Слайдшоу</span>
-              </a>
-              <a class="button-view list" href="#">
+              </button>
+              <button class="button-view list" type="button" href="#">
                 <span class="visually-hidden">Список</span>
-              </a>
+              </button>
             </div>
           </div>
           <h3 class="visually-hidden">Раздел с отелями</h3>
@@ -262,7 +264,7 @@
           <p class="nospam-mail">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="newsletter-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
             <div class="button-submit-footer">
-              <input class="field-mail" type="email" id="mailing-address" name="mailing" placeholder="Ваш e-mail">
+              <input class="field-mail" type="email" id="mailing-address" name="mailing" placeholder="Ваш e-mail" required>
               <button class="button-footer" type="submit">Подписаться</button>
             </div>
           </form>
