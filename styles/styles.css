@@ -1190,7 +1190,7 @@ div .advantages {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
@@ -1450,6 +1450,23 @@ div .advantages {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.modal-input-field[type="number"]::-webkit-outer-spin-button,
+.modal-input-field[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.modal-input-field[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+
+
 
 .modal-input-field:hover {
   background-color: #E6E6E6;
