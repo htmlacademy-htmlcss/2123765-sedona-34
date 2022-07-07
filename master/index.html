@@ -6,7 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <base href="https://htmlacademy-htmlcss.github.io/2123765-sedona-34/master/">
 </head>
 
@@ -14,17 +14,17 @@
     <div class="body-index">
       <header>
         <nav class="nav-container">
-          <a class="page-header-logo" href="index.html">
+          <a class="page-header-logo">
             <img src="images/logo.svg" width="139" height="70" alt="Логотип Седоны.">
           </a>
           <ul class="container-nav">
-            <li class="navmain"><a class="navigation-link " href="index.html">Главная</a></li>
-            <li><a class="navigation-link" href="index.html">О Седоне</a></li>
-            <li><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+            <li class="navmain nav-main-wrapper"><a class="navigation-link">Главная</a></li>
+            <li class="nav-sedona-wrapper"><a class="navigation-link" href="index.html">О Седоне</a></li>
+            <li class="nav-hotels-wrapper"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
           </ul>
           <ul class="container-nav-icons">
-            <li class="iconsearch-header">
-              <a class="icon-header-search" href="#">
+            <li>
+              <a class="icon-header-search" href="#"><span class="visually-hidden">Поиск.</span>
                 <svg aria-hidden="true" focusable="false" width="19" height="19" role="img" aria-label="Иконка поиска."
                   viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -33,7 +33,7 @@
               </a>
             </li>
             <li class="iconchosen-header">
-              <a class="icon-chosen-digit" href="#">
+              <a class="icon-chosen-digit" href="#"><span class="visually-hidden">Избранное.</span>
                 <svg class="icon-search-search" aria-hidden="true" focusable="false" width="19" height="17" role="img"
                   aria-label="иконка избранное." viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -41,7 +41,7 @@
                 </svg><span class="digit-twelve"></span>
               </a>
             </li>
-            <li class="navigation-item-want">
+            <li>
               <a class="header-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -50,13 +50,11 @@
       <main>
         <section class="welcome">
           <h1 class="visually-hidden">Обзорный вид Седоны</h1>
-          <div class="headermedia">
-            <img class="welcomephoto" src="images/welcome.svg" width="458" height="352" alt="Приветствие.">
-          </div>
+          <img class="welcomephoto headermedia" src="images/welcome.svg" width="458" height="352" alt="Приветствие.">
         </section>
         <div class="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <p class="titlehead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="titlehead">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
           <p class="fivereason">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <ul class="list-advants">
@@ -65,7 +63,8 @@
             <p class="advant-number"> - №1 - </p>
             <p class="advant-descr">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
           </li>
-          <li class="index-photo-container">
+          <li>
+            <img class="index-photo" src="images/photo-city.jpg" width="800" height="384" alt="Город.">
           </li>
           <li class="underlist-house">
             <div class="icon-house"></div>
@@ -82,7 +81,8 @@
             <h3 class="advant-title-souv">Сувениры</h3>
             <p class="advant-descr-souv">Не только китайского,<br> но и настоящего местного производства!</p>
           </li>
-          <li class="index-photo-wrapper">
+          <li>
+            <img class="index-photo" src="images/canyon-bridge.jpg" width="800" height="384" alt="Мост дьявола.">
           </li>
           <li class="town-block-bridge">
             <h3 class="advant-title-bridge">Там есть<br>мост дьявола</h3>
@@ -106,26 +106,27 @@
           </li>
         </ul>
         <section class="booking-header">
-          <h3 class="visually-hidden">Форма для подачи заявки</h3>
+          <h2 class="visually-hidden">Форма для подачи заявки</h2>
           <div class="title-booking">
             <p class="booking-interest">Заинтересовались?</p>
           </div>
-          <p class="datetravel">&nbsp;&nbsp;Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
-            гостиниц в
-            Седоне</p>
+          <p class="datetravel">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
+            Седоне &nbsp;&nbsp;</p>
           <div class="button-hotel-modal">
             <button class="button-hotel-search" type="button">Поиск гостиницы в седоне</button>
           </div>
         </section>
         <section class="mailing">
-          <h3 class="visually-hidden">Раздел подписки на почтовую рассылку</h3>
+          <h2 class="visually-hidden">Раздел подписки на почтовую рассылку</h2>
           <div class="mailing-header">
             <p class="callto">Подпишитесь на рассылку</p>
           </div>
           <p class="nospam">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="button-submit-footer">
-              <input class="field-mail" type="email" id="mailing-address" name="mailing" placeholder="Ваш e-mail" required>
+              <label class="visually-hidden" for="mailing-address">Поле ввода почты</label>
+              <input class="field-mail" type="email" id="mailing-address" name="mailing" placeholder="Ваш e-mail"
+                required>
               <button class="button-footer" type="submit">Подписаться</button>
             </div>
           </form>
@@ -134,7 +135,8 @@
       <footer class="footer-social footer">
         <ul class="footer-social-container">
           <li class="footer-social-vk">
-            <a href="https://vk.com/htmlacademy">
+            <a class="social-links" href="https://vk.com/htmlacademy"><span class="visually-hidden">Ссылка
+                вконтакте.</span>
               <svg class="icons-sc" aria-hidden="true" focusable="false" width="25" height="14" role="img"
                 aria-label="Иконка вконтакте." viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -143,7 +145,8 @@
             </a>
           </li>
           <li class="footer-social-tg">
-            <a href="https://t.me/htmlacademy">
+            <a class="social-links" href="https://t.me/htmlacademy"><span class="visually-hidden">Ссылка
+                телеграм.</span>
               <svg class="icons-sc" aria-hidden="true" focusable="false" width="18" height="16" role="img"
                 aria-label="Иконка телеграм." viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -152,7 +155,8 @@
             </a>
           </li>
           <li class="footer-social-yot">
-            <a href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-links" href="https://www.youtube.com/user/htmlacademyru"><span
+                class="visually-hidden">Ссылка ютуб.</span>
               <svg class="icons-sc" aria-hidden="true" focusable="false" width="23" height="18" role="img"
                 aria-label="Иконка ютуб." viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -165,7 +169,8 @@
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="footerlogo">
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Ссылка
+              академии.</span>
             <svg class="icon-academy" aria-hidden="true" focusable="false" width="115" height="33" role="img"
               aria-label="Иконка академии." viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.9V15.5H2.5V12.9H0Z" />
@@ -207,27 +212,31 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
-          <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <p class="booking-item">
               <label class="item-name modal-date-check" for="checkindata">Дата Заезда:</label>
-              <input class="modal-input" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020" required>
-              <button class="calendar" type="button"></button>
+              <input class="modal-input" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020"
+                required>
+              <button class="calendar" type="button"><span class="visually-hidden">Календарь.</span></button>
             </p>
             <div class="modal-warning">Мы не можем отправить вас в прошлое.</div>
             <p class="booking-item">
               <label class="item-name" for="checkoutdata">Дата Выезда:</label>
-              <input class="modal-input" type="text" name="check-out" id="checkoutdata" placeholder="1 сентября 2021" required>
-              <button class="calendar" type="button"></button>
+              <input class="modal-input" type="text" name="check-out" id="checkoutdata" placeholder="1 сентября 2021"
+                required>
+              <button class="calendar" type="button"><span class="visually-hidden">Календарь.</span></button>
             </p>
             <div class="modal-warning-accept">На эти даты есть свободные номера. Пока есть.</div>
             <div class="modal-container-choices">
               <p class="booking-adults">
                 <label for="adults" class="modal-label-adult">Взрослые:</label>
-                <button class="button-adult-min" type="button"></button>
-                <input id="adults" class="modal-input-field left-field" type="text" name="number-of-adults"
+                <button class="button-adult-min" type="button"><span class="visually-hidden">Уменьшить количество
+                    взрослых</span></button>
+                <input id="adults" class="modal-input-field left-field" type="number" name="number-of-adults" min="1"
                   placeholder="2" required>
-                <button class="button-adult-plus" type="button"></button>
+                <button class="button-adult-plus" type="button"><span class="visually-hidden">Увеличить количество
+                    взрослых</span></button>
               </p>
               <p class="booking-kids">
                 <span class="form-label form-label-icon">
@@ -255,9 +264,11 @@
                       с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
-                <button class="button-adult-min button-kids-min" type="button"></button>
-                <input id="kids" class="modal-input-field" type="text" name="number-of-kids" placeholder="1">
-                <button class="button-adult-plus button-kids-plus" type="button"></button>
+                <button class="button-adult-min button-kids-min" type="button"><span class="visually-hidden">Уменьшить
+                    количество детей</span></button>
+                <input id="kids" class="modal-input-field" type="number" name="number-of-kids" min="1" placeholder="1">
+                <button class="button-adult-plus button-kids-plus" type="button"><span class="visually-hidden">Увеличить
+                    количество детей</span></button>
               </p>
             </div>
             <button class="modal-button-search" type="submit">Найти</button>
