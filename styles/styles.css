@@ -1190,7 +1190,7 @@ div .advantages {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
@@ -1269,9 +1269,11 @@ div .advantages {
   -ms-transform: translateX(5px);
   transform: translateX(5px);
 }
+
 .social-links {
   padding: 12px;
 }
+
 .booking-item {
   width: 575px;
   display: -webkit-box;
@@ -1289,6 +1291,30 @@ div .advantages {
   align-items: center;
   margin: 0;
   padding: 0;
+}
+
+.stars-four {
+  background-image: url("../images/stars-four.svg");
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 37px;
+  color: #83B3D3;
+}
+
+.stars-three {
+  background-image: url("../images/stars-three.svg");
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 37px;
+  color: #83B3D3;
+}
+
+.stars-two {
+  background-image: url("../images/stars-two.svg");
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 37px;
+  color: #83B3D3;
 }
 
 .item-name {
