@@ -25,7 +25,7 @@
           </ul>
           <ul class="container-nav-icons">
             <li>
-              <a class="icon-header-search" href="#">
+              <a class="icon-header-search" href="#"><span class="visually-hidden">Поиск.</span>
                 <svg aria-hidden="true" focusable="false" width="19" height="19" role="img" aria-label="Иконка поиска."
                   viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -34,7 +34,7 @@
               </a>
             </li>
             <li class="iconchosen-header">
-              <a class="icon-chosen-digit" href="#">
+              <a class="icon-chosen-digit" href="#"><span class="visually-hidden">Избранное.</span>
                 <svg class="icon-search-search" aria-hidden="true" focusable="false" width="19" height="17" role="img"
                   aria-label="иконка избранное." viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -52,7 +52,7 @@
         <section class="container-hotels-sedona">
           <h1 class="header-catalog">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-item">
-            <li><a class="union-vector" href="index.html">
+            <li><a class="union-vector" href="index.html"><span class="visually-hidden">Главная.</span>
               </a></li>
             <li><span class="vector-container"></span></li>
             <li><a class="breadcrumbs-link-hotels">Гостиницы</a></li>
@@ -62,8 +62,8 @@
             <fieldset class="fieldset-infrastructure">
               <legend class="hotels-filter-title">Инфраструктура:</legend>
               <label class="control-pool" for="pool">
-                <input class="visually-hidden control-checkbox" type="checkbox" id="pool" name="pool"
-                  checked><span class="checkbox-vector"></span>
+                <input class="visually-hidden control-checkbox" type="checkbox" id="pool" name="pool" checked><span
+                  class="checkbox-vector"></span>
                 Бассейн
               </label>
               <label class="control-parking" for="parking">
@@ -99,10 +99,12 @@
               <legend class="visually-hidden">Фильтр стоимости отелей</legend>
               <span class="value-catalog">Стоимость, &#x20bd;:</span>
               <div class="range-wrapper-inputs">
-                <input class="range-input range-input-min" type="text" min="0" max="12000" name="range-input" value="0"
-                  placeholder="от"><span class="input-from">от</span>
-                <input class="range-input range-input-max" type="text" min="0" max="12000" name="range" value="9000" placeholder="до"><span
-                  class="input-before">до</span>
+                <label class="visually-hidden" for="range-min">Поле минимальной стоимости отеля</label>
+                <input class="range-input range-input-min" type="text" id="range-min" min="0" max="12000"
+                  name="range-input" value="0" placeholder="от"><span class="input-from">от</span>
+                <label class="visually-hidden" for="range-max">Поле максимальной стоимости отеля</label>
+                <input class="range-input range-input-max" type="text" id="range-max" min="0" max="12000" name="range"
+                  value="9000" placeholder="до"><span class="input-before">до</span>
               </div>
               <div class="range">
                 <div class="range-scale">
@@ -264,7 +266,8 @@
           <p class="nospam-mail">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="newsletter-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
             <div class="button-submit-footer">
-              <input class="field-mail" type="email" id="mailing-address" name="mailing" placeholder="Ваш e-mail" required>
+              <input class="field-mail" type="email" id="mailing-address" name="mailing" placeholder="Ваш e-mail"
+                required>
               <button class="button-footer" type="submit">Подписаться</button>
             </div>
           </form>
@@ -273,7 +276,7 @@
       <footer class="footer-social">
         <ul class="footer-social-container">
           <li class="footer-social-vk">
-            <a href="https://vk.com/htmlacademy">
+            <a class="social-links" href="https://vk.com/htmlacademy"><span class="visually-hidden">Ссылка вконтакте.</span>
               <svg class="icons-sc" aria-hidden="true" focusable="false" width="25" height="14" role="img"
                 aria-label="Иконка вконтакте." viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -282,7 +285,7 @@
             </a>
           </li>
           <li class="footer-social-tg">
-            <a href="https://t.me/htmlacademy">
+            <a class="social-links" href="https://t.me/htmlacademy"><span class="visually-hidden">Ссылка телеграм.</span>
               <svg class="icons-sc" aria-hidden="true" focusable="false" width="18" height="16" role="img"
                 aria-label="Иконка телеграм." viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -291,7 +294,7 @@
             </a>
           </li>
           <li class="footer-social-yot">
-            <a href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-links" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Ссылка ютуб.</span>
               <svg class="icons-sc" aria-hidden="true" focusable="false" width="23" height="18" role="img"
                 aria-label="Иконка ютуб." viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -304,7 +307,7 @@
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="footerlogo">
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Ссылка академии.</span>
             <svg class="icon-academy" aria-hidden="true" focusable="false" width="115" height="33" role="img"
               aria-label="Иконка академии." viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.9V15.5H2.5V12.9H0Z" />

@@ -1190,7 +1190,7 @@ div .advantages {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
@@ -1269,7 +1269,9 @@ div .advantages {
   -ms-transform: translateX(5px);
   transform: translateX(5px);
 }
-
+.social-links {
+  padding: 12px;
+}
 .booking-item {
   width: 575px;
   display: -webkit-box;
@@ -1457,9 +1459,11 @@ div .advantages {
   appearance: none;
   margin: 0;
 }
+
 .modal-input-field[type="number"] {
   -moz-appearance: textfield;
 }
+
 input[type="number"]:hover,
 input[type="number"]:focus {
   -moz-appearance: number-input;
@@ -2520,7 +2524,6 @@ input[type="number"]:focus {
   margin-right: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  cursor: pointer;
 }
 
 .range-wrapper-inputs .range-input {
