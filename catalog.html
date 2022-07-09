@@ -20,8 +20,7 @@
             <li class="nav-main-wrapper"><a class="navigation-link catalog-link-main" href="index.html">Главная</a></li>
             <li class="nav-sedona-wrapper"><a class="navigation-link catalog-link-sedona" href="index.html">О Седоне</a>
             </li>
-            <li class="navcatalog nav-hotels-wrapper"><a class="navigation-link catalog-link"
-                href="catalog.html">Гостиницы</a></li>
+            <li class="navcatalog nav-hotels-wrapper"><a class="navigation-link catalog-link">Гостиницы</a></li>
           </ul>
           <ul class="container-nav-icons">
             <li>
@@ -58,7 +57,7 @@
             <li><a class="breadcrumbs-link-hotels">Гостиницы</a></li>
           </ul>
           <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="post">
-            <h2 class="visually-hidden">Выбор инфраструктуры отеля</h2>
+            <h2 class="visually-hidden">Выбор инфраструктуры отеля.</h2>
             <fieldset class="fieldset-infrastructure">
               <legend class="hotels-filter-title">Инфраструктура:</legend>
               <label class="control-pool" for="pool">
@@ -96,15 +95,15 @@
               </label>
             </fieldset>
             <fieldset class="fieldset-range">
-              <legend class="visually-hidden">Фильтр стоимости отелей</legend>
+              <legend class="visually-hidden">Фильтр стоимости отелей.</legend>
               <span class="value-catalog">Стоимость, &#x20bd;:</span>
               <div class="range-wrapper-inputs">
-                <label class="visually-hidden" for="range-min">Поле минимальной стоимости отеля</label>
+                <label for="range-min">
                 <input class="range-input range-input-min" type="text" id="range-min" name="range-input" value="0"
-                  placeholder="от"><span class="input-from">от</span>
-                <label class="visually-hidden" for="range-max">Поле максимальной стоимости отеля</label>
+                  placeholder="от"><span class="input-from">от</span></label>
+                <label for="range-max">
                 <input class="range-input range-input-max" type="text" id="range-max" name="range" value="9000"
-                  placeholder="до"><span class="input-before">до</span>
+                  placeholder="до"><span class="input-before">до</span></label>
               </div>
               <div class="range">
                 <div class="range-scale">
@@ -136,19 +135,19 @@
             </select>
             <div class="catalog-view">
               <button class="button-view table current-table" type="button">
-                <span class="visually-hidden">Таблица</span>
+                <span class="visually-hidden">Таблица.</span>
               </button>
               <button class="button-view slide" type="button">
-                <span class="visually-hidden">Слайдшоу</span>
+                <span class="visually-hidden">Слайдшоу.</span>
               </button>
               <button class="button-view list" type="button">
-                <span class="visually-hidden">Список</span>
+                <span class="visually-hidden">Список.</span>
               </button>
             </div>
           </div>
           <h3 class="visually-hidden">Раздел с отелями</h3>
           <ul class="container-allhotels">
-            <li class="hotel-amara cards">
+            <li class="cards">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/hotel-1.jpg" width="300" height="211" alt="Ущелье.">
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -165,8 +164,7 @@
                 <span class="stars-four"></span>
                 <p class="icon-rating">рейтинг: 8,5</p>
               </div>
-            </li>
-            <li class="hotel-diablo cards">
+            <li class="cards">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/hotel-2.jpg" width="300" height="211"
                   alt="Радуга над горами.">
@@ -185,7 +183,7 @@
                 <p class="icon-rating">рейтинг: 9,2</p>
               </div>
             </li>
-            <li class="hotel-desertinn cards">
+            <li class="cards">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/hotel-3.jpg" width="300" height="211" alt="Лес и горы.">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -203,7 +201,7 @@
                 <p class="icon-rating">рейтинг: 6,9</p>
               </div>
             </li>
-            <li class="hotel-greentree cards">
+            <li class="cards greentree">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/hotel-4.jpg" width="300" height="211"
                   alt="Звездное небо над скалой">
@@ -266,6 +264,7 @@
           <p class="nospam-mail">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="newsletter-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
             <div class="button-submit-footer">
+              <label class="visually-hidden" for="mailing-address">Поле ввода почты</label>
               <input class="field-mail" type="email" id="mailing-address" name="mailing" placeholder="Ваш e-mail"
                 required>
               <button class="button-footer" type="submit">Подписаться</button>
