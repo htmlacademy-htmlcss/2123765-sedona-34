@@ -1677,6 +1677,8 @@ input[type="number"]:focus {
   opacity: 0.3;
   background-position: center;
   background-color: transparent;
+  left: 25px;
+  bottom: 23px;
 }
 
 .button-adult-plus {
@@ -1686,8 +1688,8 @@ input[type="number"]:focus {
   height: 13px;
   border: none;
   opacity: 0.3;
-  right: 18px;
-  bottom: 16px;
+  right: 19px;
+  bottom: 17px;
   background-position: center;
   background-color: transparent;
 }
