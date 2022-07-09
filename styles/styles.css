@@ -1196,7 +1196,7 @@ div .advantages {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .calendar-wrapper {
@@ -1465,11 +1465,14 @@ div .advantages {
 }
 
 .modal-input-field {
+  position: relative;
   width: 133px;
   background-color: #F2F2F2;
   border: none;
+  min-height: 50px;
   border-radius: 4px;
-  padding: 15px 62px 14px 61px;
+  bottom: 3px;
+  padding: 17px 62px 12px 61px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1698,8 +1701,8 @@ input[type="number"]:focus {
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
-  left: 25px;
-  bottom: 11px;
+  left: 20px;
+  bottom: 16px;
   z-index: 1;
   cursor: pointer;
   border: 3px solid transparent;
@@ -1713,8 +1716,8 @@ input[type="number"]:focus {
   height: 25px;
   border: 3px solid transparent;
   opacity: 0.3;
-  right: 15px;
-  bottom: 11px;
+  right: 8px;
+  bottom: 16px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -1733,8 +1736,8 @@ input[type="number"]:focus {
   background-color: transparent;
   background-repeat: no-repeat;
   z-index: 1;
-  right: 90px;
-  bottom: 13px;
+  right: 95px;
+  bottom: 16px;
   cursor: pointer;
   outline: none;
 }
@@ -1749,8 +1752,8 @@ input[type="number"]:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
-  right: 17px;
-  bottom: 14px;
+  right: 12px;
+  bottom: 16px;
   cursor: pointer;
   outline: none;
 }
@@ -1907,10 +1910,10 @@ input[type="number"]:focus {
   -ms-flex-pack: justify;
   width: 1056px;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 23px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 84px;
+  margin-bottom: 85px;
   list-style-type: none;
 }
 
