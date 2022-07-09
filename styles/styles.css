@@ -1578,6 +1578,7 @@ input[type="number"]:focus {
 }
 .modal-adult-wrapper {
   position: relative;
+  right: 5px;
 }
 
 .modal-container-choices {
@@ -1642,7 +1643,7 @@ input[type="number"]:focus {
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
-  right: -10px;
+  right: -7px;
   bottom: -5px;
 }
 
@@ -1701,6 +1702,8 @@ input[type="number"]:focus {
   opacity: 0.3;
   background-position: center;
   background-color: transparent;
+  right: 95px;
+  bottom: 23px;
 }
 
 .button-kids-plus {
@@ -1709,26 +1712,25 @@ input[type="number"]:focus {
   width: 13px;
   height: 13px;
   border: none;
-  -webkit-transform: translate(258px, 17px);
-  -ms-transform: translate(258px, 17px);
-  transform: translate(258px, 17px);
   opacity: 0.3;
   background-position: center;
   background-color: transparent;
+  right: 21px;
+  bottom: 19px;
 }
-
+.button-kids-min:hover,
 .button-adult-min:hover {
   opacity: 1;
 }
-
+.button-kids-plus:hover,
 .button-adult-plus:hover {
   opacity: 1;
 }
-
+.button-kids-min:active,
 .button-adult-min:active {
   opacity: 0.2;
 }
-
+.button-kids-plus:active,
 .button-adult-plus:active {
   opacity: 0.2;
 }
