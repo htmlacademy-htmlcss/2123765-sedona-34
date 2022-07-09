@@ -427,12 +427,12 @@ img {
   line-height: 28px;
   font-weight: 700;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 28px;
   text-transform: uppercase;
 }
 
 .advant-descr-house {
-  padding-top: 30px;
+  padding-top: 28px;
   margin: 0 auto;
   width: 180px;
   display: -webkit-box;
@@ -447,7 +447,7 @@ img {
 .advant-descr-burger {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
+  padding-top: 28px;
   margin-top: 0;
   width: 230px;
   display: -webkit-box;
@@ -694,7 +694,6 @@ img {
 
 .title-booking {
   width: 297px;
-  height: 36px;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
@@ -1040,7 +1039,6 @@ div .advantages {
   padding-top: 29px;
   justify-content: center;
   min-width: 475px;
-  min-height: 52px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -1076,7 +1074,6 @@ div .advantages {
 
 .newsletter-form {
   width: 800px;
-  height: 60px;
   padding-top: 46px;
   padding-left: 200px;
   padding-right: 200px;
@@ -1199,7 +1196,7 @@ div .advantages {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .calendar-wrapper {
@@ -1240,7 +1237,7 @@ div .advantages {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 59px;
+  top: 57px;
   right: 72px;
   width: 53px;
   height: 53px;
@@ -1298,6 +1295,8 @@ div .advantages {
 }
 
 .social-links {
+  position: relative;
+  right: 2px;
   padding: 12px;
 }
 
@@ -1326,13 +1325,12 @@ div .advantages {
 }
 
 .item-name {
+  position: relative;
   font-size: 20px;
   line-height: 26px;
   font-family: inherit;
   font-weight: 700;
-  -webkit-transform: translateX(5px);
-  -ms-transform: translateX(5px);
-  transform: translateX(5px);
+  left: 5px;
 }
 
 .modal-input {
@@ -1357,6 +1355,8 @@ div .advantages {
 
 .modal-input-up {
   transform: translateX(2px);
+  padding-top: 16px;
+  padding-bottom: 13px;
 }
 
 .modal-input:hover {
@@ -1416,7 +1416,10 @@ div .advantages {
 }
 
 .modal-date-check {
+  position: relative;
   margin-right: auto;
+  left: 5px;
+  top: 1px;
 }
 
 .modal-warning {
@@ -1466,7 +1469,6 @@ div .advantages {
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
   padding: 15px 62px 14px 61px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1690,53 +1692,67 @@ input[type="number"]:focus {
 .button-adult-min {
   position: absolute;
   background-image: url("../images/modal-min.svg");
-  border: none;
   opacity: 0.3;
   width: 25px;
   height: 25px;
   background-position: center;
   background-color: transparent;
+  background-repeat: no-repeat;
   left: 25px;
-  bottom: -13px;
+  bottom: 11px;
+  z-index: 1;
+  cursor: pointer;
+  border: 3px solid transparent;
+  outline: none;
 }
 
 .button-adult-plus {
   position: absolute;
   background-image: url("../images/modal-plus.svg");
-  width: 13px;
-  height: 13px;
-  border: none;
+  width: 25px;
+  height: 25px;
+  border: 3px solid transparent;
   opacity: 0.3;
-  right: 19px;
-  bottom: 17px;
+  right: 15px;
+  bottom: 11px;
+  background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
+  cursor: pointer;
+  outline: none;
 }
 
 .button-kids-min {
   position: absolute;
   background-image: url("../images/modal-min.svg");
-  border: none;
+  border: 3px solid transparent;
   opacity: 0.3;
   width: 25px;
   height: 25px;
   background-position: center;
   background-color: transparent;
-  right: 95px;
-  bottom: 23px;
+  background-repeat: no-repeat;
+  z-index: 1;
+  right: 90px;
+  bottom: 13px;
+  cursor: pointer;
+  outline: none;
 }
 
 .button-kids-plus {
   position: absolute;
   background-image: url("../images/modal-plus.svg");
-  width: 13px;
-  height: 13px;
-  border: none;
+  width: 25px;
+  height: 25px;
+  border: 3px solid transparent;
   opacity: 0.3;
+  background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
-  right: 21px;
-  bottom: 19px;
+  right: 17px;
+  bottom: 14px;
+  cursor: pointer;
+  outline: none;
 }
 
 .button-kids-min:hover,
@@ -1757,6 +1773,18 @@ input[type="number"]:focus {
 .button-kids-plus:active,
 .button-adult-plus:active {
   opacity: 0.2;
+}
+
+.button-kids-min:focus,
+.button-adult-min:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.button-kids-plus:focus,
+.button-adult-plus:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .tooltip-toggle {
@@ -1952,6 +1980,11 @@ input[type="number"]:focus {
   font-weight: 700;
 }
 
+.hotels-filter-title {
+  position: relative;
+  right: 2px;
+}
+
 .house-filter-title {
   text-transform: capitalize;
 }
@@ -2008,7 +2041,7 @@ input[type="number"]:focus {
 }
 
 .control-pool {
-  padding-top: 25px;
+  padding-top: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2017,9 +2050,18 @@ input[type="number"]:focus {
   align-items: center;
 }
 
-.control-wifi,
 .control-parking {
   padding-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.control-wifi {
+  padding-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2244,6 +2286,9 @@ input[type="number"]:focus {
 .current-table {
   border: 2px solid #000000;
   border-color: #000000;
+  position: relative;
+  top: 1px;
+  right: 1px;
 }
 
 .slide {
@@ -2702,6 +2747,8 @@ input[type="number"]:focus {
 
 .range-scale {
   position: relative;
+  bottom: 2px;
+  left: 2px;
   background-color: rgba(255, 255, 255, 0.3);
   height: 4px;
   margin-bottom: 16px;
