@@ -1354,9 +1354,11 @@ div .advantages {
   -ms-flex-align: center;
   align-items: center;
 }
+
 .modal-input-up {
   transform: translateX(2px);
 }
+
 .modal-input:hover {
   background-color: #E6E6E6;
 }
@@ -1576,9 +1578,23 @@ input[type="number"]:focus {
   -ms-transform: translateY(8px);
   transform: translateY(8px);
 }
+
 .modal-adult-wrapper {
   position: relative;
   right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 133px;
+  margin: 0;
+  padding: 0;
 }
 
 .modal-container-choices {
@@ -1676,10 +1692,12 @@ input[type="number"]:focus {
   background-image: url("../images/modal-min.svg");
   border: none;
   opacity: 0.3;
+  width: 25px;
+  height: 25px;
   background-position: center;
   background-color: transparent;
   left: 25px;
-  bottom: 23px;
+  bottom: -13px;
 }
 
 .button-adult-plus {
@@ -1700,6 +1718,8 @@ input[type="number"]:focus {
   background-image: url("../images/modal-min.svg");
   border: none;
   opacity: 0.3;
+  width: 25px;
+  height: 25px;
   background-position: center;
   background-color: transparent;
   right: 95px;
@@ -1718,18 +1738,22 @@ input[type="number"]:focus {
   right: 21px;
   bottom: 19px;
 }
+
 .button-kids-min:hover,
 .button-adult-min:hover {
   opacity: 1;
 }
+
 .button-kids-plus:hover,
 .button-adult-plus:hover {
   opacity: 1;
 }
+
 .button-kids-min:active,
 .button-adult-min:active {
   opacity: 0.2;
 }
+
 .button-kids-plus:active,
 .button-adult-plus:active {
   opacity: 0.2;
