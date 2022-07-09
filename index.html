@@ -215,17 +215,21 @@
           <form action="https://echo.htmlacademy.ru/" method="post">
             <p class="booking-item">
               <label class="item-name modal-date-check" for="checkindata">Дата Заезда:</label>
+            <div class="calendar-wrapper">
               <input class="modal-input" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020"
                 required>
-              <button class="calendar" type="button"><span class="visually-hidden">Календарь.</span></button>
+              <button class="calendar-in" type="button"><span class="visually-hidden">Календарь.</span></button>
+            </div>
             </p>
             <div class="modal-warning">Мы не можем отправить вас в прошлое.</div>
             <p class="booking-item">
               <label class="item-name" for="checkoutdata">Дата Выезда:</label>
+            </p>
+            <div class="calendar-container">
               <input class="modal-input" type="text" name="check-out" id="checkoutdata" placeholder="1 сентября 2021"
                 required>
-              <button class="calendar" type="button"><span class="visually-hidden">Календарь.</span></button>
-            </p>
+              <button class="calendar-out" type="button"><span class="visually-hidden">Календарь.</span></button>
+            </div>
             <div class="modal-warning-accept">На эти даты есть свободные номера. Пока есть.</div>
             <div class="modal-container-choices">
               <p class="booking-adults">

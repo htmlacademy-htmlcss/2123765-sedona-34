@@ -1199,7 +1199,25 @@ div .advantages {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
+}
+
+.calendar-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 420px;
+  padding: 0;
+  margin: 0;
+  left: 41px;
+}
+
+.calendar-container {
+  display: inline-block;
+  position: relative;
+  width: 420px;
+  padding: 0;
+  margin: 0;
+  left: 32px;
 }
 
 .modal {
@@ -1284,10 +1302,9 @@ div .advantages {
 }
 
 .booking-item {
-  width: 575px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -1647,19 +1664,41 @@ input[type="number"]:focus {
   color: #FFFFFF;
 }
 
-.calendar {
+.calendar-in {
   position: absolute;
   background-image: url("../images/calendar-modal.svg");
   width: 15px;
   height: 15px;
-  padding: 10px;
+  padding: 30px;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
-  -webkit-transform: translate(548px);
-  -ms-transform: translate(548px);
-  transform: translate(548px);
   border: none;
+  right: -10px;
+  bottom: -5px;
+}
+
+.calendar-out {
+  position: absolute;
+  background-image: url("../images/calendar-modal.svg");
+  width: 15px;
+  height: 15px;
+  padding: 30px;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  right: -8px;
+  bottom: -5px;
+}
+
+.calendar-in:hover,
+.calendar-out:hover {
+  opacity: 0.6;
+}
+.calendar-in:active,
+.calendar-out:active {
+  opacity: 0.3;
 }
 
 .button-adult-min {
