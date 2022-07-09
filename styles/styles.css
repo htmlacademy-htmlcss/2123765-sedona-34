@@ -1301,24 +1301,6 @@ div .advantages {
   padding: 12px;
 }
 
-.booking-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: inline-block;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
 .stars-four {
   background-image: url("../images/stars-four.svg");
   background-repeat: no-repeat;
@@ -1361,8 +1343,6 @@ div .advantages {
   color: rgba(0, 0, 0, 0.6);
   border: none;
   border-radius: 4px;
-  -webkit-transform: translateX(5px);
-  -ms-transform: translateX(5px);
   transform: translateX(5px);
   cursor: pointer;
   padding-top: 15px;
@@ -1374,7 +1354,9 @@ div .advantages {
   -ms-flex-align: center;
   align-items: center;
 }
-
+.modal-input-up {
+  transform: translateX(2px);
+}
 .modal-input:hover {
   background-color: #E6E6E6;
 }
@@ -1455,23 +1437,6 @@ div .advantages {
   -webkit-transform: translate(5px, -5px);
   -ms-transform: translate(5px, -5px);
   transform: translate(5px, -5px);
-}
-
-.booking-adults {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 288px;
-  height: 50px;
-  padding: 0;
-  margin: 0;
 }
 
 .booking-kids {
@@ -1611,6 +1576,9 @@ input[type="number"]:focus {
   -ms-transform: translateY(8px);
   transform: translateY(8px);
 }
+.modal-adult-wrapper {
+  position: relative;
+}
 
 .modal-container-choices {
   display: -webkit-box;
@@ -1696,6 +1664,7 @@ input[type="number"]:focus {
 .calendar-out:hover {
   opacity: 0.6;
 }
+
 .calendar-in:active,
 .calendar-out:active {
   opacity: 0.3;
@@ -1704,18 +1673,35 @@ input[type="number"]:focus {
 .button-adult-min {
   position: absolute;
   background-image: url("../images/modal-min.svg");
-  width: 10px;
   border: none;
-  -webkit-transform: translate(183px, 23px);
-  -ms-transform: translate(183px, 23px);
-  transform: translate(183px, 23px);
-  z-index: 1;
   opacity: 0.3;
   background-position: center;
   background-color: transparent;
 }
 
 .button-adult-plus {
+  position: absolute;
+  background-image: url("../images/modal-plus.svg");
+  width: 13px;
+  height: 13px;
+  border: none;
+  opacity: 0.3;
+  right: 18px;
+  bottom: 16px;
+  background-position: center;
+  background-color: transparent;
+}
+
+.button-kids-min {
+  position: absolute;
+  background-image: url("../images/modal-min.svg");
+  border: none;
+  opacity: 0.3;
+  background-position: center;
+  background-color: transparent;
+}
+
+.button-kids-plus {
   position: absolute;
   background-image: url("../images/modal-plus.svg");
   width: 13px;
@@ -1743,18 +1729,6 @@ input[type="number"]:focus {
 
 .button-adult-plus:active {
   opacity: 0.2;
-}
-
-.button-kids-min {
-  -webkit-transform: translate(118px, 23px);
-  -ms-transform: translate(118px, 23px);
-  transform: translate(118px, 23px);
-}
-
-.button-kids-plus {
-  -webkit-transform: translate(199px, 17px);
-  -ms-transform: translate(199px, 17px);
-  transform: translate(199px, 17px);
 }
 
 .tooltip-toggle {
@@ -2076,19 +2050,11 @@ input[type="number"]:focus {
   box-shadow: 0 0 0 2px #83B3D3;
 }
 
-.control-checkbox:disabled {
+.control-checkbox:disabled ~ .checkbox-vector {
   opacity: 0.6;
 }
 
-.control-input:disabled {
-  opacity: 0.6;
-}
-
-.checkbox-vector:disabled {
-  opacity: 0.6;
-}
-
-.radio-disk:disabled {
+.control-input:disabled ~ .radio-disk {
   opacity: 0.6;
 }
 
