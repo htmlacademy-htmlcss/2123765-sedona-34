@@ -19,7 +19,7 @@
           </a>
           <ul class="container-nav">
             <li class="navmain nav-main-wrapper"><a class="navigation-link">Главная</a></li>
-            <li class="nav-sedona-wrapper"><a class="navigation-link" href="index.html">О Седоне</a></li>
+            <li class="nav-sedona-wrapper"><a class="navigation-link">О Седоне</a></li>
             <li class="nav-hotels-wrapper"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
           </ul>
           <ul class="container-nav-icons">
@@ -209,35 +209,35 @@
             <path
               d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" />
           </svg>
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в седоне</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <p class="booking-item">
-              <label class="item-name modal-date-check" for="checkindata">Дата Заезда:</label>
-              <input class="modal-input" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020"
+            <label class="item-name modal-date-check" for="checkindata">Дата Заезда:</label>
+            <div class="calendar-wrapper">
+              <input class="modal-input modal-input-up" type="text" name="check-in" id="checkindata" placeholder="27 апреля 2020"
                 required>
-              <button class="calendar" type="button"><span class="visually-hidden">Календарь.</span></button>
-            </p>
+              <button class="calendar-in" type="button"><span class="visually-hidden">Календарь.</span></button>
+            </div>
             <div class="modal-warning">Мы не можем отправить вас в прошлое.</div>
-            <p class="booking-item">
-              <label class="item-name" for="checkoutdata">Дата Выезда:</label>
+            <label class="item-name" for="checkoutdata">Дата Выезда:</label>
+            <div class="calendar-container">
               <input class="modal-input" type="text" name="check-out" id="checkoutdata" placeholder="1 сентября 2021"
                 required>
-              <button class="calendar" type="button"><span class="visually-hidden">Календарь.</span></button>
-            </p>
+              <button class="calendar-out" type="button"><span class="visually-hidden">Календарь.</span></button>
+            </div>
             <div class="modal-warning-accept">На эти даты есть свободные номера. Пока есть.</div>
             <div class="modal-container-choices">
-              <p class="booking-adults">
-                <label for="adults" class="modal-label-adult">Взрослые:</label>
+              <label for="adults" class="modal-label-adult">Взрослые:</label>
+              <div class="modal-adult-wrapper">
                 <button class="button-adult-min" type="button"><span class="visually-hidden">Уменьшить количество
-                    взрослых</span></button>
+                    взрослых.</span></button>
                 <input id="adults" class="modal-input-field left-field" type="number" name="number-of-adults" min="1"
                   placeholder="2" required>
                 <button class="button-adult-plus" type="button"><span class="visually-hidden">Увеличить количество
-                    взрослых</span></button>
-              </p>
+                    взрослых.</span></button>
+              </div>
               <p class="booking-kids">
                 <span class="form-label form-label-icon">
                   <label for="kids" class="modal-label-kids">Дети:</label>
@@ -264,11 +264,11 @@
                       с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
-                <button class="button-adult-min button-kids-min" type="button"><span class="visually-hidden">Уменьшить
-                    количество детей</span></button>
+                <button class="button-kids-min" type="button"><span class="visually-hidden">Уменьшить
+                    количество детей.</span></button>
                 <input id="kids" class="modal-input-field" type="number" name="number-of-kids" min="1" placeholder="1">
-                <button class="button-adult-plus button-kids-plus" type="button"><span class="visually-hidden">Увеличить
-                    количество детей</span></button>
+                <button class="button-kids-plus" type="button"><span class="visually-hidden">Увеличить
+                    количество детей.</span></button>
               </p>
             </div>
             <button class="modal-button-search" type="submit">Найти</button>

@@ -689,7 +689,6 @@ img {
 .booking-header {
   display: block;
   width: 1200px;
-  height: 417px;
   background-color: #FFFFFF;
 }
 
@@ -729,6 +728,7 @@ img {
   padding-top: 56px;
   padding-left: 313px;
   padding-right: 313px;
+  padding-bottom: 93px;
   border: none;
 }
 
@@ -1058,6 +1058,22 @@ div .advantages {
   font-weight: 400;
 }
 
+.social-links {
+  fill: #68A2CA;
+}
+
+.social-links:hover svg {
+  fill: #68A2CA;
+}
+
+.social-links:active svg {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.social-links:focus svg {
+  fill: #68A2CA;
+}
+
 .newsletter-form {
   width: 800px;
   height: 60px;
@@ -1135,15 +1151,6 @@ div .advantages {
   fill: #83B3D3;
 }
 
-.icons-sc:hover,
-.icons-sc:focus {
-  fill: #68A2CA;
-}
-
-.icons-sc:active {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -1192,7 +1199,25 @@ div .advantages {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
+}
+
+.calendar-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 420px;
+  padding: 0;
+  margin: 0;
+  left: 41px;
+}
+
+.calendar-container {
+  display: inline-block;
+  position: relative;
+  width: 420px;
+  padding: 0;
+  margin: 0;
+  left: 32px;
 }
 
 .modal {
@@ -1276,25 +1301,6 @@ div .advantages {
   padding: 12px;
 }
 
-.booking-item {
-  width: 575px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
 .stars-four {
   background-image: url("../images/stars-four.svg");
   background-repeat: no-repeat;
@@ -1337,8 +1343,6 @@ div .advantages {
   color: rgba(0, 0, 0, 0.6);
   border: none;
   border-radius: 4px;
-  -webkit-transform: translateX(5px);
-  -ms-transform: translateX(5px);
   transform: translateX(5px);
   cursor: pointer;
   padding-top: 15px;
@@ -1349,6 +1353,10 @@ div .advantages {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.modal-input-up {
+  transform: translateX(2px);
 }
 
 .modal-input:hover {
@@ -1431,23 +1439,6 @@ div .advantages {
   -webkit-transform: translate(5px, -5px);
   -ms-transform: translate(5px, -5px);
   transform: translate(5px, -5px);
-}
-
-.booking-adults {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 288px;
-  height: 50px;
-  padding: 0;
-  margin: 0;
 }
 
 .booking-kids {
@@ -1588,6 +1579,24 @@ input[type="number"]:focus {
   transform: translateY(8px);
 }
 
+.modal-adult-wrapper {
+  position: relative;
+  right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 133px;
+  margin: 0;
+  padding: 0;
+}
+
 .modal-container-choices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1640,29 +1649,55 @@ input[type="number"]:focus {
   color: #FFFFFF;
 }
 
-.calendar {
+.calendar-in {
   position: absolute;
   background-image: url("../images/calendar-modal.svg");
   width: 15px;
   height: 15px;
-  -webkit-transform: translate(548px);
-  -ms-transform: translate(548px);
-  transform: translate(548px);
+  padding: 30px;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
   border: none;
+  right: -7px;
+  bottom: -5px;
+}
+
+.calendar-out {
+  position: absolute;
+  background-image: url("../images/calendar-modal.svg");
+  width: 15px;
+  height: 15px;
+  padding: 30px;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  right: -8px;
+  bottom: -5px;
+}
+
+.calendar-in:hover,
+.calendar-out:hover {
+  opacity: 0.6;
+}
+
+.calendar-in:active,
+.calendar-out:active {
+  opacity: 0.3;
 }
 
 .button-adult-min {
   position: absolute;
   background-image: url("../images/modal-min.svg");
-  width: 10px;
   border: none;
-  -webkit-transform: translate(183px, 23px);
-  -ms-transform: translate(183px, 23px);
-  transform: translate(183px, 23px);
-  z-index: 1;
   opacity: 0.3;
+  width: 25px;
+  height: 25px;
   background-position: center;
   background-color: transparent;
+  left: 25px;
+  bottom: -13px;
 }
 
 .button-adult-plus {
@@ -1671,40 +1706,57 @@ input[type="number"]:focus {
   width: 13px;
   height: 13px;
   border: none;
-  -webkit-transform: translate(258px, 17px);
-  -ms-transform: translate(258px, 17px);
-  transform: translate(258px, 17px);
   opacity: 0.3;
+  right: 19px;
+  bottom: 17px;
   background-position: center;
   background-color: transparent;
 }
 
+.button-kids-min {
+  position: absolute;
+  background-image: url("../images/modal-min.svg");
+  border: none;
+  opacity: 0.3;
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-color: transparent;
+  right: 95px;
+  bottom: 23px;
+}
+
+.button-kids-plus {
+  position: absolute;
+  background-image: url("../images/modal-plus.svg");
+  width: 13px;
+  height: 13px;
+  border: none;
+  opacity: 0.3;
+  background-position: center;
+  background-color: transparent;
+  right: 21px;
+  bottom: 19px;
+}
+
+.button-kids-min:hover,
 .button-adult-min:hover {
   opacity: 1;
 }
 
+.button-kids-plus:hover,
 .button-adult-plus:hover {
   opacity: 1;
 }
 
+.button-kids-min:active,
 .button-adult-min:active {
   opacity: 0.2;
 }
 
+.button-kids-plus:active,
 .button-adult-plus:active {
   opacity: 0.2;
-}
-
-.button-kids-min {
-  -webkit-transform: translate(118px, 23px);
-  -ms-transform: translate(118px, 23px);
-  transform: translate(118px, 23px);
-}
-
-.button-kids-plus {
-  -webkit-transform: translate(199px, 17px);
-  -ms-transform: translate(199px, 17px);
-  transform: translate(199px, 17px);
 }
 
 .tooltip-toggle {
@@ -1810,7 +1862,6 @@ input[type="number"]:focus {
   font-weight: 700;
   color: #FFFFFF;
   width: 495px;
-  height: 78px;
   padding-top: 35px;
   padding-left: 70px;
   padding-right: 0;
@@ -2025,6 +2076,14 @@ input[type="number"]:focus {
 .control-input[type="radio"]:focus + .radio-disk {
   -webkit-box-shadow: 0 0 0 2px #83B3D3;
   box-shadow: 0 0 0 2px #83B3D3;
+}
+
+.control-checkbox:disabled ~ .checkbox-vector {
+  opacity: 0.6;
+}
+
+.control-input:disabled ~ .radio-disk {
+  opacity: 0.6;
 }
 
 .radio-disk {
@@ -2616,6 +2675,8 @@ input[type="number"]:focus {
   left: 5px;
   right: 60px;
   top: 12px;
+  width: 120px;
+  text-align: right;
 }
 
 .input-before {
@@ -2703,10 +2764,6 @@ input[type="number"]:focus {
   color: #FFFFFF;
 }
 
-.hotel-amara {
-  margin-right: 18px;
-}
-
 .hotelscat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2736,10 +2793,6 @@ input[type="number"]:focus {
   padding-right: 71px;
   padding-left: 72px;
   padding-bottom: 0;
-}
-
-.hotel-diablo {
-  margin-right: 18px;
 }
 
 .hotel-card-title {
@@ -2866,8 +2919,16 @@ input[type="number"]:focus {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 340px;
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
+  margin-bottom: 20px;
+}
 
+.cards:not(:nth-child(3n)) {
+  margin-right: 18px
+}
+
+.greentree {
+  margin-bottom: 0;
 }
 
 .hotel-card-price {
