@@ -689,7 +689,6 @@ img {
 .booking-header {
   display: block;
   width: 1200px;
-  height: 417px;
   background-color: #FFFFFF;
 }
 
@@ -729,6 +728,7 @@ img {
   padding-top: 56px;
   padding-left: 313px;
   padding-right: 313px;
+  padding-bottom: 93px;
   border: none;
 }
 
@@ -1058,6 +1058,22 @@ div .advantages {
   font-weight: 400;
 }
 
+.social-links {
+  fill: #68A2CA;
+}
+
+.social-links:hover svg {
+  fill: #68A2CA;
+}
+
+.social-links:active svg {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.social-links:focus svg {
+  fill: #68A2CA;
+}
+
 .newsletter-form {
   width: 800px;
   height: 60px;
@@ -1133,15 +1149,6 @@ div .advantages {
 
 .icons-sc {
   fill: #83B3D3;
-}
-
-.icons-sc:hover,
-.icons-sc:focus {
-  fill: #68A2CA;
-}
-
-.icons-sc:active {
-  fill: rgba(104, 162, 202, 0.3);
 }
 
 .contacts-phone {
@@ -1645,6 +1652,10 @@ input[type="number"]:focus {
   background-image: url("../images/calendar-modal.svg");
   width: 15px;
   height: 15px;
+  padding: 10px;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
   -webkit-transform: translate(548px);
   -ms-transform: translate(548px);
   transform: translate(548px);
@@ -1810,7 +1821,6 @@ input[type="number"]:focus {
   font-weight: 700;
   color: #FFFFFF;
   width: 495px;
-  height: 78px;
   padding-top: 35px;
   padding-left: 70px;
   padding-right: 0;
@@ -2025,6 +2035,22 @@ input[type="number"]:focus {
 .control-input[type="radio"]:focus + .radio-disk {
   -webkit-box-shadow: 0 0 0 2px #83B3D3;
   box-shadow: 0 0 0 2px #83B3D3;
+}
+
+.control-checkbox:disabled {
+  opacity: 0.6;
+}
+
+.control-input:disabled {
+  opacity: 0.6;
+}
+
+.checkbox-vector:disabled {
+  opacity: 0.6;
+}
+
+.radio-disk:disabled {
+  opacity: 0.6;
 }
 
 .radio-disk {
@@ -2616,6 +2642,8 @@ input[type="number"]:focus {
   left: 5px;
   right: 60px;
   top: 12px;
+  width: 120px;
+  text-align: right;
 }
 
 .input-before {
@@ -2703,10 +2731,6 @@ input[type="number"]:focus {
   color: #FFFFFF;
 }
 
-.hotel-amara {
-  margin-right: 18px;
-}
-
 .hotelscat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2736,10 +2760,6 @@ input[type="number"]:focus {
   padding-right: 71px;
   padding-left: 72px;
   padding-bottom: 0;
-}
-
-.hotel-diablo {
-  margin-right: 18px;
 }
 
 .hotel-card-title {
@@ -2866,8 +2886,16 @@ input[type="number"]:focus {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 340px;
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
+  margin-bottom: 20px;
+}
 
+.cards:not(:nth-child(3n)) {
+  margin-right: 18px
+}
+
+.greentree {
+  margin-bottom: 0;
 }
 
 .hotel-card-price {
